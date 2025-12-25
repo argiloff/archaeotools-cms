@@ -7,12 +7,15 @@ import {
   resolvePhotoUrl,
   ensureAbsoluteUrl,
   buildPhotoPublicUrlFromKey,
+  updatePhoto,
+  deletePhoto,
 } from '../../api/photos.service';
 import { listPlaces, createPlace, updatePlace, deletePlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import { MapPreview } from '../../components/map/MapPreview';
 import { Modal } from '../../components/ui/Modal';
 import { RichTextEditor } from '../../components/editor/RichTextEditor';
+import type { Photo } from '../../api/types';
 import './mediaManager.css';
 
 export function MediaManagerPage() {
@@ -44,11 +47,23 @@ export function MediaManagerPage() {
   const [photoPlaceId, setPhotoPlaceId] = useState<string>('');
   const [photoError, setPhotoError] = useState<string | null>(null);
   const [galleryPlaceId, setGalleryPlaceId] = useState<string | null>(null);
+  const [editingPhoto, setEditingPhoto] = useState<Photo | null>(null);
+  const [photoModalMode, setPhotoModalMode] = useState<'create' | 'edit'>('create');
+  const [previewPhoto, setPreviewPhoto] = useState<Photo | null>(null);
 
   const photosQuery = useQuery({
     queryKey: ['photos', projectId],
     queryFn: () => listPhotos(projectId!),
     enabled: !!projectId,
+  });
+
+  const deletePhotoMutation = useMutation({
+    mutationFn: (photoId: string) => deletePhoto(projectId!, photoId),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['photos', projectId] });
+      setStatusMessage('Foto gelöscht.');
+    },
+    onError: () => setStatusMessage('Löschen fehlgeschlagen.'),
   });
   const placesQuery = useQuery({
     queryKey: ['places', projectId],
@@ -97,34 +112,67 @@ export function MediaManagerPage() {
     onError: () => setStatusMessage('Löschen fehlgeschlagen.'),
   });
 
-  const uploadPhotoMutation = useMutation({
+  const resetPhotoForm = () => {
+    setPhotoFile(null);
+    setPhotoDesc('');
+    setPhotoNotes(null);
+    setPhotoTags('');
+    setPhotoPlaceId('');
+    setEditingPhoto(null);
+    setPhotoModalMode('create');
+  };
+
+  const savePhotoMutation = useMutation({
     mutationFn: async (payload: {
-      file: File;
+      file?: File | null;
+      photoId?: string;
       description?: string;
       placeId?: string | null;
       tags?: string[];
       notes?: string;
     }) => {
-      const presigned = await createUploadUrl(projectId!, {
-        filename: payload.file.name,
-        contentType: payload.file.type || 'image/jpeg',
-        contentLength: payload.file.size,
-      });
-      await fetch(presigned.uploadUrl, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': payload.file.type || 'image/jpeg',
-        },
-        body: payload.file,
-      });
-      const publicUrl =
-        ensureAbsoluteUrl(presigned.fileUrl, presigned.key) ??
-        ensureAbsoluteUrl(presigned.uploadUrl, presigned.key) ??
-        buildPhotoPublicUrlFromKey(presigned.key) ??
-        presigned.key;
+      let publicUrl: string | undefined;
+      let storageKey: string | undefined;
+
+      if (payload.file) {
+        const presigned = await createUploadUrl(projectId!, {
+          filename: payload.file.name,
+          contentType: payload.file.type || 'image/jpeg',
+          contentLength: payload.file.size,
+        });
+        await fetch(presigned.uploadUrl, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': payload.file.type || 'image/jpeg',
+          },
+          body: payload.file,
+        });
+        publicUrl =
+          ensureAbsoluteUrl(presigned.fileUrl, presigned.key) ??
+          ensureAbsoluteUrl(presigned.uploadUrl, presigned.key) ??
+          buildPhotoPublicUrlFromKey(presigned.key) ??
+          presigned.key;
+        storageKey = presigned.key;
+      }
+
+      if (payload.photoId) {
+        return updatePhoto(projectId!, payload.photoId, {
+          ...(publicUrl ? { url: publicUrl } : {}),
+          ...(storageKey ? { storageKey } : {}),
+          description: payload.description,
+          placeId: payload.placeId || undefined,
+          tags: payload.tags,
+          notes: payload.notes,
+        });
+      }
+
+      if (!publicUrl || !storageKey) {
+        throw new Error('Für neue Fotos muss eine Datei ausgewählt werden.');
+      }
+
       return createPhoto(projectId!, {
         url: publicUrl,
-        storageKey: presigned.key,
+        storageKey,
         description: payload.description,
         placeId: payload.placeId || undefined,
         tags: payload.tags,
@@ -134,11 +182,7 @@ export function MediaManagerPage() {
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['photos', projectId] });
       setShowPhotoModal(false);
-      setPhotoFile(null);
-      setPhotoDesc('');
-      setPhotoNotes(null);
-      setPhotoTags('');
-      setPhotoPlaceId('');
+      resetPhotoForm();
       setPhotoError(null);
     },
     onError: (err: any) => {
@@ -221,7 +265,13 @@ export function MediaManagerPage() {
         <button className="btn" onClick={() => setShowPlaceModal(true)}>
           Place anlegen
         </button>
-        <button className="btn" onClick={() => setShowPhotoModal(true)}>
+        <button
+          className="btn"
+          onClick={() => {
+            resetPhotoForm();
+            setShowPhotoModal(true);
+          }}
+        >
           Foto hochladen
         </button>
       </div>
@@ -319,70 +369,82 @@ export function MediaManagerPage() {
               ? 'Fehler beim Laden der Fotos'
               : `${filtered.length} von ${photos.length} Fotos`}
         </div>
-        <div
-          style={{
-            display: 'grid',
-            gap: 12,
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-          }}
-        >
+        <div className="photo-grid">
           {!photosQuery.isLoading &&
             !photosQuery.isError &&
             filtered.map((p) => (
-              <div
-                key={p.id}
-                style={{
-                  background: 'rgba(255,255,255,0.03)',
-                  border: '1px solid rgba(255,255,255,0.08)',
-                  borderRadius: 12,
-                  padding: 12,
-                  display: 'grid',
-                  gap: 6,
-                }}
-              >
-                {p.url && (
-                  <img
-                    src={resolvePhotoUrl(p)}
-                    alt={p.description ?? 'Foto'}
-                    style={{
-                      width: '100%',
-                      height: 150,
-                      objectFit: 'cover',
-                      borderRadius: 10,
-                      border: '1px solid rgba(255,255,255,0.08)',
-                    }}
-                  />
-                )}
-                <div style={{ fontWeight: 600 }}>{p.description ?? 'Foto'}</div>
-                <div style={{ fontSize: 12, color: '#8fa0bf' }}>
-                  {p.capturedAt ?? 'Ohne Datum'}
-                  {p.placeId && (
-                    <span style={{ marginLeft: 8, color: '#6de3c4' }}>
-                      • {places.find((pl) => pl.id === p.placeId)?.title ?? 'Place'}
-                    </span>
+              <div key={p.id} className="photo-card">
+                <div
+                  className="photo-thumb-wrapper"
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setPreviewPhoto(p)}
+                  onKeyDown={(evt) => {
+                    if (evt.key === 'Enter' || evt.key === ' ') {
+                      evt.preventDefault();
+                      setPreviewPhoto(p);
+                    }
+                  }}
+                >
+                  {p.url ? (
+                    <img className="photo-thumb" src={resolvePhotoUrl(p)} alt={p.description ?? 'Foto'} />
+                  ) : (
+                    <div className="photo-thumb-placeholder">Kein Bild</div>
                   )}
-                </div>
-                {p.tags && p.tags.length > 0 && (
-                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                    {p.tags.map((t) => (
-                      <span
-                        key={t}
-                        style={{
-                          fontSize: 11,
-                          padding: '4px 8px',
-                          background: 'rgba(255,255,255,0.06)',
-                          borderRadius: 8,
-                          border: '1px solid rgba(255,255,255,0.1)',
-                        }}
-                      >
-                        #{t}
-                      </span>
-                    ))}
+                  <div className="photo-actions-overlay">
+                    <button
+                      className="icon-btn"
+                      aria-label="Foto bearbeiten"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setPhotoModalMode('edit');
+                        setEditingPhoto(p);
+                        setPhotoFile(null);
+                        setPhotoDesc(p.description ?? '');
+                        setPhotoTags((p.tags ?? []).join(', '));
+                        setPhotoPlaceId(p.placeId ?? '');
+                        try {
+                          setPhotoNotes(p.notes ? JSON.parse(p.notes) : null);
+                        } catch {
+                          setPhotoNotes(p.notes ?? null);
+                        }
+                        setShowPhotoModal(true);
+                      }}
+                    >
+                      ✏️
+                    </button>
+                    <button
+                      className="icon-btn danger"
+                      aria-label="Foto löschen"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (deletePhotoMutation.isPending) return;
+                        if (window.confirm('Foto wirklich löschen?')) {
+                          deletePhotoMutation.mutate(p.id);
+                        }
+                      }}
+                    >
+                      🗑
+                    </button>
                   </div>
-                )}
-                {p.notes && (
-                  <div style={{ fontSize: 13, color: '#c5d1e0' }}>{p.notes}</div>
-                )}
+                </div>
+                <div className="photo-meta">
+                  <div className="photo-meta-title">{p.description ?? 'Foto'}</div>
+                  <div className="photo-meta-subline">
+                    <span>{p.capturedAt ? new Date(p.capturedAt).toLocaleDateString() : 'Ohne Datum'}</span>
+                    {p.placeId && (
+                      <span>• {places.find((pl) => pl.id === p.placeId)?.title ?? 'Place'}</span>
+                    )}
+                  </div>
+                  {p.tags && p.tags.length > 0 && (
+                    <div className="photo-tags">
+                      {p.tags.map((t) => (
+                        <span key={t}>#{t}</span>
+                      ))}
+                    </div>
+                  )}
+                  {p.notes && <div className="photo-notes-preview">{p.notes}</div>}
+                </div>
               </div>
             ))}
           {photosQuery.isLoading && <div style={{ color: '#8fa0bf' }}>Lade …</div>}
@@ -485,7 +547,16 @@ export function MediaManagerPage() {
         </button>
       </Modal>
 
-      <Modal title="Foto hochladen" open={showPhotoModal} onClose={() => setShowPhotoModal(false)}>
+      <Modal
+        title={photoModalMode === 'create' ? 'Foto hochladen' : 'Foto bearbeiten'}
+        open={showPhotoModal}
+        onClose={() => {
+          if (!savePhotoMutation.isPending) {
+            setShowPhotoModal(false);
+            resetPhotoForm();
+          }
+        }}
+      >
         <div
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => {
@@ -501,7 +572,11 @@ export function MediaManagerPage() {
             background: 'rgba(255,255,255,0.02)',
           }}
         >
-          <div style={{ marginBottom: 8 }}>Bild hierher ziehen oder auswählen</div>
+          <div style={{ marginBottom: 8 }}>
+            {photoModalMode === 'create'
+              ? 'Bild hierher ziehen oder auswählen'
+              : 'Optional neues Bild auswählen (leer lassen, um das bestehende zu behalten)'}
+          </div>
           <input
             className="input"
             type="file"
@@ -520,12 +595,8 @@ export function MediaManagerPage() {
         </label>
         <label className="project-selector">
           <span>Place</span>
-          <select
-            className="input select-like"
-            value={photoPlaceId}
-            onChange={(e) => setPhotoPlaceId(e.target.value)}
-          >
-            <option value="">Kein Place</option>
+          <select className="input select-like" value={photoPlaceId} onChange={(e) => setPhotoPlaceId(e.target.value)}>
+            <option value="">Alle Orte</option>
             {places.map((pl) => (
               <option key={pl.id} value={pl.id}>
                 {pl.title ?? pl.type ?? 'Place'}
@@ -541,19 +612,81 @@ export function MediaManagerPage() {
         <button
           className="btn"
           onClick={() =>
-            photoFile &&
-            uploadPhotoMutation.mutate({
-              file: photoFile,
+            savePhotoMutation.mutate({
+              file: photoFile ?? undefined,
+              photoId: photoModalMode === 'edit' ? editingPhoto?.id : undefined,
               description: photoDesc,
               placeId: photoPlaceId || undefined,
               tags: photoTags ? photoTags.split(',').map((t) => t.trim()).filter(Boolean) : undefined,
               notes: photoNotes ? JSON.stringify(photoNotes) : undefined,
             })
           }
-          disabled={!photoFile || uploadPhotoMutation.isPending}
+          disabled={
+            photoModalMode === 'create'
+              ? !photoFile || savePhotoMutation.isPending
+              : savePhotoMutation.isPending
+          }
         >
-          {uploadPhotoMutation.isPending ? 'Lädt…' : 'Upload'}
+          {savePhotoMutation.isPending ? 'Speichere…' : photoModalMode === 'create' ? 'Upload' : 'Änderungen speichern'}
         </button>
+      </Modal>
+
+      <Modal
+        title={previewPhoto?.description ?? 'Foto'}
+        open={!!previewPhoto}
+        onClose={() => setPreviewPhoto(null)}
+      >
+        {previewPhoto ? (
+          <div className="photo-preview">
+            {previewPhoto.url ? (
+              <img
+                className="photo-preview-img"
+                src={resolvePhotoUrl(previewPhoto)}
+                alt={previewPhoto.description ?? 'Foto'}
+              />
+            ) : (
+              <div className="photo-thumb-placeholder">Kein Bild verfügbar</div>
+            )}
+            <div className="photo-preview-meta">
+              <div className="photo-meta-title">{previewPhoto.description ?? 'Foto'}</div>
+              <div className="photo-meta-subline">
+                <span>
+                  {previewPhoto.capturedAt
+                    ? new Date(previewPhoto.capturedAt).toLocaleString()
+                    : 'Ohne Datum'}
+                </span>
+                {previewPhoto.placeId && (
+                  <span>
+                    • {places.find((pl) => pl.id === previewPhoto.placeId)?.title ?? 'Place'}
+                  </span>
+                )}
+              </div>
+              {previewPhoto.tags && previewPhoto.tags.length > 0 && (
+                <div className="photo-tags">
+                  {previewPhoto.tags.map((t) => (
+                    <span key={t}>#{t}</span>
+                  ))}
+                </div>
+              )}
+              {previewPhoto.notes && (
+                <div className="photo-notes-preview">
+                  {(() => {
+                    try {
+                      const parsed = JSON.parse(previewPhoto.notes);
+                      if (typeof parsed === 'string') return parsed;
+                      if (Array.isArray(parsed)) {
+                        return parsed.map((block: any) => block.text).join('\n');
+                      }
+                      return previewPhoto.notes;
+                    } catch {
+                      return previewPhoto.notes;
+                    }
+                  })()}
+                </div>
+              )}
+            </div>
+          </div>
+        ) : null}
       </Modal>
 
       <Modal

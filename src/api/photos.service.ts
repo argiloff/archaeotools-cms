@@ -18,6 +18,18 @@ export async function createPhoto(projectId: string, payload: Partial<Photo>) {
   return data;
 }
 
+export async function updatePhoto(projectId: string, photoId: string, payload: Partial<Photo>) {
+  const { data } = await httpClient.patch<Photo>(
+    `/projects/${projectId}/photos/${photoId}`,
+    payload,
+  );
+  return data;
+}
+
+export async function deletePhoto(projectId: string, photoId: string) {
+  await httpClient.delete(`/projects/${projectId}/photos/${photoId}`);
+}
+
 const storageBaseUrl =
   import.meta.env.VITE_STORAGE_PUBLIC_URL?.replace(/\/$/, '') || null;
 
