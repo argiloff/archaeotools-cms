@@ -1,6 +1,13 @@
 import { useMemo, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { listPhotos, uploadPhoto } from '../../api/photos.service';
+import {
+  listPhotos,
+  createPhoto,
+  createUploadUrl,
+  resolvePhotoUrl,
+  ensureAbsoluteUrl,
+  buildPhotoPublicUrlFromKey,
+} from '../../api/photos.service';
 import { listPlaces, createPlace, updatePlace, deletePlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import { MapPreview } from '../../components/map/MapPreview';
@@ -91,13 +98,39 @@ export function MediaManagerPage() {
   });
 
   const uploadPhotoMutation = useMutation({
-    mutationFn: (payload: {
+    mutationFn: async (payload: {
       file: File;
       description?: string;
       placeId?: string | null;
       tags?: string[];
       notes?: string;
-    }) => uploadPhoto(projectId!, payload),
+    }) => {
+      const presigned = await createUploadUrl(projectId!, {
+        filename: payload.file.name,
+        contentType: payload.file.type || 'image/jpeg',
+        contentLength: payload.file.size,
+      });
+      await fetch(presigned.uploadUrl, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': payload.file.type || 'image/jpeg',
+        },
+        body: payload.file,
+      });
+      const publicUrl =
+        ensureAbsoluteUrl(presigned.fileUrl, presigned.key) ??
+        ensureAbsoluteUrl(presigned.uploadUrl, presigned.key) ??
+        buildPhotoPublicUrlFromKey(presigned.key) ??
+        presigned.key;
+      return createPhoto(projectId!, {
+        url: publicUrl,
+        storageKey: presigned.key,
+        description: payload.description,
+        placeId: payload.placeId || undefined,
+        tags: payload.tags,
+        notes: payload.notes,
+      });
+    },
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['photos', projectId] });
       setShowPhotoModal(false);
@@ -309,7 +342,7 @@ export function MediaManagerPage() {
               >
                 {p.url && (
                   <img
-                    src={p.url}
+                    src={resolvePhotoUrl(p)}
                     alt={p.description ?? 'Foto'}
                     style={{
                       width: '100%',

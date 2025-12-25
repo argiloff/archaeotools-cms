@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 import { Modal } from '../ui/Modal';
 import { createPlace } from '../../api/places.service';
-import { uploadPhoto } from '../../api/photos.service';
+import { createPhoto, createUploadUrl, buildPhotoPublicUrlFromKey } from '../../api/photos.service';
 import { projectStore } from '../../state/project.store';
 import { createProject, deleteProject, listProjects } from '../../api/projects.service';
 
@@ -118,10 +118,34 @@ export function ImportDatasetModal({ open, onClose }: Props) {
             const file = new File([blob], `${newPlace.id}-${Date.now()}.jpg`, {
               type: blob.type || 'image/jpeg',
             });
+            const presigned = await runWithRetry(
+              () =>
+                createUploadUrl(newProject.id, {
+                  filename: file.name,
+                  contentType: file.type || 'image/jpeg',
+                  contentLength: file.size,
+                }),
+              `Presigned ${photo.description ?? ''}`,
+            );
+            await fetch(presigned.uploadUrl, {
+              method: 'PUT',
+              headers: { 'Content-Type': file.type || 'image/jpeg' },
+              body: file,
+            });
+            let publicUrl = presigned.fileUrl ?? buildPhotoPublicUrlFromKey(presigned.key);
+            if (!publicUrl) {
+              try {
+                const parsed = new URL(presigned.uploadUrl);
+                publicUrl = `${parsed.origin}${parsed.pathname}`;
+              } catch {
+                publicUrl = presigned.key;
+              }
+            }
             await runWithRetry(
               () =>
-                uploadPhoto(newProject.id, {
-                  file,
+                createPhoto(newProject.id, {
+                  url: publicUrl,
+                  storageKey: presigned.key,
                   description: photo.description,
                   placeId: newPlace.id,
                 }),

@@ -47,8 +47,15 @@ export type Photo = {
   lat?: number;
   lng?: number;
   placeId?: string | null;
+  storageKey?: string;
   createdAt?: string;
   updatedAt?: string;
+};
+
+export type PresignedUpload = {
+  uploadUrl: string;
+  key: string;
+  fileUrl?: string;
 };
 
 export type OsintStatus = 'IDEA' | 'IN_PROGRESS' | 'DONE';

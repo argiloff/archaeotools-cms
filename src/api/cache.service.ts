@@ -6,8 +6,15 @@ export type CacheMetrics = {
 };
 
 export async function getCacheMetrics() {
-  const { data } = await httpClient.get<CacheMetrics>('/cache/metrics');
-  return data;
+  try {
+    const { data } = await httpClient.get<CacheMetrics>('/cache/metrics');
+    return data;
+  } catch (error: any) {
+    if (error?.response?.status === 404) {
+      return {};
+    }
+    throw error;
+  }
 }
 
 export async function invalidateProjectCache(projectId: string) {
