@@ -2,12 +2,18 @@
 
 export type Visibility = 'PUBLIC' | 'PRIVATE';
 
+export type ProjectType = 'MUSEUM_GUIDE' | 'ARCHAEOLOGY' | 'OSINT';
+
 export type Project = {
   id: string;
   name: string;
-  type?: string;
+  type?: ProjectType;
   visibility?: Visibility;
-  location?: string;
+  description?: string;
+  locationName?: string;
+  country?: string;
+  city?: string;
+  visitedAt?: string;
   createdAt?: string;
   updatedAt?: string;
 };

@@ -7,6 +7,7 @@ import { listPhotos } from '../../api/photos.service';
 import { listPlaces } from '../../api/places.service';
 import { listOsint } from '../../api/osint.service';
 import { Modal } from '../../components/ui/Modal';
+import type { ProjectType, Visibility } from '../../api/types';
 
 export function ProjectSelector() {
   const qc = useQueryClient();
@@ -16,8 +17,13 @@ export function ProjectSelector() {
   });
   const [showCreate, setShowCreate] = useState(false);
   const [projName, setProjName] = useState('');
-  const [projType, setProjType] = useState('');
-  const [projLocation, setProjLocation] = useState('');
+  const [projType, setProjType] = useState<ProjectType>('ARCHAEOLOGY');
+  const [projVisibility, setProjVisibility] = useState<Visibility>('PRIVATE');
+  const [projLocationName, setProjLocationName] = useState('');
+  const [projCountry, setProjCountry] = useState('');
+  const [projCity, setProjCity] = useState('');
+  const [projVisitedAt, setProjVisitedAt] = useState('');
+  const [projError, setProjError] = useState<string | null>(null);
 
   const { projects, currentProjectId, setProjects, setCurrentProject } = projectStore();
 
@@ -42,16 +48,32 @@ export function ProjectSelector() {
       createProject({
         name: projName,
         type: projType,
-        location: projLocation,
+        visibility: projVisibility,
+        locationName: projLocationName || undefined,
+        country: projCountry || undefined,
+        city: projCity || undefined,
+        visitedAt: projVisitedAt || undefined,
       }),
     onSuccess: (newProject) => {
       setShowCreate(false);
       setProjName('');
-      setProjType('');
-      setProjLocation('');
+      setProjType('ARCHAEOLOGY');
+      setProjVisibility('PRIVATE');
+      setProjLocationName('');
+      setProjCountry('');
+      setProjCity('');
+      setProjVisitedAt('');
+      setProjError(null);
       // refresh list + select new
       qc.invalidateQueries({ queryKey: ['projects'] });
       setCurrentProject(newProject.id);
+    },
+    onError: (err: any) => {
+      const msg =
+        err?.response?.data?.message ||
+        err?.message ||
+        'Speichern fehlgeschlagen. Bitte prüfen.';
+      setProjError(Array.isArray(msg) ? msg.join(', ') : msg);
     },
   });
 
@@ -106,12 +128,49 @@ export function ProjectSelector() {
         </label>
         <label className="project-selector">
           <span>Typ</span>
-          <input className="input" value={projType} onChange={(e) => setProjType(e.target.value)} />
+          <select
+            className="input select-like"
+            value={projType}
+            onChange={(e) => setProjType(e.target.value as ProjectType)}
+          >
+            <option value="MUSEUM_GUIDE">MUSEUM_GUIDE</option>
+            <option value="ARCHAEOLOGY">ARCHAEOLOGY</option>
+            <option value="OSINT">OSINT</option>
+          </select>
         </label>
         <label className="project-selector">
-          <span>Ort</span>
-          <input className="input" value={projLocation} onChange={(e) => setProjLocation(e.target.value)} />
+          <span>Visibility</span>
+          <select
+            className="input select-like"
+            value={projVisibility}
+            onChange={(e) => setProjVisibility(e.target.value as Visibility)}
+          >
+            <option value="PRIVATE">PRIVATE</option>
+            <option value="PUBLIC">PUBLIC</option>
+          </select>
         </label>
+        <label className="project-selector">
+          <span>Location Name</span>
+          <input className="input" value={projLocationName} onChange={(e) => setProjLocationName(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Land</span>
+          <input className="input" value={projCountry} onChange={(e) => setProjCountry(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Stadt</span>
+          <input className="input" value={projCity} onChange={(e) => setProjCity(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Besucht am</span>
+          <input
+            className="input"
+            type="datetime-local"
+            value={projVisitedAt}
+            onChange={(e) => setProjVisitedAt(e.target.value)}
+          />
+        </label>
+        {projError && <div style={{ color: '#f78c6c', fontSize: 13 }}>{projError}</div>}
         <button
           className="btn"
           onClick={() => createMutation.mutate()}
