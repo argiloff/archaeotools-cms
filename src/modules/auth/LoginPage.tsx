@@ -48,30 +48,34 @@ export function LoginPage() {
   };
 
   return (
-    <div className="page" style={{ maxWidth: 420, margin: '60px auto' }}>
+    <div className="page auth-card">
       <h1>Anmeldung</h1>
       <p>Mit gültigen Zugangsdaten anmelden (Access/Refresh werden gesetzt).</p>
-      <form onSubmit={handleSubmit} style={{ display: 'grid', gap: 12, marginTop: 16 }}>
-        <label style={{ display: 'grid', gap: 6 }}>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gap: 14, marginTop: 18 }}>
+        <label style={{ display: 'grid', gap: 6, fontSize: 13, color: '#a6b3cd' }}>
           <span>E-Mail</span>
           <input
+            className="input"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="alice@example.com"
           />
         </label>
-        <label style={{ display: 'grid', gap: 6 }}>
+        <label style={{ display: 'grid', gap: 6, fontSize: 13, color: '#a6b3cd' }}>
           <span>Passwort</span>
           <input
+            className="input"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            placeholder="••••••••"
           />
         </label>
-        {error && <div style={{ color: '#f78c6c' }}>{error}</div>}
-        <button type="submit" disabled={loading}>
+        {error && <div style={{ color: '#f78c6c', fontSize: 13 }}>{error}</div>}
+        <button className="btn" type="submit" disabled={loading}>
           {loading ? 'Anmelden…' : 'Anmelden'}
         </button>
       </form>
