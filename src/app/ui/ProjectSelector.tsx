@@ -1,27 +1,36 @@
-import type { ChangeEvent } from 'react';
+import { useEffect } from 'react';
+import { useQuery } from '@tanstack/react-query';
 import './layout.css';
+import { listProjects } from '../../api/projects.service';
+import { projectStore } from '../../state/project.store';
 
-// Placeholder selector; will be wired to real project API/store later.
-const demoProjects = [
-  { id: 'p1', name: 'Projekt A' },
-  { id: 'p2', name: 'Projekt B' },
-];
+export function ProjectSelector() {
+  const { data, isLoading } = useQuery({
+    queryKey: ['projects'],
+    queryFn: listProjects,
+  });
 
-type Props = {
-  value?: string;
-  onChange?: (projectId: string) => void;
-};
+  const { projects, currentProjectId, setProjects, setCurrentProject } = projectStore();
 
-export function ProjectSelector({ value, onChange }: Props) {
-  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    onChange?.(event.target.value);
-  };
+  useEffect(() => {
+    if (data) {
+      setProjects(data);
+      if (!currentProjectId && data.length > 0) {
+        setCurrentProject(data[0].id);
+      }
+    }
+  }, [currentProjectId, data, setCurrentProject, setProjects]);
 
   return (
     <label className="project-selector">
       <span>Projekt</span>
-      <select value={value} onChange={handleChange}>
-        {demoProjects.map((p) => (
+      <select
+        value={currentProjectId ?? ''}
+        onChange={(e) => setCurrentProject(e.target.value)}
+        disabled={isLoading}
+      >
+        {!isLoading && projects.length === 0 && <option value="">Kein Projekt</option>}
+        {projects.map((p) => (
           <option key={p.id} value={p.id}>
             {p.name}
           </option>
