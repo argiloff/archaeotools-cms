@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L, { LatLngBoundsExpression } from 'leaflet';
+import { MapContainer, TileLayer, Marker, Popup, CircleMarker } from 'react-leaflet';
+import L from 'leaflet';
+import type { LatLngBoundsExpression } from 'leaflet';
 
 // Fix default marker icons for Leaflet + Vite
 import 'leaflet/dist/leaflet.css';
@@ -22,15 +23,17 @@ export type MapPoint = {
   lng: number;
   label?: string;
   meta?: Record<string, unknown>;
+  intensity?: number;
 };
 
 type Props = {
   points: MapPoint[];
   height?: number;
   onMarkerClick?: (point: MapPoint) => void;
+  heat?: boolean;
 };
 
-export function MapPreview({ points, height = 320, onMarkerClick }: Props) {
+export function MapPreview({ points, height = 320, onMarkerClick, heat = false }: Props) {
   const bounds = useMemo<LatLngBoundsExpression | null>(() => {
     if (!points.length) return null;
     const b = L.latLngBounds(points.map((p) => [p.lat, p.lng]));
@@ -52,21 +55,37 @@ export function MapPreview({ points, height = 320, onMarkerClick }: Props) {
           attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {points.map((p) => (
-          <Marker
-            key={p.id}
-            position={[p.lat, p.lng]}
-            eventHandlers={
-              onMarkerClick
-                ? {
-                    click: () => onMarkerClick(p),
-                  }
-                : undefined
-            }
-          >
-            {p.label && <Popup>{p.label}</Popup>}
-          </Marker>
-        ))}
+        {heat
+          ? points.map((p) => (
+              <CircleMarker
+                key={p.id}
+                center={[p.lat, p.lng]}
+                radius={Math.min(28, (p.intensity ?? 1) * 3 + 6)}
+                pathOptions={{
+                  color: 'rgba(111,227,196,0.8)',
+                  fillColor: 'rgba(111,227,196,0.35)',
+                  fillOpacity: 0.6,
+                  weight: 1,
+                }}
+              >
+                {p.label && <Popup>{p.label}</Popup>}
+              </CircleMarker>
+            ))
+          : points.map((p) => (
+              <Marker
+                key={p.id}
+                position={[p.lat, p.lng]}
+                eventHandlers={
+                  onMarkerClick
+                    ? {
+                        click: () => onMarkerClick(p),
+                      }
+                    : undefined
+                }
+              >
+                {p.label && <Popup>{p.label}</Popup>}
+              </Marker>
+            ))}
       </MapContainer>
     </div>
   );

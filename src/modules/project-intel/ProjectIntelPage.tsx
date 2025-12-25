@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import { listPhotos } from '../../api/photos.service';
@@ -67,28 +66,27 @@ export function ProjectIntelPage() {
     },
   ];
 
-  const timelineItems = useMemo(() => {
-    const combined = [
-      ...photos
-        .filter((p) => p.capturedAt)
-        .map((p) => ({ at: p.capturedAt!, title: p.description ?? 'Foto', type: 'photo' as const })),
-      ...osint
-        .filter((o) => o.createdAt)
-        .map((o) => ({
-          at: o.createdAt!,
-          title: `${o.title} (${o.status})`,
-          type: 'osint' as const,
-        })),
-      ...places
-        .filter((pl) => pl.createdAt)
-        .map((pl) => ({
-          at: pl.createdAt!,
-          title: pl.title ?? 'Place erstellt',
-          type: 'place' as const,
-        })),
-    ];
-    return combined.sort((a, b) => (a.at > b.at ? -1 : 1)).slice(0, 8);
-  }, [photos, osint, places]);
+  const timelineItems = [
+    ...photos
+      .filter((p) => p.capturedAt)
+      .map((p) => ({ at: p.capturedAt!, title: p.description ?? 'Foto', type: 'photo' as const })),
+    ...osint
+      .filter((o) => o.createdAt)
+      .map((o) => ({
+        at: o.createdAt!,
+        title: `${o.title} (${o.status})`,
+        type: 'osint' as const,
+      })),
+    ...places
+      .filter((pl) => pl.createdAt)
+      .map((pl) => ({
+        at: pl.createdAt!,
+        title: pl.title ?? 'Place erstellt',
+        type: 'place' as const,
+      })),
+  ]
+    .sort((a, b) => (a.at > b.at ? -1 : 1))
+    .slice(0, 8);
 
   const geoPoints = [
     ...photosWithGeo.map((p) => ({

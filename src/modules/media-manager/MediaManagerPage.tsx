@@ -24,6 +24,9 @@ export function MediaManagerPage() {
   const [placeFilter, setPlaceFilter] = useState<string>('');
   const [tagFilter, setTagFilter] = useState<string>('');
   const [search, setSearch] = useState<string>('');
+  const [startDate, setStartDate] = useState<string>('');
+  const [endDate, setEndDate] = useState<string>('');
+  const [mapMode, setMapMode] = useState<'places' | 'heat'>('places');
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [showPlaceModal, setShowPlaceModal] = useState(false);
   const [placeModalMode, setPlaceModalMode] = useState<'create' | 'edit'>('create');
@@ -204,11 +207,13 @@ export function MediaManagerPage() {
         ? (p.description ?? '').toLowerCase().includes(search.toLowerCase()) ||
           (p.notes ?? '').toLowerCase().includes(search.toLowerCase())
         : true;
-      return matchPlace && matchTag && matchSearch;
+      const matchStart = startDate ? (p.capturedAt ? p.capturedAt >= startDate : false) : true;
+      const matchEnd = endDate ? (p.capturedAt ? p.capturedAt <= endDate : false) : true;
+      return matchPlace && matchTag && matchSearch && matchStart && matchEnd;
     });
-  }, [photos, placeFilter, tagFilter, search]);
+  }, [photos, placeFilter, tagFilter, search, startDate, endDate]);
 
-  const mapPoints = places
+  const placePoints = places
     .filter((pl) => pl.latitude != null && pl.longitude != null)
     .map((pl) => ({
       id: pl.id,
@@ -217,6 +222,27 @@ export function MediaManagerPage() {
       label: pl.title ?? pl.type ?? 'Place',
       meta: { placeId: pl.id },
     }));
+
+  const heatPoints = useMemo(() => {
+    const buckets = new Map<string, { lat: number; lng: number; count: number }>();
+    filtered.forEach((photo) => {
+      if (photo.lat == null || photo.lng == null) return;
+      const key = `${photo.lat.toFixed(4)}-${photo.lng.toFixed(4)}`;
+      const bucket = buckets.get(key);
+      if (bucket) {
+        bucket.count += 1;
+      } else {
+        buckets.set(key, { lat: photo.lat, lng: photo.lng, count: 1 });
+      }
+    });
+    return Array.from(buckets.values()).map((b, idx) => ({
+      id: `heat-${idx}`,
+      lat: b.lat,
+      lng: b.lng,
+      intensity: b.count,
+      label: `${b.count} Foto${b.count > 1 ? 's' : ''}`,
+    }));
+  }, [filtered]);
 
   const galleryPhotos =
     galleryPlaceId && photosQuery.data
@@ -257,6 +283,22 @@ export function MediaManagerPage() {
             placeholder="Beschreibung/Notizen…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+          />
+        </FilterBlock>
+        <FilterBlock label="Von">
+          <input
+            className="input"
+            type="date"
+            value={startDate}
+            onChange={(e) => setStartDate(e.target.value)}
+          />
+        </FilterBlock>
+        <FilterBlock label="Bis">
+          <input
+            className="input"
+            type="date"
+            value={endDate}
+            onChange={(e) => setEndDate(e.target.value)}
           />
         </FilterBlock>
       </div>
@@ -349,15 +391,34 @@ export function MediaManagerPage() {
       </div>
 
       <div style={{ marginTop: 16 }}>
-        <div style={{ fontWeight: 600, marginBottom: 8 }}>Map (OpenStreetMap)</div>
-        {mapPoints.length ? (
-          <MapPreview
-            points={mapPoints}
-            height={320}
-            onMarkerClick={(p) => setGalleryPlaceId(p.meta?.placeId as string)}
-          />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+          <div style={{ fontWeight: 600 }}>Map (OpenStreetMap)</div>
+          <div style={{ display: 'flex', gap: 6 }}>
+            <button
+              className={`pill-btn ${mapMode === 'places' ? 'active' : ''}`}
+              onClick={() => setMapMode('places')}
+            >
+              Orte
+            </button>
+            <button className={`pill-btn ${mapMode === 'heat' ? 'active' : ''}`} onClick={() => setMapMode('heat')}>
+              Heatmap
+            </button>
+          </div>
+        </div>
+        {mapMode === 'places' ? (
+          placePoints.length ? (
+            <MapPreview
+              points={placePoints}
+              height={320}
+              onMarkerClick={(p) => setGalleryPlaceId(p.meta?.placeId as string)}
+            />
+          ) : (
+            <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Places mit Geodaten.</div>
+          )
+        ) : heatPoints.length ? (
+          <MapPreview points={heatPoints} height={320} heat />
         ) : (
-          <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Geodaten für aktuelle Filter.</div>
+          <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Fotos mit Geodaten für aktuelle Filter.</div>
         )}
       </div>
 
