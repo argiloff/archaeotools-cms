@@ -13,3 +13,11 @@ export async function createPlace(projectId: string, payload: Partial<Place>) {
   );
   return data;
 }
+
+export async function updatePlace(projectId: string, placeId: string, payload: Partial<Place>) {
+  const { data } = await httpClient.patch<Place>(
+    `/projects/${projectId}/places/${placeId}`,
+    payload,
+  );
+  return data;
+}

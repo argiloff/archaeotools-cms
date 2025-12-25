@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { listPhotos, uploadPhoto } from '../../api/photos.service';
-import { listPlaces, createPlace } from '../../api/places.service';
+import { listPlaces, createPlace, updatePlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import '../../app/ui/layout.css';
 import { MapPreview } from '../../components/map/MapPreview';
@@ -15,6 +15,8 @@ export function MediaManagerPage() {
   const [tagFilter, setTagFilter] = useState<string>('');
   const [search, setSearch] = useState<string>('');
   const [showPlaceModal, setShowPlaceModal] = useState(false);
+  const [placeModalMode, setPlaceModalMode] = useState<'create' | 'edit'>('create');
+  const [editingPlaceId, setEditingPlaceId] = useState<string | null>(null);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [placeTitle, setPlaceTitle] = useState('');
   const [placeType, setPlaceType] = useState<'SITE' | 'MUSEUM' | 'POI'>('SITE');
@@ -46,22 +48,30 @@ export function MediaManagerPage() {
     enabled: !!projectId,
   });
 
-  const createPlaceMutation = useMutation({
+  const resetPlaceForm = () => {
+    setPlaceTitle('');
+    setPlaceType('SITE');
+    setPlaceDescription(null);
+    setPlaceLat('');
+    setPlaceLng('');
+    setPlaceRadius('');
+    setPlaceAddress('');
+    setPlaceCity('');
+    setPlaceCountry('');
+    setPlaceVisited(false);
+    setEditingPlaceId(null);
+    setPlaceModalMode('create');
+  };
+
+  const savePlaceMutation = useMutation({
     mutationFn: (payload: Parameters<typeof createPlace>[1]) =>
-      createPlace(projectId!, payload),
+      editingPlaceId
+        ? updatePlace(projectId!, editingPlaceId, payload)
+        : createPlace(projectId!, payload),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['places', projectId] });
       setShowPlaceModal(false);
-      setPlaceTitle('');
-      setPlaceType('SITE');
-      setPlaceDescription(null);
-      setPlaceLat('');
-      setPlaceLng('');
-      setPlaceRadius('');
-      setPlaceAddress('');
-      setPlaceCity('');
-      setPlaceCountry('');
-      setPlaceVisited(false);
+      resetPlaceForm();
       setPlaceError(null);
     },
     onError: (err: any) => {
@@ -111,14 +121,14 @@ export function MediaManagerPage() {
     });
   }, [photos, placeFilter, tagFilter, search]);
 
-  const mapPoints = filtered
-    .filter((p) => p.lat != null && p.lng != null && p.placeId)
-    .map((p) => ({
-      id: p.placeId!,
-      lat: p.lat!,
-      lng: p.lng!,
-      label: places.find((pl) => pl.id === p.placeId)?.title ?? p.description ?? 'Foto',
-      meta: { placeId: p.placeId },
+  const mapPoints = places
+    .filter((pl) => pl.latitude != null && pl.longitude != null)
+    .map((pl) => ({
+      id: pl.id,
+      lat: pl.latitude!,
+      lng: pl.longitude!,
+      label: pl.title ?? pl.type ?? 'Place',
+      meta: { placeId: pl.id },
     }));
 
   const galleryPhotos =
@@ -174,6 +184,61 @@ export function MediaManagerPage() {
       </div>
 
       <div style={{ marginTop: 16 }}>
+        <div style={{ fontWeight: 600, marginBottom: 8 }}>Places Übersicht</div>
+        <div
+          style={{
+            display: 'grid',
+            gap: 8,
+            maxHeight: 220,
+            overflowY: 'auto',
+            paddingRight: 6,
+          }}
+        >
+          {places.map((pl) => (
+            <div
+              key={pl.id}
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: 10,
+                padding: '8px 12px',
+              }}
+            >
+              <div>
+                <div style={{ fontWeight: 600 }}>{pl.title ?? pl.type ?? 'Place'}</div>
+                <div style={{ fontSize: 12, color: '#8fa0bf' }}>
+                  {[pl.city, pl.country].filter(Boolean).join(', ') || '–'}
+                </div>
+              </div>
+              <button
+                className="btn"
+                style={{ padding: '6px 10px', fontSize: 12 }}
+                onClick={() => {
+                  setPlaceModalMode('edit');
+                  setEditingPlaceId(pl.id);
+                  setPlaceTitle(pl.title ?? '');
+                  setPlaceType((pl.type as 'SITE' | 'MUSEUM' | 'POI') ?? 'SITE');
+                  setPlaceDescription(pl.description ? JSON.parse(pl.description) : null);
+                  setPlaceLat(pl.latitude?.toString() ?? '');
+                  setPlaceLng(pl.longitude?.toString() ?? '');
+                  setPlaceRadius(pl.radiusMeters?.toString() ?? '');
+                  setPlaceAddress(pl.address ?? '');
+                  setPlaceCity(pl.city ?? '');
+                  setPlaceCountry(pl.country ?? '');
+                  setPlaceVisited(pl.visited ?? false);
+                  setShowPlaceModal(true);
+                }}
+              >
+                Bearbeiten
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginTop: 16 }}>
         <div style={{ fontWeight: 600, marginBottom: 8 }}>Map (OpenStreetMap)</div>
         {mapPoints.length ? (
           <MapPreview
@@ -215,6 +280,19 @@ export function MediaManagerPage() {
                   gap: 6,
                 }}
               >
+                {p.url && (
+                  <img
+                    src={p.url}
+                    alt={p.description ?? 'Foto'}
+                    style={{
+                      width: '100%',
+                      height: 150,
+                      objectFit: 'cover',
+                      borderRadius: 10,
+                      border: '1px solid rgba(255,255,255,0.08)',
+                    }}
+                  />
+                )}
                 <div style={{ fontWeight: 600 }}>{p.description ?? 'Foto'}</div>
                 <div style={{ fontSize: 12, color: '#8fa0bf' }}>
                   {p.capturedAt ?? 'Ohne Datum'}
@@ -255,7 +333,16 @@ export function MediaManagerPage() {
         </div>
       </div>
 
-      <Modal title="Neuen Place anlegen" open={showPlaceModal} onClose={() => setShowPlaceModal(false)}>
+      <Modal
+        title={placeModalMode === 'create' ? 'Neuen Place anlegen' : 'Place bearbeiten'}
+        open={showPlaceModal}
+        onClose={() => {
+          if (!savePlaceMutation.isPending) {
+            setShowPlaceModal(false);
+            resetPlaceForm();
+          }
+        }}
+      >
         <label className="project-selector">
           <span>Titel</span>
           <input className="input" value={placeTitle} onChange={(e) => setPlaceTitle(e.target.value)} />
@@ -315,7 +402,7 @@ export function MediaManagerPage() {
         <button
           className="btn"
           onClick={() =>
-            createPlaceMutation.mutate({
+            savePlaceMutation.mutate({
               title: placeTitle,
               type: placeType,
               description: placeDescription ? JSON.stringify(placeDescription) : undefined,
@@ -328,9 +415,13 @@ export function MediaManagerPage() {
               visited: placeVisited,
             })
           }
-          disabled={!placeTitle || createPlaceMutation.isPending}
+          disabled={!placeTitle || savePlaceMutation.isPending}
         >
-          {createPlaceMutation.isPending ? 'Speichere…' : 'Speichern'}
+          {savePlaceMutation.isPending
+            ? 'Speichere…'
+            : placeModalMode === 'create'
+              ? 'Speichern'
+              : 'Änderungen speichern'}
         </button>
       </Modal>
 
