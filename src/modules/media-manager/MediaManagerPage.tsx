@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   listPhotos,
@@ -13,6 +13,7 @@ import {
 import { listPlaces, createPlace, updatePlace, deletePlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import { MapPreview } from '../../components/map/MapPreview';
+import type { MapPoint } from '../../components/map/MapPreview';
 import { Modal } from '../../components/ui/Modal';
 import { RichTextEditor } from '../../components/editor/RichTextEditor';
 import type { Photo } from '../../api/types';
@@ -53,6 +54,17 @@ export function MediaManagerPage() {
   const [editingPhoto, setEditingPhoto] = useState<Photo | null>(null);
   const [photoModalMode, setPhotoModalMode] = useState<'create' | 'edit'>('create');
   const [previewPhoto, setPreviewPhoto] = useState<Photo | null>(null);
+  const [visibleCount, setVisibleCount] = useState(60);
+
+  const deferredPlaceFilter = useDeferredValue(placeFilter);
+  const deferredTagFilter = useDeferredValue(tagFilter);
+  const deferredSearch = useDeferredValue(search);
+  const deferredStartDate = useDeferredValue(startDate);
+  const deferredEndDate = useDeferredValue(endDate);
+
+  useEffect(() => {
+    setVisibleCount(60);
+  }, [deferredPlaceFilter, deferredTagFilter, deferredSearch, deferredStartDate, deferredEndDate]);
 
   const photosQuery = useQuery({
     queryKey: ['photos', projectId],
@@ -198,32 +210,41 @@ export function MediaManagerPage() {
   const places = placesQuery.data ?? [];
 
   const filtered = useMemo(() => {
+    const placeTerm = deferredPlaceFilter;
+    const tagTerm = deferredTagFilter.trim().toLowerCase();
+    const searchTerm = deferredSearch.trim().toLowerCase();
+    const start = deferredStartDate;
+    const end = deferredEndDate;
     return photos.filter((p) => {
-      const matchPlace = placeFilter ? p.placeId === placeFilter : true;
-      const matchTag = tagFilter
-        ? (p.tags ?? []).some((t) => t.toLowerCase().includes(tagFilter.toLowerCase()))
+      const matchPlace = placeTerm ? p.placeId === placeTerm : true;
+      const matchTag = tagTerm
+        ? (p.tags ?? []).some((t) => t.toLowerCase().includes(tagTerm))
         : true;
-      const matchSearch = search
-        ? (p.description ?? '').toLowerCase().includes(search.toLowerCase()) ||
-          (p.notes ?? '').toLowerCase().includes(search.toLowerCase())
+      const matchSearch = searchTerm
+        ? (p.description ?? '').toLowerCase().includes(searchTerm) ||
+          (p.notes ?? '').toLowerCase().includes(searchTerm)
         : true;
-      const matchStart = startDate ? (p.capturedAt ? p.capturedAt >= startDate : false) : true;
-      const matchEnd = endDate ? (p.capturedAt ? p.capturedAt <= endDate : false) : true;
+      const matchStart = start ? (p.capturedAt ? p.capturedAt >= start : false) : true;
+      const matchEnd = end ? (p.capturedAt ? p.capturedAt <= end : false) : true;
       return matchPlace && matchTag && matchSearch && matchStart && matchEnd;
     });
-  }, [photos, placeFilter, tagFilter, search, startDate, endDate]);
+  }, [photos, deferredPlaceFilter, deferredTagFilter, deferredSearch, deferredStartDate, deferredEndDate]);
 
-  const placePoints = places
-    .filter((pl) => pl.latitude != null && pl.longitude != null)
-    .map((pl) => ({
-      id: pl.id,
-      lat: pl.latitude!,
-      lng: pl.longitude!,
-      label: pl.title ?? pl.type ?? 'Place',
-      meta: { placeId: pl.id },
-    }));
+  const placePoints = useMemo<MapPoint[]>(
+    () =>
+      places
+        .filter((pl) => pl.latitude != null && pl.longitude != null)
+        .map((pl) => ({
+          id: pl.id,
+          lat: pl.latitude!,
+          lng: pl.longitude!,
+          label: pl.title ?? pl.type ?? 'Place',
+          meta: { placeId: pl.id },
+        })),
+    [places],
+  );
 
-  const heatPoints = useMemo(() => {
+  const heatPoints = useMemo<MapPoint[]>(() => {
     const buckets = new Map<string, { lat: number; lng: number; count: number }>();
     filtered.forEach((photo) => {
       if (photo.lat == null || photo.lng == null) return;
@@ -244,196 +265,265 @@ export function MediaManagerPage() {
     }));
   }, [filtered]);
 
+  const visiblePhotos = useMemo(() => filtered.slice(0, visibleCount), [filtered, visibleCount]);
+  const hasMorePhotos = filtered.length > visibleCount;
   const galleryPhotos =
     galleryPlaceId && photosQuery.data
       ? photosQuery.data.filter((p) => p.placeId === galleryPlaceId)
       : [];
 
+  const geoPhotos = useMemo(() => photos.filter((p) => p.lat != null && p.lng != null).length, [photos]);
+  const taggedPhotos = useMemo(
+    () => photos.filter((p) => (p.tags ?? []).length > 0).length,
+    [photos],
+  );
+  const tagUniverseSize = useMemo(() => {
+    const set = new Set<string>();
+    photos.forEach((p) => {
+      (p.tags ?? []).forEach((t) => set.add(t));
+    });
+    return set.size;
+  }, [photos]);
+  const visitedPlaces = useMemo(() => places.filter((pl) => pl.visited).length, [places]);
+
+  const heroStats = useMemo(
+    () => [
+      { label: 'Fotos', value: photos.length, hint: `${filtered.length} aktiv gefiltert` },
+      { label: 'Places', value: places.length, hint: `${visitedPlaces} besucht` },
+      { label: 'Geo-Fotos', value: geoPhotos, hint: 'Mit GPS-Koordinaten' },
+      { label: 'Tags', value: tagUniverseSize, hint: `${taggedPhotos} Fotos getaggt` },
+    ],
+    [photos, filtered.length, places, visitedPlaces, geoPhotos, tagUniverseSize, taggedPhotos],
+  );
+
+  const photoStatusText = photosQuery.isLoading
+    ? 'Lade Fotos …'
+    : photosQuery.isError
+      ? 'Fehler beim Laden der Fotos'
+      : `${filtered.length} von ${photos.length} Fotos`;
+
+  const anyFilterActive = Boolean(placeFilter || tagFilter || search || startDate || endDate);
+  const resetFilters = () => {
+    setPlaceFilter('');
+    setTagFilter('');
+    setSearch('');
+    setStartDate('');
+    setEndDate('');
+  };
+  const filterSummary = anyFilterActive ? `${filtered.length} Treffer` : `${photos.length} Fotos gesamt`;
+
   return (
-    <div className="page">
-      <h1>Spatial Media Manager</h1>
-      <p>{project?.name ?? 'Projekt'} — Medien mit Filtern.</p>
-
-      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', marginTop: 16 }}>
-        <FilterBlock label="Ort">
-          <select
-            className="input select-like"
-            value={placeFilter}
-            onChange={(e) => setPlaceFilter(e.target.value)}
-          >
-            <option value="">Alle Orte</option>
-            {places.map((pl) => (
-              <option key={pl.id} value={pl.id}>
-                {pl.title ?? pl.type ?? 'Place'}
-              </option>
-            ))}
-          </select>
-        </FilterBlock>
-        <FilterBlock label="Tag">
-          <input
-            className="input"
-            placeholder="Tag enthält…"
-            value={tagFilter}
-            onChange={(e) => setTagFilter(e.target.value)}
-          />
-        </FilterBlock>
-        <FilterBlock label="Suche">
-          <input
-            className="input"
-            placeholder="Beschreibung/Notizen…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </FilterBlock>
-        <FilterBlock label="Von">
-          <input
-            className="input"
-            type="date"
-            value={startDate}
-            onChange={(e) => setStartDate(e.target.value)}
-          />
-        </FilterBlock>
-        <FilterBlock label="Bis">
-          <input
-            className="input"
-            type="date"
-            value={endDate}
-            onChange={(e) => setEndDate(e.target.value)}
-          />
-        </FilterBlock>
-      </div>
-
-      <div style={{ marginTop: 12, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-        <button className="btn" onClick={() => setShowPlaceModal(true)}>
-          Place anlegen
-        </button>
-        <button
-          className="btn"
-          onClick={() => {
-            resetPhotoForm();
-            setShowPhotoModal(true);
-          }}
-        >
-          Foto hochladen
-        </button>
-      </div>
-      {statusMessage && (
-        <div style={{ marginTop: 8, fontSize: 13, color: '#8fa0bf' }}>{statusMessage}</div>
-      )}
-
-      <div style={{ marginTop: 16 }}>
-        <div style={{ fontWeight: 600, marginBottom: 8 }}>Places Übersicht</div>
-        <div
-          style={{
-            display: 'grid',
-            gap: 8,
-            maxHeight: 220,
-            overflowY: 'auto',
-            paddingRight: 6,
-          }}
-        >
-          {places.map((pl) => (
-            <div
-              key={pl.id}
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                border: '1px solid rgba(255,255,255,0.08)',
-                borderRadius: 10,
-                padding: '8px 12px',
+    <div className="page media-page">
+      <div className="media-hero">
+        <div className="media-hero__left">
+          <span className="media-eyebrow">{project?.name ?? 'Projekt'}</span>
+          <h1>Spatial Media Manager</h1>
+          <p>Verwalte Orte, Fotos und Geodaten mit modernen Filtern und Kartenansichten.</p>
+          <div className="media-hero__actions">
+            <button className="ghost-btn" onClick={() => setShowPlaceModal(true)}>
+              Place anlegen
+            </button>
+            <button
+              className="btn"
+              onClick={() => {
+                resetPhotoForm();
+                setShowPhotoModal(true);
               }}
             >
-              <div>
-                <div style={{ fontWeight: 600 }}>{pl.title ?? pl.type ?? 'Place'}</div>
-                <div style={{ fontSize: 12, color: '#8fa0bf' }}>
-                  {[pl.city, pl.country].filter(Boolean).join(', ') || '–'}
-                </div>
-              </div>
-              <div className="place-actions">
-                <button
-                  className="icon-btn"
-                  aria-label="Bearbeiten"
-                  onClick={() => {
-                    setPlaceModalMode('edit');
-                    setEditingPlaceId(pl.id);
-                    setPlaceTitle(pl.title ?? '');
-                    setPlaceType((pl.type as 'SITE' | 'MUSEUM' | 'POI') ?? 'SITE');
-                    setPlaceDescription(pl.description ? JSON.parse(pl.description) : null);
-                    setPlaceLat(pl.latitude?.toString() ?? '');
-                    setPlaceLng(pl.longitude?.toString() ?? '');
-                    setPlaceRadius(pl.radiusMeters?.toString() ?? '');
-                    setPlaceAddress(pl.address ?? '');
-                    setPlaceCity(pl.city ?? '');
-                    setPlaceCountry(pl.country ?? '');
-                    setPlaceVisited(pl.visited ?? false);
-                    setShowPlaceModal(true);
-                  }}
-                >
-                  ✏️
-                </button>
-                <button
-                  className="icon-btn danger"
-                  aria-label="Löschen"
-                  onClick={() => {
-                    if (!projectId || deletePlaceMutation.isPending) return;
-                    if (window.confirm('Place wirklich löschen?')) {
-                      deletePlaceMutation.mutate(pl.id);
-                    }
-                  }}
-                >
-                  🗑
-                </button>
-              </div>
+              Foto hochladen
+            </button>
+          </div>
+        </div>
+        <div className="media-hero__stats">
+          {heroStats.map((stat) => (
+            <div key={stat.label} className="media-stat-card">
+              <div className="label">{stat.label}</div>
+              <div className="value">{stat.value}</div>
+              <div className="hint">{stat.hint}</div>
             </div>
           ))}
         </div>
       </div>
 
-      <div style={{ marginTop: 16 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-          <div style={{ fontWeight: 600 }}>Map (OpenStreetMap)</div>
-          <div style={{ display: 'flex', gap: 6 }}>
-            <button
-              className={`pill-btn ${mapMode === 'places' ? 'active' : ''}`}
-              onClick={() => setMapMode('places')}
-            >
-              Orte
-            </button>
-            <button className={`pill-btn ${mapMode === 'heat' ? 'active' : ''}`} onClick={() => setMapMode('heat')}>
-              Heatmap
-            </button>
+      <section className="media-section">
+        <div className="media-section__header">
+          <div>
+            <h2>Filter & Suche</h2>
+            <p>{filterSummary}</p>
+          </div>
+          <div className="media-section__header-actions">
+            {anyFilterActive && (
+              <button className="ghost-link-btn" onClick={resetFilters}>
+                Filter zurücksetzen
+              </button>
+            )}
           </div>
         </div>
-        {mapMode === 'places' ? (
-          placePoints.length ? (
-            <MapPreview
-              points={placePoints}
-              height={320}
-              onMarkerClick={(p) => setGalleryPlaceId(p.meta?.placeId as string)}
+        <div className="media-filter-grid">
+          <FilterBlock label="Ort">
+            <select
+              className="input select-like"
+              value={placeFilter}
+              onChange={(e) => setPlaceFilter(e.target.value)}
+            >
+              <option value="">Alle Orte</option>
+              {places.map((pl) => (
+                <option key={pl.id} value={pl.id}>
+                  {pl.title ?? pl.type ?? 'Place'}
+                </option>
+              ))}
+            </select>
+          </FilterBlock>
+          <FilterBlock label="Tag">
+            <input
+              className="input"
+              placeholder="Tag enthält…"
+              value={tagFilter}
+              onChange={(e) => setTagFilter(e.target.value)}
             />
+          </FilterBlock>
+          <FilterBlock label="Suche">
+            <input
+              className="input"
+              placeholder="Beschreibung/Notizen…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </FilterBlock>
+          <FilterBlock label="Von">
+            <input
+              className="input"
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+            />
+          </FilterBlock>
+          <FilterBlock label="Bis">
+            <input
+              className="input"
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+            />
+          </FilterBlock>
+        </div>
+      </section>
+
+      {statusMessage && <div className="media-status">{statusMessage}</div>}
+
+      <div className="media-grid">
+        <div className="media-card">
+          <div className="media-card__head">
+            <div>
+              <h3>Places Übersicht</h3>
+              <p>
+                {places.length
+                  ? `${places.length} Orte · ${visitedPlaces} besucht`
+                  : 'Noch keine Orte vorhanden'}
+              </p>
+            </div>
+          </div>
+          <div className="media-places-list">
+            {places.map((pl) => (
+              <div key={pl.id} className="media-place-row">
+                <div>
+                  <div className="title">{pl.title ?? pl.type ?? 'Place'}</div>
+                  <div className="meta">{[pl.city, pl.country].filter(Boolean).join(', ') || '–'}</div>
+                </div>
+                <div className="place-actions">
+                  <button
+                    className="icon-btn"
+                    aria-label="Bearbeiten"
+                    onClick={() => {
+                      setPlaceModalMode('edit');
+                      setEditingPlaceId(pl.id);
+                      setPlaceTitle(pl.title ?? '');
+                      setPlaceType((pl.type as 'SITE' | 'MUSEUM' | 'POI') ?? 'SITE');
+                      setPlaceDescription(pl.description ? JSON.parse(pl.description) : null);
+                      setPlaceLat(pl.latitude?.toString() ?? '');
+                      setPlaceLng(pl.longitude?.toString() ?? '');
+                      setPlaceRadius(pl.radiusMeters?.toString() ?? '');
+                      setPlaceAddress(pl.address ?? '');
+                      setPlaceCity(pl.city ?? '');
+                      setPlaceCountry(pl.country ?? '');
+                      setPlaceVisited(pl.visited ?? false);
+                      setShowPlaceModal(true);
+                    }}
+                  >
+                    ✏️
+                  </button>
+                  <button
+                    className="icon-btn danger"
+                    aria-label="Löschen"
+                    onClick={() => {
+                      if (!projectId || deletePlaceMutation.isPending) return;
+                      if (window.confirm('Place wirklich löschen?')) {
+                        deletePlaceMutation.mutate(pl.id);
+                      }
+                    }}
+                  >
+                    🗑
+                  </button>
+                </div>
+              </div>
+            ))}
+            {places.length === 0 && <div className="empty-line">Keine Places vorhanden</div>}
+          </div>
+        </div>
+        <div className="media-card">
+          <div className="media-card__head">
+            <div>
+              <h3>Map (OpenStreetMap)</h3>
+              <p>{mapMode === 'places' ? 'Placemarker' : 'Foto-Heatmap'}</p>
+            </div>
+            <div className="media-card__actions">
+              <button
+                className={`pill-btn ${mapMode === 'places' ? 'active' : ''}`}
+                onClick={() => setMapMode('places')}
+              >
+                Orte
+              </button>
+              <button className={`pill-btn ${mapMode === 'heat' ? 'active' : ''}`} onClick={() => setMapMode('heat')}>
+                Heatmap
+              </button>
+            </div>
+          </div>
+          {mapMode === 'places' ? (
+            placePoints.length ? (
+              <MapPreview
+                points={placePoints}
+                height={320}
+                onMarkerClick={(p) => setGalleryPlaceId(p.meta?.placeId as string)}
+              />
+            ) : (
+              <div className="empty-line">Keine Places mit Geodaten.</div>
+            )
+          ) : heatPoints.length ? (
+            <MapPreview points={heatPoints} height={320} heat />
           ) : (
-            <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Places mit Geodaten.</div>
-          )
-        ) : heatPoints.length ? (
-          <MapPreview points={heatPoints} height={320} heat />
-        ) : (
-          <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Fotos mit Geodaten für aktuelle Filter.</div>
-        )}
+            <div className="empty-line">Keine Fotos mit Geodaten für aktuelle Filter.</div>
+          )}
+        </div>
       </div>
 
-      <div style={{ marginTop: 18 }}>
-        <div style={{ fontSize: 13, color: '#8fa0bf', marginBottom: 8 }}>
-          {photosQuery.isLoading
-            ? 'Lade Fotos …'
-            : photosQuery.isError
-              ? 'Fehler beim Laden der Fotos'
-              : `${filtered.length} von ${photos.length} Fotos`}
+      <div className="media-card">
+        <div className="media-card__head">
+          <div>
+            <h3>Foto-Galerie</h3>
+            <p>{photoStatusText}</p>
+          </div>
+          {hasMorePhotos && (
+            <div className="media-card__actions">
+              <button className="ghost-btn" onClick={() => setVisibleCount((prev) => prev + 60)}>
+                Mehr laden
+              </button>
+            </div>
+          )}
         </div>
         <div className="photo-grid">
           {!photosQuery.isLoading &&
             !photosQuery.isError &&
-            filtered.map((p) => (
+            visiblePhotos.map((p) => (
               <div key={p.id} className="photo-card">
                 <div
                   className="photo-thumb-wrapper"

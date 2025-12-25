@@ -1,3 +1,221 @@
+.media-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.media-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(circle at 5% 15%, rgba(109, 227, 196, 0.16), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(79, 107, 255, 0.18), transparent 45%),
+    rgba(7, 12, 24, 0.8);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.media-hero__left h1 {
+  margin: 12px 0 8px;
+  font-size: 32px;
+  letter-spacing: 0.3px;
+}
+
+.media-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #8fb0ff;
+}
+
+.media-hero__left p {
+  margin: 0;
+  color: #cfd7f7;
+  font-size: 14px;
+}
+
+.media-hero__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.ghost-btn {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 16px;
+  background: transparent;
+  color: #e8ecff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.ghost-btn:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.media-hero__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.media-stat-card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.media-stat-card .label {
+  font-size: 12px;
+  color: #8fa0bf;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.media-stat-card .value {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.media-stat-card .hint {
+  font-size: 12px;
+  color: #6de3c4;
+}
+
+.media-section {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 24px;
+  background: rgba(5, 9, 18, 0.8);
+  display: grid;
+  gap: 16px;
+}
+
+.media-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.media-section__header h2 {
+  margin: 0;
+}
+
+.media-section__header p {
+  margin: 2px 0 0;
+  color: #8fa0bf;
+  font-size: 13px;
+}
+
+.ghost-link-btn {
+  border: none;
+  background: none;
+  color: #8fb0ff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+}
+
+.media-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.media-status {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 13px;
+  color: #8fa0bf;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.media-card {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(10, 14, 24, 0.85);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.media-card__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.media-card__head h3 {
+  margin: 0;
+}
+
+.media-card__head p {
+  margin: 4px 0 0;
+  color: #8fa0bf;
+  font-size: 13px;
+}
+
+.media-card__actions {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.media-places-list {
+  display: grid;
+  gap: 10px;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.media-place-row {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.media-place-row .title {
+  font-weight: 600;
+}
+
+.media-place-row .meta {
+  font-size: 12px;
+  color: #8fa0bf;
+}
+
+.empty-line {
+  font-size: 13px;
+  color: #8fa0bf;
+}
+
 .pill-btn {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.15);
