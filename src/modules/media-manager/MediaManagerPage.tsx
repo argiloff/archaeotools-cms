@@ -4,6 +4,7 @@ import { listPhotos } from '../../api/photos.service';
 import { listPlaces } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import '../../app/ui/layout.css';
+import { MapPreview } from '../../components/map/MapPreview';
 
 export function MediaManagerPage() {
   const { projectId, project } = useCurrentProject();
@@ -48,6 +49,16 @@ export function MediaManagerPage() {
     });
   }, [photos, placeFilter, tagFilter, search]);
 
+  const mapPoints = filtered
+    .filter((p) => p.lat != null && p.lng != null)
+    .map((p) => ({
+      id: p.id,
+      lat: p.lat!,
+      lng: p.lng!,
+      label: p.description ?? 'Foto',
+    }))
+    .slice(0, 200); // einfache Limitierung
+
   return (
     <div className="page">
       <h1>Spatial Media Manager</h1>
@@ -84,6 +95,15 @@ export function MediaManagerPage() {
             onChange={(e) => setSearch(e.target.value)}
           />
         </FilterBlock>
+      </div>
+
+      <div style={{ marginTop: 16 }}>
+        <div style={{ fontWeight: 600, marginBottom: 8 }}>Map (OpenStreetMap)</div>
+        {mapPoints.length ? (
+          <MapPreview points={mapPoints} height={320} />
+        ) : (
+          <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Geodaten für aktuelle Filter.</div>
+        )}
       </div>
 
       <div style={{ marginTop: 18 }}>

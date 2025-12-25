@@ -4,6 +4,7 @@ import { listOsint } from '../../api/osint.service';
 import { listPlaces } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import '../../app/ui/layout.css';
+import { MapPreview } from '../../components/map/MapPreview';
 
 export function ProjectIntelPage() {
   const { projectId, project } = useCurrentProject();
@@ -43,6 +44,23 @@ export function ProjectIntelPage() {
     { label: 'OSINT', value: osint.length },
   ];
 
+  const timelineItems = [
+    ...photos
+      .filter((p) => p.capturedAt)
+      .map((p) => ({ at: p.capturedAt!, title: p.description ?? 'Foto', type: 'photo' as const })),
+    ...osint
+      .filter((o) => o.createdAt)
+      .map((o) => ({
+        at: o.createdAt!,
+        title: `${o.title} (${o.status})`,
+        type: 'osint' as const,
+      })),
+  ]
+    .sort((a, b) => (a.at > b.at ? -1 : 1))
+    .slice(0, 8);
+
+  const geoSamples = photos.filter((p) => p.lat != null && p.lng != null);
+
   return (
     <div className="page">
       <h1>Project Intelligence View</h1>
@@ -74,6 +92,24 @@ export function ProjectIntelPage() {
         </Panel>
         <Panel title="Places" loading={placesQuery.isLoading} error={placesQuery.isError}>
           <MiniList items={places.map((pl) => pl.name ?? pl.type ?? 'Place')} empty="Keine Places" />
+        </Panel>
+        <Panel title="Timeline (neueste zuerst)">
+          <Timeline items={timelineItems} empty="Keine zeitlichen Einträge" />
+        </Panel>
+        <Panel title="Geo (Map)">
+          {geoSamples.length ? (
+            <MapPreview
+              points={geoSamples.map((p) => ({
+                id: p.id,
+                lat: p.lat!,
+                lng: p.lng!,
+                label: p.description ?? 'Foto',
+              }))}
+              height={260}
+            />
+          ) : (
+            <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Geodaten</div>
+          )}
         </Panel>
       </div>
     </div>
@@ -126,6 +162,40 @@ function MiniList({ items, empty }: { items: string[]; empty: string }) {
           }}
         >
           {t}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Timeline({
+  items,
+  empty,
+}: {
+  items: { at: string; title: string; type: 'photo' | 'osint' }[];
+  empty: string;
+}) {
+  if (!items.length) {
+    return <div style={{ color: '#8fa0bf', fontSize: 13 }}>{empty}</div>;
+  }
+  return (
+    <ul style={{ padding: 0, margin: 0, listStyle: 'none', display: 'grid', gap: 10 }}>
+      {items.map((t, i) => (
+        <li
+          key={`${t.title}-${t.at}-${i}`}
+          style={{
+            padding: 10,
+            borderRadius: 10,
+            border: '1px solid rgba(255,255,255,0.08)',
+            background:
+              t.type === 'photo'
+                ? 'linear-gradient(120deg, rgba(79,107,255,0.18), rgba(109,227,196,0.05))'
+                : 'linear-gradient(120deg, rgba(255,200,120,0.18), rgba(109,227,196,0.05))',
+          }}
+        >
+          <div style={{ fontSize: 12, color: '#8fa0bf' }}>{new Date(t.at).toLocaleString()}</div>
+          <div style={{ fontWeight: 700 }}>{t.title}</div>
+          <div style={{ fontSize: 11, color: '#c5d1e0' }}>{t.type.toUpperCase()}</div>
         </li>
       ))}
     </ul>
