@@ -21,3 +21,7 @@ export async function updatePlace(projectId: string, placeId: string, payload: P
   );
   return data;
 }
+
+export async function deletePlace(projectId: string, placeId: string) {
+  await httpClient.delete(`/projects/${projectId}/places/${placeId}`);
+}

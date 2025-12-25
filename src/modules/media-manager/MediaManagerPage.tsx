@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { listPhotos, uploadPhoto } from '../../api/photos.service';
-import { listPlaces, createPlace, updatePlace } from '../../api/places.service';
+import { listPlaces, createPlace, updatePlace, deletePlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
-import '../../app/ui/layout.css';
 import { MapPreview } from '../../components/map/MapPreview';
 import { Modal } from '../../components/ui/Modal';
 import { RichTextEditor } from '../../components/editor/RichTextEditor';
+import './mediaManager.css';
 
 export function MediaManagerPage() {
   const { projectId, project } = useCurrentProject();
@@ -14,6 +14,7 @@ export function MediaManagerPage() {
   const [placeFilter, setPlaceFilter] = useState<string>('');
   const [tagFilter, setTagFilter] = useState<string>('');
   const [search, setSearch] = useState<string>('');
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [showPlaceModal, setShowPlaceModal] = useState(false);
   const [placeModalMode, setPlaceModalMode] = useState<'create' | 'edit'>('create');
   const [editingPlaceId, setEditingPlaceId] = useState<string | null>(null);
@@ -78,6 +79,15 @@ export function MediaManagerPage() {
       const msg = err?.response?.data?.message || err?.message || 'Speichern fehlgeschlagen.';
       setPlaceError(Array.isArray(msg) ? msg.join(', ') : msg);
     },
+  });
+
+  const deletePlaceMutation = useMutation({
+    mutationFn: (placeId: string) => deletePlace(projectId!, placeId),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['places', projectId] });
+      setStatusMessage('Place gelöscht.');
+    },
+    onError: () => setStatusMessage('Löschen fehlgeschlagen.'),
   });
 
   const uploadPhotoMutation = useMutation({
@@ -182,6 +192,9 @@ export function MediaManagerPage() {
           Foto hochladen
         </button>
       </div>
+      {statusMessage && (
+        <div style={{ marginTop: 8, fontSize: 13, color: '#8fa0bf' }}>{statusMessage}</div>
+      )}
 
       <div style={{ marginTop: 16 }}>
         <div style={{ fontWeight: 600, marginBottom: 8 }}>Places Übersicht</div>
@@ -212,27 +225,41 @@ export function MediaManagerPage() {
                   {[pl.city, pl.country].filter(Boolean).join(', ') || '–'}
                 </div>
               </div>
-              <button
-                className="btn"
-                style={{ padding: '6px 10px', fontSize: 12 }}
-                onClick={() => {
-                  setPlaceModalMode('edit');
-                  setEditingPlaceId(pl.id);
-                  setPlaceTitle(pl.title ?? '');
-                  setPlaceType((pl.type as 'SITE' | 'MUSEUM' | 'POI') ?? 'SITE');
-                  setPlaceDescription(pl.description ? JSON.parse(pl.description) : null);
-                  setPlaceLat(pl.latitude?.toString() ?? '');
-                  setPlaceLng(pl.longitude?.toString() ?? '');
-                  setPlaceRadius(pl.radiusMeters?.toString() ?? '');
-                  setPlaceAddress(pl.address ?? '');
-                  setPlaceCity(pl.city ?? '');
-                  setPlaceCountry(pl.country ?? '');
-                  setPlaceVisited(pl.visited ?? false);
-                  setShowPlaceModal(true);
-                }}
-              >
-                Bearbeiten
-              </button>
+              <div className="place-actions">
+                <button
+                  className="icon-btn"
+                  aria-label="Bearbeiten"
+                  onClick={() => {
+                    setPlaceModalMode('edit');
+                    setEditingPlaceId(pl.id);
+                    setPlaceTitle(pl.title ?? '');
+                    setPlaceType((pl.type as 'SITE' | 'MUSEUM' | 'POI') ?? 'SITE');
+                    setPlaceDescription(pl.description ? JSON.parse(pl.description) : null);
+                    setPlaceLat(pl.latitude?.toString() ?? '');
+                    setPlaceLng(pl.longitude?.toString() ?? '');
+                    setPlaceRadius(pl.radiusMeters?.toString() ?? '');
+                    setPlaceAddress(pl.address ?? '');
+                    setPlaceCity(pl.city ?? '');
+                    setPlaceCountry(pl.country ?? '');
+                    setPlaceVisited(pl.visited ?? false);
+                    setShowPlaceModal(true);
+                  }}
+                >
+                  ✏️
+                </button>
+                <button
+                  className="icon-btn danger"
+                  aria-label="Löschen"
+                  onClick={() => {
+                    if (!projectId || deletePlaceMutation.isPending) return;
+                    if (window.confirm('Place wirklich löschen?')) {
+                      deletePlaceMutation.mutate(pl.id);
+                    }
+                  }}
+                >
+                  🗑
+                </button>
+              </div>
             </div>
           ))}
         </div>
