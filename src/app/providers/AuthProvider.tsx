@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import type { PropsWithChildren } from 'react';
 import { authStore, type SessionUser } from '../../state/auth.store';
 
@@ -11,6 +11,7 @@ type AuthContextValue = {
     accessToken: string;
     refreshToken: string;
   }) => void;
+  logout: () => Promise<void>;
   clear: () => void;
 };
 
@@ -19,13 +20,12 @@ const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 export function AuthProvider({ children }: PropsWithChildren) {
   const [state, setState] = useState(() => authStore.getState());
 
-  useMemo(
-    () =>
-      authStore.subscribe((next) => {
-        setState(next);
-      }),
-    [],
-  );
+  useEffect(() => {
+    const unsub = authStore.subscribe((next) => {
+      setState(next);
+    });
+    return () => unsub();
+  }, []);
 
   const value = useMemo<AuthContextValue>(
     () => ({
@@ -35,6 +35,19 @@ export function AuthProvider({ children }: PropsWithChildren) {
       setSession: ({ user, accessToken, refreshToken }) => {
         authStore.getState().setTokens({ accessToken, refreshToken });
         authStore.getState().setUser(user);
+        setState(authStore.getState());
+      },
+      logout: async () => {
+        const refreshToken = authStore.getState().refreshToken;
+        if (refreshToken) {
+          try {
+            const { logout } = await import('../../api/auth.service');
+            await logout(refreshToken);
+          } catch {
+            // best-effort logout; bei Fehler trotzdem local clear
+          }
+        }
+        authStore.getState().clear();
         setState(authStore.getState());
       },
       clear: () => {

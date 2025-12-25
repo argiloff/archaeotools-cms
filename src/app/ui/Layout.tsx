@@ -1,8 +1,17 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import './layout.css';
 import { ProjectSelector } from './ProjectSelector';
+import { useAuth } from '../providers/AuthProvider';
 
 export function Layout() {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    await logout();
+    navigate('/login', { replace: true });
+  };
+
   return (
     <div className="app-shell">
       <aside className="app-sidebar">
@@ -30,6 +39,14 @@ export function Layout() {
             System & Cache Studio
           </NavLink>
         </nav>
+        <div className="sidebar-footer">
+          <div className="user-line">
+            <span className="user-email">{user?.email ?? 'Angemeldet'}</span>
+          </div>
+          <button className="logout-btn" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
       </aside>
       <main className="app-main">
         <Outlet />

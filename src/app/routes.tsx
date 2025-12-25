@@ -7,11 +7,21 @@ import { MediaManagerPage } from '../modules/media-manager/MediaManagerPage';
 import { DataQualityPage } from '../modules/data-quality/DataQualityPage';
 import { OsintPage } from '../modules/osint/OsintPage';
 import { CacheStudioPage } from '../modules/cache-studio/CacheStudioPage';
+import { LoginPage } from '../modules/auth/LoginPage';
+import { RequireAuth } from './RequireAuth';
 
 const router = createBrowserRouter([
   {
+    path: '/login',
+    element: <LoginPage />,
+  },
+  {
     path: '/',
-    element: <Layout />,
+    element: (
+      <RequireAuth>
+        <Layout />
+      </RequireAuth>
+    ),
     children: [
       { index: true, element: <ProjectIntelPage /> },
       { path: 'media', element: <MediaManagerPage /> },
