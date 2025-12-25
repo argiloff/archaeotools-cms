@@ -5,6 +5,7 @@ import { listOsint } from '../../api/osint.service';
 import { listPlaces } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import '../../app/ui/layout.css';
+import './projectIntel.css';
 import { MapPreview } from '../../components/map/MapPreview';
 
 export function ProjectIntelPage() {
@@ -117,99 +118,86 @@ export function ProjectIntelPage() {
   ].filter(Boolean) as string[];
 
   return (
-    <div className="page">
-      <h1>Project Intelligence View</h1>
-      <p>{project?.name ?? 'Projekt'} — Überblick (Fotos/Places/OSINT).</p>
-
-      <div
-        style={{
-          display: 'grid',
-          gap: 16,
-          gridTemplateColumns: '2fr 1fr',
-          marginTop: 18,
-          flexWrap: 'wrap',
-        }}
-      >
-        <div
-          style={{
-            borderRadius: 16,
-            border: '1px solid rgba(255,255,255,0.08)',
-            background: 'linear-gradient(135deg, rgba(79,107,255,0.18), rgba(109,227,196,0.05))',
-            padding: 18,
-            display: 'grid',
-            gap: 8,
-          }}
-        >
-          <div style={{ fontSize: 24, fontWeight: 700 }}>{project?.name ?? 'Projekt'}</div>
-          <div style={{ fontSize: 13, color: '#8fa0bf', display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-            {project?.type && <span>{project.type}</span>}
-            {project?.visibility && <span>• {project.visibility}</span>}
-            {project?.city && (
-              <span>
-                • {project.city}
-                {project?.country ? `, ${project.country}` : ''}
+    <div className="page intel-page">
+      <div className="intel-hero">
+        <div className="intel-hero__left">
+          <div className="intel-chip-row">
+            {project?.type && <span className="intel-chip">{project.type}</span>}
+            {project?.visibility && <span className="intel-chip subtle">{project.visibility}</span>}
+            {(project?.city || project?.country) && (
+              <span className="intel-chip ghost">
+                {project?.city}
+                {project?.city && project?.country ? ', ' : ''}
+                {project?.country}
               </span>
             )}
-            {!project?.city && project?.country && <span>• {project.country}</span>}
           </div>
-          {project?.locationName && (
-            <div style={{ fontSize: 14, color: '#c5d5ff' }}>{project.locationName}</div>
-          )}
-          <div style={{ display: 'flex', gap: 10 }}>
-            <button className="project-action-btn" title="Media Manager" onClick={() => navigate('/media')}>
+          <h1>{project?.name ?? 'Projekt'}</h1>
+          {project?.locationName && <p className="intel-hero__location">{project.locationName}</p>}
+          <div className="intel-hero__actions">
+            <button onClick={() => navigate('/media')} title="Media Manager">
               🖼
+              <span>Media</span>
             </button>
-            <button className="project-action-btn" title="OSINT" onClick={() => navigate('/osint')}>
+            <button onClick={() => navigate('/osint')} title="OSINT Control">
               🛰
+              <span>OSINT</span>
             </button>
-            <button className="project-action-btn" title="Data Quality" onClick={() => navigate('/data-quality')}>
+            <button onClick={() => navigate('/data-quality')} title="Data Quality">
               ✅
+              <span>Quality</span>
             </button>
           </div>
         </div>
-        <Panel title="Hinweise" actions={null}>
+        <div className="intel-hero__metrics">
+          {cards.map((c) => (
+            <div key={c.label} className="intel-stat-card">
+              <div className="label">{c.label}</div>
+              <div className="value">{c.value}</div>
+              <div className="muted">{c.foot}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="intel-section">
+        <div className="intel-section__header">
+          <div>
+            <h2>Insights & Alerts</h2>
+            <p>Automatische Hinweise zu Datenqualität und Aktivität.</p>
+          </div>
+          <button className="ghost-link" onClick={() => navigate('/data-quality')}>
+            Zum Quality Dashboard →
+          </button>
+        </div>
+        <div className="intel-alerts">
           {dataQualityAlerts.length === 0 ? (
-            <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine offenen Hinweise</div>
+            <div className="intel-alerts__empty">Keine offenen Hinweise</div>
           ) : (
-            <ul style={{ padding: 0, margin: 0, listStyle: 'none', display: 'grid', gap: 8 }}>
-              {dataQualityAlerts.map((alert, idx) => (
-                <li
-                  key={alert + idx}
-                  style={{
-                    background: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.08)',
-                    borderRadius: 10,
-                    padding: 10,
-                    fontSize: 13,
-                  }}
-                >
-                  {alert}
-                </li>
-              ))}
-            </ul>
+            dataQualityAlerts.map((alert, idx) => (
+              <div key={alert + idx} className="intel-alert">
+                <span>⚠</span>
+                <div>{alert}</div>
+              </div>
+            ))
+          )}
+        </div>
+      </section>
+
+      <section className="intel-panel-grid">
+        <Panel title="Timeline (neueste zuerst)">
+          <Timeline items={timelineItems} empty="Keine zeitlichen Einträge" />
+        </Panel>
+        <Panel title="Geo Footprint">
+          {geoPoints.length ? (
+            <MapPreview
+              points={geoPoints}
+              height={260}
+            />
+          ) : (
+            <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Geodaten</div>
           )}
         </Panel>
-      </div>
-
-      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', marginTop: 18 }}>
-        {cards.map((c) => (
-          <div
-            key={c.label}
-            style={{
-              background: 'rgba(255,255,255,0.03)',
-              border: '1px solid rgba(255,255,255,0.08)',
-              borderRadius: 12,
-              padding: 14,
-            }}
-          >
-            <div style={{ fontSize: 12, color: '#8fa0bf' }}>{c.label}</div>
-            <div style={{ fontSize: 24, fontWeight: 700 }}>{c.value}</div>
-            <div style={{ fontSize: 11, color: '#6de3c4' }}>{c.foot}</div>
-          </div>
-        ))}
-      </div>
-
-      <div style={{ display: 'grid', gap: 16, marginTop: 18, gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
         <Panel title="Fotos (chronologisch)" loading={photosQuery.isLoading} error={photosQuery.isError}>
           <MiniList items={photos.map((p) => `${p.description ?? 'Foto'} — ${p.capturedAt ?? 'ohne Datum'}`)} empty="Keine Fotos" />
         </Panel>
@@ -220,23 +208,14 @@ export function ProjectIntelPage() {
           />
         </Panel>
         <Panel title="Places (Top 8)" loading={placesQuery.isLoading} error={placesQuery.isError}>
-          <div style={{ display: 'grid', gap: 8, maxHeight: 220, overflowY: 'auto', paddingRight: 4 }}>
+          <div className="intel-places-list">
             {topPlaces.length === 0 ? (
               <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Places</div>
             ) : (
               topPlaces.map((pl, idx) => (
-                <div
-                  key={`${pl.id}-${idx}`}
-                  style={{
-                    border: '1px solid rgba(255,255,255,0.08)',
-                    borderRadius: 10,
-                    padding: 10,
-                    fontSize: 13,
-                    background: 'rgba(255,255,255,0.02)',
-                  }}
-                >
-                  <div style={{ fontWeight: 600 }}>{pl.title ?? pl.type ?? 'Place'}</div>
-                  <div style={{ color: '#8fa0bf' }}>
+                <div key={`${pl.id}-${idx}`} className="intel-place-card">
+                  <div className="title">{pl.title ?? pl.type ?? 'Place'}</div>
+                  <div className="meta">
                     {[pl.city, pl.country].filter(Boolean).join(', ') || 'Ort unbekannt'}
                   </div>
                 </div>
@@ -245,28 +224,15 @@ export function ProjectIntelPage() {
           </div>
           {places.length > topPlaces.length && (
             <button
-              className="btn"
-              style={{ marginTop: 10, padding: '8px 12px', fontSize: 13 }}
+              className="ghost-link"
               onClick={() => navigate('/media')}
+              style={{ marginTop: 10 }}
             >
-              Alle Places öffnen
+              Alle Places öffnen →
             </button>
           )}
         </Panel>
-        <Panel title="Timeline (neueste zuerst)">
-          <Timeline items={timelineItems} empty="Keine zeitlichen Einträge" />
-        </Panel>
-        <Panel title="Geo (Map)">
-          {geoPoints.length ? (
-            <MapPreview
-              points={geoPoints}
-              height={260}
-            />
-          ) : (
-            <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Geodaten</div>
-          )}
-        </Panel>
-      </div>
+      </section>
     </div>
   );
 }
