@@ -21,14 +21,16 @@ export type MapPoint = {
   lat: number;
   lng: number;
   label?: string;
+  meta?: Record<string, unknown>;
 };
 
 type Props = {
   points: MapPoint[];
   height?: number;
+  onMarkerClick?: (point: MapPoint) => void;
 };
 
-export function MapPreview({ points, height = 320 }: Props) {
+export function MapPreview({ points, height = 320, onMarkerClick }: Props) {
   const bounds = useMemo<LatLngBoundsExpression | null>(() => {
     if (!points.length) return null;
     const b = L.latLngBounds(points.map((p) => [p.lat, p.lng]));
@@ -51,7 +53,17 @@ export function MapPreview({ points, height = 320 }: Props) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {points.map((p) => (
-          <Marker key={p.id} position={[p.lat, p.lng]}>
+          <Marker
+            key={p.id}
+            position={[p.lat, p.lng]}
+            eventHandlers={
+              onMarkerClick
+                ? {
+                    click: () => onMarkerClick(p),
+                  }
+                : undefined
+            }
+          >
             {p.label && <Popup>{p.label}</Popup>}
           </Marker>
         ))}

@@ -1,16 +1,30 @@
 import { useMemo, useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { listPhotos } from '../../api/photos.service';
-import { listPlaces } from '../../api/places.service';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { listPhotos, uploadPhoto } from '../../api/photos.service';
+import { listPlaces, createPlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import '../../app/ui/layout.css';
 import { MapPreview } from '../../components/map/MapPreview';
+import { Modal } from '../../components/ui/Modal';
+import { RichTextEditor } from '../../components/editor/RichTextEditor';
 
 export function MediaManagerPage() {
   const { projectId, project } = useCurrentProject();
+  const qc = useQueryClient();
   const [placeFilter, setPlaceFilter] = useState<string>('');
   const [tagFilter, setTagFilter] = useState<string>('');
   const [search, setSearch] = useState<string>('');
+  const [showPlaceModal, setShowPlaceModal] = useState(false);
+  const [showPhotoModal, setShowPhotoModal] = useState(false);
+  const [newPlaceName, setNewPlaceName] = useState('');
+  const [newPlaceType, setNewPlaceType] = useState('');
+  const [newPlaceNotes, setNewPlaceNotes] = useState<any>(null);
+  const [photoFile, setPhotoFile] = useState<File | null>(null);
+  const [photoDesc, setPhotoDesc] = useState('');
+  const [photoNotes, setPhotoNotes] = useState<any>(null);
+  const [photoTags, setPhotoTags] = useState('');
+  const [photoPlaceId, setPhotoPlaceId] = useState<string>('');
+  const [galleryPlaceId, setGalleryPlaceId] = useState<string | null>(null);
 
   const photosQuery = useQuery({
     queryKey: ['photos', projectId],
@@ -21,6 +35,37 @@ export function MediaManagerPage() {
     queryKey: ['places', projectId],
     queryFn: () => listPlaces(projectId!),
     enabled: !!projectId,
+  });
+
+  const createPlaceMutation = useMutation({
+    mutationFn: (payload: Parameters<typeof createPlace>[1]) =>
+      createPlace(projectId!, payload),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['places', projectId] });
+      setShowPlaceModal(false);
+      setNewPlaceName('');
+      setNewPlaceType('');
+      setNewPlaceNotes(null);
+    },
+  });
+
+  const uploadPhotoMutation = useMutation({
+    mutationFn: (payload: {
+      file: File;
+      description?: string;
+      placeId?: string | null;
+      tags?: string[];
+      notes?: string;
+    }) => uploadPhoto(projectId!, payload),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['photos', projectId] });
+      setShowPhotoModal(false);
+      setPhotoFile(null);
+      setPhotoDesc('');
+      setPhotoNotes(null);
+      setPhotoTags('');
+      setPhotoPlaceId('');
+    },
   });
 
   if (!projectId) {
@@ -50,14 +95,19 @@ export function MediaManagerPage() {
   }, [photos, placeFilter, tagFilter, search]);
 
   const mapPoints = filtered
-    .filter((p) => p.lat != null && p.lng != null)
+    .filter((p) => p.lat != null && p.lng != null && p.placeId)
     .map((p) => ({
-      id: p.id,
+      id: p.placeId!,
       lat: p.lat!,
       lng: p.lng!,
-      label: p.description ?? 'Foto',
-    }))
-    .slice(0, 200); // einfache Limitierung
+      label: places.find((pl) => pl.id === p.placeId)?.name ?? p.description ?? 'Foto',
+      meta: { placeId: p.placeId },
+    }));
+
+  const galleryPhotos =
+    galleryPlaceId && photosQuery.data
+      ? photosQuery.data.filter((p) => p.placeId === galleryPlaceId)
+      : [];
 
   return (
     <div className="page">
@@ -97,10 +147,23 @@ export function MediaManagerPage() {
         </FilterBlock>
       </div>
 
+      <div style={{ marginTop: 12, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+        <button className="btn" onClick={() => setShowPlaceModal(true)}>
+          Place anlegen
+        </button>
+        <button className="btn" onClick={() => setShowPhotoModal(true)}>
+          Foto hochladen
+        </button>
+      </div>
+
       <div style={{ marginTop: 16 }}>
         <div style={{ fontWeight: 600, marginBottom: 8 }}>Map (OpenStreetMap)</div>
         {mapPoints.length ? (
-          <MapPreview points={mapPoints} height={320} />
+          <MapPreview
+            points={mapPoints}
+            height={320}
+            onMarkerClick={(p) => setGalleryPlaceId(p.meta?.placeId as string)}
+          />
         ) : (
           <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Geodaten für aktuelle Filter.</div>
         )}
@@ -174,6 +237,107 @@ export function MediaManagerPage() {
           )}
         </div>
       </div>
+
+      <Modal title="Neuen Place anlegen" open={showPlaceModal} onClose={() => setShowPlaceModal(false)}>
+        <label className="project-selector">
+          <span>Name</span>
+          <input className="input" value={newPlaceName} onChange={(e) => setNewPlaceName(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Typ</span>
+          <input className="input" value={newPlaceType} onChange={(e) => setNewPlaceType(e.target.value)} />
+        </label>
+        <div>
+          <span style={{ fontSize: 12, color: '#8fa0bf' }}>Notizen</span>
+          <RichTextEditor value={newPlaceNotes} onChange={setNewPlaceNotes} placeholder="Notizen zum Place" />
+        </div>
+        <button
+          className="btn"
+          onClick={() =>
+            createPlaceMutation.mutate({
+              name: newPlaceName,
+              type: newPlaceType,
+              notes: newPlaceNotes ? JSON.stringify(newPlaceNotes) : undefined,
+            })
+          }
+          disabled={!newPlaceName || createPlaceMutation.isPending}
+        >
+          {createPlaceMutation.isPending ? 'Speichere…' : 'Speichern'}
+        </button>
+      </Modal>
+
+      <Modal title="Foto hochladen" open={showPhotoModal} onClose={() => setShowPhotoModal(false)}>
+        <label className="project-selector">
+          <span>Datei</span>
+          <input className="input" type="file" accept="image/*" onChange={(e) => setPhotoFile(e.target.files?.[0] ?? null)} />
+        </label>
+        <label className="project-selector">
+          <span>Beschreibung</span>
+          <input className="input" value={photoDesc} onChange={(e) => setPhotoDesc(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Tags (comma)</span>
+          <input className="input" value={photoTags} onChange={(e) => setPhotoTags(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Place</span>
+          <select
+            className="input select-like"
+            value={photoPlaceId}
+            onChange={(e) => setPhotoPlaceId(e.target.value)}
+          >
+            <option value="">Kein Place</option>
+            {places.map((pl) => (
+              <option key={pl.id} value={pl.id}>
+                {pl.name ?? pl.type ?? 'Place'}
+              </option>
+            ))}
+          </select>
+        </label>
+        <div>
+          <span style={{ fontSize: 12, color: '#8fa0bf' }}>Notizen</span>
+          <RichTextEditor value={photoNotes} onChange={setPhotoNotes} placeholder="Notizen zum Foto" />
+        </div>
+        <button
+          className="btn"
+          onClick={() =>
+            photoFile &&
+            uploadPhotoMutation.mutate({
+              file: photoFile,
+              description: photoDesc,
+              placeId: photoPlaceId || undefined,
+              tags: photoTags ? photoTags.split(',').map((t) => t.trim()).filter(Boolean) : undefined,
+              notes: photoNotes ? JSON.stringify(photoNotes) : undefined,
+            })
+          }
+          disabled={!photoFile || uploadPhotoMutation.isPending}
+        >
+          {uploadPhotoMutation.isPending ? 'Lädt…' : 'Upload'}
+        </button>
+      </Modal>
+
+      <Modal
+        title="Galerie"
+        open={galleryPlaceId !== null}
+        onClose={() => setGalleryPlaceId(null)}
+      >
+        {galleryPhotos.length === 0 ? (
+          <div style={{ color: '#8fa0bf' }}>Keine Fotos</div>
+        ) : (
+          <div style={{ display: 'grid', gap: 10, gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))' }}>
+            {galleryPhotos.map((p) => (
+              <div key={p.id} style={{ display: 'grid', gap: 6 }}>
+                <img
+                  src={p.url}
+                  alt={p.description ?? 'Foto'}
+                  style={{ width: '100%', borderRadius: 10, objectFit: 'cover', border: '1px solid rgba(255,255,255,0.08)' }}
+                />
+                <div style={{ fontSize: 13, color: '#c5d1e0' }}>{p.description}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Modal>
     </div>
   );
 }
