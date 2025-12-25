@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import './layout.css';
 import { listProjects } from '../../api/projects.service';
 import { projectStore } from '../../state/project.store';
+import { listPhotos } from '../../api/photos.service';
+import { listPlaces } from '../../api/places.service';
+import { listOsint } from '../../api/osint.service';
 
 export function ProjectSelector() {
+  const qc = useQueryClient();
   const { data, isLoading, isError } = useQuery({
     queryKey: ['projects'],
     queryFn: listProjects,
@@ -18,8 +22,15 @@ export function ProjectSelector() {
       if (!currentProjectId && data.length > 0) {
         setCurrentProject(data[0].id);
       }
+      // Prefetch häufig genutzte Daten für das erste Projekt
+      const pid = currentProjectId ?? data[0]?.id;
+      if (pid) {
+        qc.prefetchQuery({ queryKey: ['photos', pid], queryFn: () => listPhotos(pid) });
+        qc.prefetchQuery({ queryKey: ['places', pid], queryFn: () => listPlaces(pid) });
+        qc.prefetchQuery({ queryKey: ['osint', pid], queryFn: () => listOsint(pid) });
+      }
     }
-  }, [currentProjectId, data, setCurrentProject, setProjects]);
+  }, [currentProjectId, data, qc, setCurrentProject, setProjects]);
 
   return (
     <label className="project-selector">
