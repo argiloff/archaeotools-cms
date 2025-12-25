@@ -16,14 +16,23 @@ export function MediaManagerPage() {
   const [search, setSearch] = useState<string>('');
   const [showPlaceModal, setShowPlaceModal] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
-  const [newPlaceName, setNewPlaceName] = useState('');
-  const [newPlaceType, setNewPlaceType] = useState('');
-  const [newPlaceNotes, setNewPlaceNotes] = useState<any>(null);
+  const [placeTitle, setPlaceTitle] = useState('');
+  const [placeType, setPlaceType] = useState<'SITE' | 'MUSEUM' | 'POI'>('SITE');
+  const [placeDescription, setPlaceDescription] = useState<any>(null);
+  const [placeLat, setPlaceLat] = useState('');
+  const [placeLng, setPlaceLng] = useState('');
+  const [placeRadius, setPlaceRadius] = useState('');
+  const [placeAddress, setPlaceAddress] = useState('');
+  const [placeCity, setPlaceCity] = useState('');
+  const [placeCountry, setPlaceCountry] = useState('');
+  const [placeVisited, setPlaceVisited] = useState(false);
+  const [placeError, setPlaceError] = useState<string | null>(null);
   const [photoFile, setPhotoFile] = useState<File | null>(null);
   const [photoDesc, setPhotoDesc] = useState('');
   const [photoNotes, setPhotoNotes] = useState<any>(null);
   const [photoTags, setPhotoTags] = useState('');
   const [photoPlaceId, setPhotoPlaceId] = useState<string>('');
+  const [photoError, setPhotoError] = useState<string | null>(null);
   const [galleryPlaceId, setGalleryPlaceId] = useState<string | null>(null);
 
   const photosQuery = useQuery({
@@ -43,9 +52,21 @@ export function MediaManagerPage() {
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['places', projectId] });
       setShowPlaceModal(false);
-      setNewPlaceName('');
-      setNewPlaceType('');
-      setNewPlaceNotes(null);
+      setPlaceTitle('');
+      setPlaceType('SITE');
+      setPlaceDescription(null);
+      setPlaceLat('');
+      setPlaceLng('');
+      setPlaceRadius('');
+      setPlaceAddress('');
+      setPlaceCity('');
+      setPlaceCountry('');
+      setPlaceVisited(false);
+      setPlaceError(null);
+    },
+    onError: (err: any) => {
+      const msg = err?.response?.data?.message || err?.message || 'Speichern fehlgeschlagen.';
+      setPlaceError(Array.isArray(msg) ? msg.join(', ') : msg);
     },
   });
 
@@ -65,6 +86,11 @@ export function MediaManagerPage() {
       setPhotoNotes(null);
       setPhotoTags('');
       setPhotoPlaceId('');
+      setPhotoError(null);
+    },
+    onError: (err: any) => {
+      const msg = err?.response?.data?.message || err?.message || 'Upload fehlgeschlagen.';
+      setPhotoError(Array.isArray(msg) ? msg.join(', ') : msg);
     },
   });
 
@@ -100,7 +126,7 @@ export function MediaManagerPage() {
       id: p.placeId!,
       lat: p.lat!,
       lng: p.lng!,
-      label: places.find((pl) => pl.id === p.placeId)?.name ?? p.description ?? 'Foto',
+      label: places.find((pl) => pl.id === p.placeId)?.title ?? p.description ?? 'Foto',
       meta: { placeId: p.placeId },
     }));
 
@@ -124,7 +150,7 @@ export function MediaManagerPage() {
             <option value="">Alle Orte</option>
             {places.map((pl) => (
               <option key={pl.id} value={pl.id}>
-                {pl.name ?? pl.type ?? 'Place'}
+                {pl.title ?? pl.type ?? 'Place'}
               </option>
             ))}
           </select>
@@ -240,37 +266,108 @@ export function MediaManagerPage() {
 
       <Modal title="Neuen Place anlegen" open={showPlaceModal} onClose={() => setShowPlaceModal(false)}>
         <label className="project-selector">
-          <span>Name</span>
-          <input className="input" value={newPlaceName} onChange={(e) => setNewPlaceName(e.target.value)} />
+          <span>Titel</span>
+          <input className="input" value={placeTitle} onChange={(e) => setPlaceTitle(e.target.value)} />
         </label>
         <label className="project-selector">
           <span>Typ</span>
-          <input className="input" value={newPlaceType} onChange={(e) => setNewPlaceType(e.target.value)} />
+          <select
+            className="input select-like"
+            value={placeType}
+            onChange={(e) => setPlaceType(e.target.value as 'SITE' | 'MUSEUM' | 'POI')}
+          >
+            <option value="SITE">SITE</option>
+            <option value="MUSEUM">MUSEUM</option>
+            <option value="POI">POI</option>
+          </select>
+        </label>
+        <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
+          <label className="project-selector">
+            <span>Latitude</span>
+            <input className="input" value={placeLat} onChange={(e) => setPlaceLat(e.target.value)} />
+          </label>
+          <label className="project-selector">
+            <span>Longitude</span>
+            <input className="input" value={placeLng} onChange={(e) => setPlaceLng(e.target.value)} />
+          </label>
+          <label className="project-selector">
+            <span>Radius (m)</span>
+            <input className="input" value={placeRadius} onChange={(e) => setPlaceRadius(e.target.value)} />
+          </label>
+        </div>
+        <label className="project-selector">
+          <span>Adresse</span>
+          <input className="input" value={placeAddress} onChange={(e) => setPlaceAddress(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Land</span>
+          <input className="input" value={placeCountry} onChange={(e) => setPlaceCountry(e.target.value)} />
+        </label>
+        <label className="project-selector">
+          <span>Stadt</span>
+          <input className="input" value={placeCity} onChange={(e) => setPlaceCity(e.target.value)} />
+        </label>
+        <label className="project-selector" style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <input
+            type="checkbox"
+            checked={placeVisited}
+            onChange={(e) => setPlaceVisited(e.target.checked)}
+            style={{ width: 16, height: 16 }}
+          />
+          <span>Besucht</span>
         </label>
         <div>
           <span style={{ fontSize: 12, color: '#8fa0bf' }}>Notizen</span>
-          <RichTextEditor value={newPlaceNotes} onChange={setNewPlaceNotes} placeholder="Notizen zum Place" />
+          <RichTextEditor value={placeDescription} onChange={setPlaceDescription} placeholder="Notizen zum Place" />
         </div>
+        {placeError && <div style={{ color: '#f78c6c', fontSize: 13 }}>{placeError}</div>}
         <button
           className="btn"
           onClick={() =>
             createPlaceMutation.mutate({
-              name: newPlaceName,
-              type: newPlaceType,
-              notes: newPlaceNotes ? JSON.stringify(newPlaceNotes) : undefined,
+              title: placeTitle,
+              type: placeType,
+              description: placeDescription ? JSON.stringify(placeDescription) : undefined,
+              latitude: placeLat ? Number(placeLat) : undefined,
+              longitude: placeLng ? Number(placeLng) : undefined,
+              radiusMeters: placeRadius ? Number(placeRadius) : undefined,
+              address: placeAddress || undefined,
+              city: placeCity || undefined,
+              country: placeCountry || undefined,
+              visited: placeVisited,
             })
           }
-          disabled={!newPlaceName || createPlaceMutation.isPending}
+          disabled={!placeTitle || createPlaceMutation.isPending}
         >
           {createPlaceMutation.isPending ? 'Speichere…' : 'Speichern'}
         </button>
       </Modal>
 
       <Modal title="Foto hochladen" open={showPhotoModal} onClose={() => setShowPhotoModal(false)}>
-        <label className="project-selector">
-          <span>Datei</span>
-          <input className="input" type="file" accept="image/*" onChange={(e) => setPhotoFile(e.target.files?.[0] ?? null)} />
-        </label>
+        <div
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            const file = e.dataTransfer.files?.[0];
+            if (file) setPhotoFile(file);
+          }}
+          style={{
+            border: '1px dashed rgba(255,255,255,0.3)',
+            borderRadius: 12,
+            padding: 16,
+            textAlign: 'center',
+            background: 'rgba(255,255,255,0.02)',
+          }}
+        >
+          <div style={{ marginBottom: 8 }}>Bild hierher ziehen oder auswählen</div>
+          <input
+            className="input"
+            type="file"
+            accept="image/*"
+            onChange={(e) => setPhotoFile(e.target.files?.[0] ?? null)}
+          />
+          {photoFile && <div style={{ marginTop: 8, fontSize: 13 }}>{photoFile.name}</div>}
+        </div>
         <label className="project-selector">
           <span>Beschreibung</span>
           <input className="input" value={photoDesc} onChange={(e) => setPhotoDesc(e.target.value)} />
@@ -289,7 +386,7 @@ export function MediaManagerPage() {
             <option value="">Kein Place</option>
             {places.map((pl) => (
               <option key={pl.id} value={pl.id}>
-                {pl.name ?? pl.type ?? 'Place'}
+                {pl.title ?? pl.type ?? 'Place'}
               </option>
             ))}
           </select>
@@ -298,6 +395,7 @@ export function MediaManagerPage() {
           <span style={{ fontSize: 12, color: '#8fa0bf' }}>Notizen</span>
           <RichTextEditor value={photoNotes} onChange={setPhotoNotes} placeholder="Notizen zum Foto" />
         </div>
+        {photoError && <div style={{ color: '#f78c6c', fontSize: 13 }}>{photoError}</div>}
         <button
           className="btn"
           onClick={() =>

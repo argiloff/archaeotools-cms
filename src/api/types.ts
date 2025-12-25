@@ -21,13 +21,16 @@ export type Project = {
 export type Place = {
   id: string;
   projectId: string;
-  name?: string;
-  type?: string;
-  lat?: number;
-  lng?: number;
+  title?: string;
+  description?: string;
+  type?: 'SITE' | 'MUSEUM' | 'POI';
+  latitude?: number;
+  longitude?: number;
   radiusMeters?: number;
   address?: string;
-  notes?: string;
+  city?: string;
+  country?: string;
+  visited?: boolean;
   createdAt?: string;
   updatedAt?: string;
 };

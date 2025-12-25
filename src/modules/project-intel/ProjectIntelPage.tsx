@@ -91,7 +91,7 @@ export function ProjectIntelPage() {
           <MiniList items={osint.map((o) => `${o.title} (${o.status})`)} empty="Keine OSINT Items" />
         </Panel>
         <Panel title="Places" loading={placesQuery.isLoading} error={placesQuery.isError}>
-          <MiniList items={places.map((pl) => pl.name ?? pl.type ?? 'Place')} empty="Keine Places" />
+          <MiniList items={places.map((pl) => pl.title ?? pl.type ?? 'Place')} empty="Keine Places" />
         </Panel>
         <Panel title="Timeline (neueste zuerst)">
           <Timeline items={timelineItems} empty="Keine zeitlichen Einträge" />
