@@ -1,0 +1,39 @@
+import { NavLink, Outlet } from 'react-router-dom';
+import './layout.css';
+import { ProjectSelector } from './ProjectSelector';
+
+export function Layout() {
+  return (
+    <div className="app-shell">
+      <aside className="app-sidebar">
+        <div className="sidebar-header">
+          <div className="brand">archaeoTools ACC</div>
+          <ProjectSelector />
+        </div>
+        <nav className="sidebar-nav">
+          <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
+            Project Intelligence
+          </NavLink>
+          <NavLink to="/media" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Spatial Media Manager
+          </NavLink>
+          <NavLink
+            to="/data-quality"
+            className={({ isActive }) => (isActive ? 'active' : '')}
+          >
+            Data Quality
+          </NavLink>
+          <NavLink to="/osint" className={({ isActive }) => (isActive ? 'active' : '')}>
+            OSINT Control
+          </NavLink>
+          <NavLink to="/cache" className={({ isActive }) => (isActive ? 'active' : '')}>
+            System & Cache Studio
+          </NavLink>
+        </nav>
+      </aside>
+      <main className="app-main">
+        <Outlet />
+      </main>
+    </div>
+  );
+}

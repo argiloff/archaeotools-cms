@@ -1,0 +1,88 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: #0e1117;
+  color: #e8ecf2;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.app-sidebar {
+  border-right: 1px solid #1f2733;
+  padding: 20px;
+  background: radial-gradient(circle at 20% 20%, rgba(57, 90, 255, 0.08), transparent),
+    #0b0e14;
+}
+
+.sidebar-header {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+  display: grid;
+  gap: 10px;
+}
+
+.sidebar-nav a {
+  color: #c5d1e0;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-nav a.active {
+  background: linear-gradient(135deg, #3c6bff, #6f8cff);
+  color: #0b0e14;
+  font-weight: 600;
+}
+
+.sidebar-nav a:not(.active):hover {
+  background: #161c26;
+}
+
+.app-main {
+  padding: 24px;
+}
+
+.project-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #9fb0c9;
+}
+
+.project-selector select {
+  background: #0f131a;
+  color: #e8ecf2;
+  border: 1px solid #1f2733;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.page {
+  background: #0f131a;
+  border: 1px solid #1f2733;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.page h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.page p {
+  color: #c5d1e0;
+  margin: 0;
+}

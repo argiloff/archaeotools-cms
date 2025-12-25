@@ -11,16 +11,9 @@ export const httpClient = axios.create({
 httpClient.interceptors.request.use((config) => {
   const token = authStore.getState().accessToken;
   if (token) {
-    const headers = config.headers ?? new AxiosHeaders();
-    if (headers instanceof AxiosHeaders) {
-      headers.set('Authorization', `Bearer ${token}`);
-      config.headers = headers;
-    } else {
-      config.headers = {
-        ...(headers as Record<string, string>),
-        Authorization: `Bearer ${token}`,
-      };
-    }
+    const headers = AxiosHeaders.from(config.headers ?? {});
+    headers.set('Authorization', `Bearer ${token}`);
+    config.headers = headers;
   }
   return config;
 });
