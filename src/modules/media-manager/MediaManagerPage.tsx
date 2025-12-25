@@ -94,15 +94,6 @@ export function MediaManagerPage() {
     },
   });
 
-  if (!projectId) {
-    return (
-      <div className="page">
-        <h1>Spatial Media Manager</h1>
-        <p>Bitte wähle ein Projekt aus.</p>
-      </div>
-    );
-  }
-
   const photos = photosQuery.data ?? [];
   const places = placesQuery.data ?? [];
 
@@ -229,7 +220,7 @@ export function MediaManagerPage() {
                   {p.capturedAt ?? 'Ohne Datum'}
                   {p.placeId && (
                     <span style={{ marginLeft: 8, color: '#6de3c4' }}>
-                      • {places.find((pl) => pl.id === p.placeId)?.name ?? 'Place'}
+                      • {places.find((pl) => pl.id === p.placeId)?.title ?? 'Place'}
                     </span>
                   )}
                 </div>

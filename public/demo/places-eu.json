@@ -1,0 +1,4404 @@
+{
+  "places": [
+    {
+      "title": "Naples Discovery 1",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 1 notes\"}}]}",
+      "latitude": 40.907905,
+      "longitude": 14.228496,
+      "radiusMeters": 418,
+      "address": "132 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 1 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-1-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 1 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-1-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 2",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 2 notes\"}}]}",
+      "latitude": 40.695123,
+      "longitude": 22.891606,
+      "radiusMeters": 197,
+      "address": "42 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 2 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-2-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 2 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-2-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 3",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 3 notes\"}}]}",
+      "latitude": 43.817378,
+      "longitude": 11.201684,
+      "radiusMeters": 240,
+      "address": "192 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 3 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-3-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 3 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-3-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 4",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 4 notes\"}}]}",
+      "latitude": 40.805352,
+      "longitude": 14.354872,
+      "radiusMeters": 230,
+      "address": "76 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 4 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-4-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 4 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-4-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 5",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 5 notes\"}}]}",
+      "latitude": 40.368374,
+      "longitude": -3.727241,
+      "radiusMeters": 146,
+      "address": "70 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 5 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-5-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 5 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-5-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 6",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 6 notes\"}}]}",
+      "latitude": 40.612908,
+      "longitude": 22.936519,
+      "radiusMeters": 142,
+      "address": "4 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 6 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-6-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 6 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-6-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 7",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 7 notes\"}}]}",
+      "latitude": 40.851649,
+      "longitude": 14.280789,
+      "radiusMeters": 215,
+      "address": "3 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 7 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-7-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 7 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-7-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 8",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 8 notes\"}}]}",
+      "latitude": 52.58136,
+      "longitude": 13.401843,
+      "radiusMeters": 284,
+      "address": "141 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 8 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-8-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 8 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-8-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 9",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 9 notes\"}}]}",
+      "latitude": 41.828228,
+      "longitude": 12.434842,
+      "radiusMeters": 264,
+      "address": "78 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Rome Discovery 9 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-9-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 9 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-9-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 10",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 10 notes\"}}]}",
+      "latitude": 40.932243,
+      "longitude": 14.255239,
+      "radiusMeters": 326,
+      "address": "157 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 10 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-10-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 10 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-10-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 11",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 11 notes\"}}]}",
+      "latitude": 48.060578,
+      "longitude": 11.522058,
+      "radiusMeters": 70,
+      "address": "178 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Munich Discovery 11 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-11-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 11 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-11-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 12",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 12 notes\"}}]}",
+      "latitude": 40.60968,
+      "longitude": 22.973578,
+      "radiusMeters": 138,
+      "address": "41 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 12 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-12-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 12 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-12-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 13",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 13 notes\"}}]}",
+      "latitude": 47.013167,
+      "longitude": 15.536124,
+      "radiusMeters": 422,
+      "address": "41 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Graz Discovery 13 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-13-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 13 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-13-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 14",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 14 notes\"}}]}",
+      "latitude": 48.169262,
+      "longitude": 16.275587,
+      "radiusMeters": 210,
+      "address": "130 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 14 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-14-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 14 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-14-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 15",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 15 notes\"}}]}",
+      "latitude": 48.199753,
+      "longitude": 11.559003,
+      "radiusMeters": 408,
+      "address": "1 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 15 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-15-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 15 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-15-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 16",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 16 notes\"}}]}",
+      "latitude": 41.824699,
+      "longitude": 12.59359,
+      "radiusMeters": 289,
+      "address": "57 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Rome Discovery 16 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-16-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 16 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-16-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 17",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 17 notes\"}}]}",
+      "latitude": 43.766836,
+      "longitude": 11.236401,
+      "radiusMeters": 183,
+      "address": "195 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 17 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-17-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 17 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-17-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 18",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 18 notes\"}}]}",
+      "latitude": 53.510635,
+      "longitude": 9.977346,
+      "radiusMeters": 345,
+      "address": "107 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 18 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-18-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 18 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-18-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 19",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 19 notes\"}}]}",
+      "latitude": 40.717198,
+      "longitude": 22.912542,
+      "radiusMeters": 125,
+      "address": "100 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 19 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-19-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 19 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-19-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 20",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 20 notes\"}}]}",
+      "latitude": 41.449414,
+      "longitude": 2.135931,
+      "radiusMeters": 148,
+      "address": "111 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 20 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-20-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 20 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-20-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 21",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 21 notes\"}}]}",
+      "latitude": 48.260824,
+      "longitude": 16.336331,
+      "radiusMeters": 152,
+      "address": "54 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 21 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-21-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 21 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-21-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 22",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 22 notes\"}}]}",
+      "latitude": 48.114884,
+      "longitude": 11.667429,
+      "radiusMeters": 419,
+      "address": "122 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 22 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-22-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 22 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-22-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 23",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 23 notes\"}}]}",
+      "latitude": 48.298484,
+      "longitude": 16.32909,
+      "radiusMeters": 188,
+      "address": "4 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 23 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-23-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 23 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-23-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 24",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 24 notes\"}}]}",
+      "latitude": 53.625013,
+      "longitude": 10.031099,
+      "radiusMeters": 252,
+      "address": "3 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 24 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-24-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 24 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-24-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 25",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 25 notes\"}}]}",
+      "latitude": 41.379741,
+      "longitude": 2.228423,
+      "radiusMeters": 312,
+      "address": "19 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 25 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-25-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 25 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-25-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 26",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 26 notes\"}}]}",
+      "latitude": 37.332197,
+      "longitude": -6.009031,
+      "radiusMeters": 354,
+      "address": "163 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 26 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-26-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 26 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-26-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 27",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 27 notes\"}}]}",
+      "latitude": 37.950515,
+      "longitude": 23.702171,
+      "radiusMeters": 238,
+      "address": "95 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 27 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-27-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 27 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-27-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 28",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 28 notes\"}}]}",
+      "latitude": 53.465332,
+      "longitude": 9.91966,
+      "radiusMeters": 94,
+      "address": "84 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 28 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-28-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 28 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-28-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 29",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 29 notes\"}}]}",
+      "latitude": 43.816225,
+      "longitude": 11.169194,
+      "radiusMeters": 156,
+      "address": "195 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 29 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-29-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 29 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-29-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 30",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 30 notes\"}}]}",
+      "latitude": 40.851316,
+      "longitude": 14.241986,
+      "radiusMeters": 399,
+      "address": "130 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 30 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-30-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 30 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-30-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 31",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 31 notes\"}}]}",
+      "latitude": 37.981894,
+      "longitude": 23.708157,
+      "radiusMeters": 263,
+      "address": "10 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 31 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-31-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 31 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-31-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 32",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 32 notes\"}}]}",
+      "latitude": 35.307942,
+      "longitude": 25.049053,
+      "radiusMeters": 237,
+      "address": "87 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 32 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-32-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 32 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-32-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 33",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 33 notes\"}}]}",
+      "latitude": 40.603161,
+      "longitude": 23.019611,
+      "radiusMeters": 210,
+      "address": "71 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 33 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-33-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 33 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-33-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 34",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 34 notes\"}}]}",
+      "latitude": 35.320429,
+      "longitude": 25.096622,
+      "radiusMeters": 404,
+      "address": "153 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 34 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-34-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 34 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-34-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 35",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 35 notes\"}}]}",
+      "latitude": 35.266855,
+      "longitude": 25.174725,
+      "radiusMeters": 249,
+      "address": "149 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 35 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-35-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 35 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-35-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 36",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 36 notes\"}}]}",
+      "latitude": 52.536165,
+      "longitude": 13.313658,
+      "radiusMeters": 313,
+      "address": "189 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 36 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-36-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 36 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-36-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 37",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 37 notes\"}}]}",
+      "latitude": 48.20933,
+      "longitude": 11.629145,
+      "radiusMeters": 407,
+      "address": "17 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 37 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-37-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 37 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-37-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 38",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 38 notes\"}}]}",
+      "latitude": 40.453535,
+      "longitude": -3.643773,
+      "radiusMeters": 264,
+      "address": "34 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Madrid Discovery 38 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-38-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 38 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-38-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 39",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 39 notes\"}}]}",
+      "latitude": 43.857496,
+      "longitude": 11.308407,
+      "radiusMeters": 173,
+      "address": "49 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Florence Discovery 39 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-39-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 39 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-39-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 40",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 40 notes\"}}]}",
+      "latitude": 37.937486,
+      "longitude": 23.780213,
+      "radiusMeters": 362,
+      "address": "119 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Athens Discovery 40 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-40-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 40 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-40-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 41",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 41 notes\"}}]}",
+      "latitude": 35.32079,
+      "longitude": 25.093327,
+      "radiusMeters": 133,
+      "address": "134 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 41 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-41-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 41 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-41-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 42",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 42 notes\"}}]}",
+      "latitude": 37.955362,
+      "longitude": 23.825941,
+      "radiusMeters": 206,
+      "address": "16 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 42 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-42-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 42 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-42-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 43",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 43 notes\"}}]}",
+      "latitude": 52.568959,
+      "longitude": 13.401916,
+      "radiusMeters": 89,
+      "address": "1 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 43 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-43-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 43 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-43-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 44",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 44 notes\"}}]}",
+      "latitude": 40.766011,
+      "longitude": 14.17779,
+      "radiusMeters": 355,
+      "address": "17 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 44 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-44-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 44 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-44-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 45",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 45 notes\"}}]}",
+      "latitude": 47.883843,
+      "longitude": 13.103468,
+      "radiusMeters": 345,
+      "address": "158 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 45 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-45-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 45 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-45-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 46",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 46 notes\"}}]}",
+      "latitude": 47.16233,
+      "longitude": 15.511402,
+      "radiusMeters": 362,
+      "address": "99 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Graz Discovery 46 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-46-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 46 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-46-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 47",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 47 notes\"}}]}",
+      "latitude": 40.816632,
+      "longitude": 14.335353,
+      "radiusMeters": 288,
+      "address": "92 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 47 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-47-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 47 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-47-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 48",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 48 notes\"}}]}",
+      "latitude": 53.641499,
+      "longitude": 10.042091,
+      "radiusMeters": 115,
+      "address": "190 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 48 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-48-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 48 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-48-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 49",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 49 notes\"}}]}",
+      "latitude": 37.387925,
+      "longitude": -6.032789,
+      "radiusMeters": 201,
+      "address": "46 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 49 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-49-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 49 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-49-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 50",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 50 notes\"}}]}",
+      "latitude": 41.30361,
+      "longitude": 2.114379,
+      "radiusMeters": 189,
+      "address": "70 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 50 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-50-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 50 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-50-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 51",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 51 notes\"}}]}",
+      "latitude": 48.127355,
+      "longitude": 11.63502,
+      "radiusMeters": 219,
+      "address": "25 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Munich Discovery 51 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-51-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 51 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-51-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 52",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 52 notes\"}}]}",
+      "latitude": 48.179735,
+      "longitude": 16.460246,
+      "radiusMeters": 236,
+      "address": "16 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 52 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-52-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 52 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-52-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 53",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 53 notes\"}}]}",
+      "latitude": 40.320069,
+      "longitude": -3.620913,
+      "radiusMeters": 51,
+      "address": "2 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 53 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-53-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 53 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-53-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 54",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 54 notes\"}}]}",
+      "latitude": 37.958894,
+      "longitude": 23.803729,
+      "radiusMeters": 407,
+      "address": "105 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Athens Discovery 54 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-54-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 54 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-54-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 55",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 55 notes\"}}]}",
+      "latitude": 48.265351,
+      "longitude": 16.431087,
+      "radiusMeters": 156,
+      "address": "160 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 55 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-55-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 55 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-55-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 56",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 56 notes\"}}]}",
+      "latitude": 48.173316,
+      "longitude": 16.393362,
+      "radiusMeters": 201,
+      "address": "43 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 56 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-56-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 56 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-56-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 57",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 57 notes\"}}]}",
+      "latitude": 47.84343,
+      "longitude": 12.993805,
+      "radiusMeters": 185,
+      "address": "139 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 57 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-57-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 57 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-57-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 58",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 58 notes\"}}]}",
+      "latitude": 40.798425,
+      "longitude": 14.215123,
+      "radiusMeters": 417,
+      "address": "89 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 58 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-58-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 58 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-58-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 59",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 59 notes\"}}]}",
+      "latitude": 43.823893,
+      "longitude": 11.243927,
+      "radiusMeters": 273,
+      "address": "150 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 59 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-59-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 59 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-59-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 60",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 60 notes\"}}]}",
+      "latitude": 40.655109,
+      "longitude": 22.999916,
+      "radiusMeters": 75,
+      "address": "194 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 60 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-60-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 60 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-60-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 61",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 61 notes\"}}]}",
+      "latitude": 40.714292,
+      "longitude": 22.936393,
+      "radiusMeters": 178,
+      "address": "193 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 61 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-61-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 61 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-61-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 62",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 62 notes\"}}]}",
+      "latitude": 48.225835,
+      "longitude": 16.331818,
+      "radiusMeters": 327,
+      "address": "139 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 62 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-62-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 62 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-62-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 63",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 63 notes\"}}]}",
+      "latitude": 48.201586,
+      "longitude": 16.399,
+      "radiusMeters": 320,
+      "address": "182 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 63 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-63-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 63 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-63-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 64",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 64 notes\"}}]}",
+      "latitude": 47.77542,
+      "longitude": 12.995512,
+      "radiusMeters": 270,
+      "address": "192 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 64 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-64-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 64 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-64-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 65",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 65 notes\"}}]}",
+      "latitude": 48.202535,
+      "longitude": 16.312062,
+      "radiusMeters": 124,
+      "address": "59 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 65 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-65-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 65 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-65-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 66",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 66 notes\"}}]}",
+      "latitude": 40.466598,
+      "longitude": -3.623915,
+      "radiusMeters": 411,
+      "address": "196 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Madrid Discovery 66 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-66-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 66 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-66-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 67",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 67 notes\"}}]}",
+      "latitude": 43.736243,
+      "longitude": 11.310453,
+      "radiusMeters": 243,
+      "address": "199 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Florence Discovery 67 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-67-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 67 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-67-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 68",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 68 notes\"}}]}",
+      "latitude": 48.145253,
+      "longitude": 16.309119,
+      "radiusMeters": 212,
+      "address": "164 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 68 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-68-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 68 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-68-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 69",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 69 notes\"}}]}",
+      "latitude": 47.720279,
+      "longitude": 12.962372,
+      "radiusMeters": 174,
+      "address": "18 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 69 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-69-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 69 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-69-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 70",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 70 notes\"}}]}",
+      "latitude": 41.468198,
+      "longitude": 2.201789,
+      "radiusMeters": 119,
+      "address": "10 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 70 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-70-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 70 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-70-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 71",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 71 notes\"}}]}",
+      "latitude": 35.40168,
+      "longitude": 25.116682,
+      "radiusMeters": 427,
+      "address": "162 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 71 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-71-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 71 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-71-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 72",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 72 notes\"}}]}",
+      "latitude": 47.121685,
+      "longitude": 15.442349,
+      "radiusMeters": 407,
+      "address": "197 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 72 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-72-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 72 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-72-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 73",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 73 notes\"}}]}",
+      "latitude": 37.37475,
+      "longitude": -5.959079,
+      "radiusMeters": 221,
+      "address": "38 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 73 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-73-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 73 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-73-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 74",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 74 notes\"}}]}",
+      "latitude": 38.030902,
+      "longitude": 23.719901,
+      "radiusMeters": 242,
+      "address": "136 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Athens Discovery 74 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-74-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 74 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-74-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 75",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 75 notes\"}}]}",
+      "latitude": 35.333534,
+      "longitude": 25.073746,
+      "radiusMeters": 141,
+      "address": "1 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 75 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-75-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 75 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-75-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 76",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 76 notes\"}}]}",
+      "latitude": 35.332107,
+      "longitude": 25.214747,
+      "radiusMeters": 311,
+      "address": "1 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 76 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-76-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 76 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-76-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 77",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 77 notes\"}}]}",
+      "latitude": 52.500115,
+      "longitude": 13.354656,
+      "radiusMeters": 264,
+      "address": "17 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Berlin Discovery 77 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-77-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 77 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-77-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 78",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 78 notes\"}}]}",
+      "latitude": 40.502834,
+      "longitude": -3.670583,
+      "radiusMeters": 264,
+      "address": "39 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 78 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-78-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 78 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-78-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 79",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 79 notes\"}}]}",
+      "latitude": 40.697501,
+      "longitude": 22.918164,
+      "radiusMeters": 226,
+      "address": "84 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 79 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-79-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 79 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-79-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 80",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 80 notes\"}}]}",
+      "latitude": 40.847072,
+      "longitude": 14.180886,
+      "radiusMeters": 289,
+      "address": "167 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 80 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-80-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 80 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-80-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 81",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 81 notes\"}}]}",
+      "latitude": 40.546331,
+      "longitude": 22.983026,
+      "radiusMeters": 80,
+      "address": "134 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 81 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-81-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 81 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-81-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 82",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 82 notes\"}}]}",
+      "latitude": 52.511021,
+      "longitude": 13.435727,
+      "radiusMeters": 229,
+      "address": "156 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 82 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-82-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 82 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-82-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 83",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 83 notes\"}}]}",
+      "latitude": 40.627682,
+      "longitude": 22.918556,
+      "radiusMeters": 176,
+      "address": "39 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 83 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-83-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 83 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-83-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 84",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 84 notes\"}}]}",
+      "latitude": 47.070435,
+      "longitude": 15.460044,
+      "radiusMeters": 193,
+      "address": "18 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 84 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-84-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 84 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-84-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 85",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 85 notes\"}}]}",
+      "latitude": 40.816681,
+      "longitude": 14.202542,
+      "radiusMeters": 430,
+      "address": "149 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 85 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-85-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 85 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-85-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 86",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 86 notes\"}}]}",
+      "latitude": 47.768419,
+      "longitude": 13.047237,
+      "radiusMeters": 358,
+      "address": "25 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 86 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-86-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 86 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-86-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 87",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 87 notes\"}}]}",
+      "latitude": 35.39188,
+      "longitude": 25.154459,
+      "radiusMeters": 126,
+      "address": "23 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 87 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-87-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 87 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-87-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 88",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 88 notes\"}}]}",
+      "latitude": 48.127483,
+      "longitude": 11.644115,
+      "radiusMeters": 61,
+      "address": "82 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Munich Discovery 88 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-88-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 88 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-88-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 89",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 89 notes\"}}]}",
+      "latitude": 43.670437,
+      "longitude": 11.186306,
+      "radiusMeters": 364,
+      "address": "86 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Florence Discovery 89 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-89-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 89 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-89-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 90",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 90 notes\"}}]}",
+      "latitude": 41.871898,
+      "longitude": 12.57174,
+      "radiusMeters": 122,
+      "address": "156 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Rome Discovery 90 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-90-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 90 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-90-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 91",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 91 notes\"}}]}",
+      "latitude": 35.359559,
+      "longitude": 25.055662,
+      "radiusMeters": 135,
+      "address": "70 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 91 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-91-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 91 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-91-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 92",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 92 notes\"}}]}",
+      "latitude": 47.842364,
+      "longitude": 13.068169,
+      "radiusMeters": 276,
+      "address": "163 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 92 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-92-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 92 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-92-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 93",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 93 notes\"}}]}",
+      "latitude": 47.751493,
+      "longitude": 12.961179,
+      "radiusMeters": 378,
+      "address": "193 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 93 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-93-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 93 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-93-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 94",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 94 notes\"}}]}",
+      "latitude": 40.738333,
+      "longitude": 22.879599,
+      "radiusMeters": 74,
+      "address": "55 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 94 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-94-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 94 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-94-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 95",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 95 notes\"}}]}",
+      "latitude": 35.399273,
+      "longitude": 25.182215,
+      "radiusMeters": 380,
+      "address": "57 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 95 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-95-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 95 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-95-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 96",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 96 notes\"}}]}",
+      "latitude": 52.465476,
+      "longitude": 13.319511,
+      "radiusMeters": 170,
+      "address": "145 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Berlin Discovery 96 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-96-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 96 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-96-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 97",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 97 notes\"}}]}",
+      "latitude": 35.330017,
+      "longitude": 25.163025,
+      "radiusMeters": 134,
+      "address": "42 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 97 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-97-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 97 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-97-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 98",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 98 notes\"}}]}",
+      "latitude": 41.892922,
+      "longitude": 12.527478,
+      "radiusMeters": 82,
+      "address": "108 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Rome Discovery 98 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-98-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 98 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-98-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 99",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 99 notes\"}}]}",
+      "latitude": 40.716763,
+      "longitude": 22.927787,
+      "radiusMeters": 102,
+      "address": "188 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 99 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-99-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 99 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-99-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 100",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 100 notes\"}}]}",
+      "latitude": 48.146649,
+      "longitude": 11.618539,
+      "radiusMeters": 114,
+      "address": "60 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 100 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-100-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 100 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-100-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 101",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 101 notes\"}}]}",
+      "latitude": 47.14233,
+      "longitude": 15.516546,
+      "radiusMeters": 394,
+      "address": "122 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 101 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-101-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 101 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-101-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 102",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 102 notes\"}}]}",
+      "latitude": 40.327987,
+      "longitude": -3.791428,
+      "radiusMeters": 162,
+      "address": "127 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 102 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-102-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 102 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-102-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 103",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 103 notes\"}}]}",
+      "latitude": 53.489675,
+      "longitude": 9.966736,
+      "radiusMeters": 436,
+      "address": "148 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 103 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-103-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 103 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-103-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 104",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 104 notes\"}}]}",
+      "latitude": 35.353547,
+      "longitude": 25.078668,
+      "radiusMeters": 408,
+      "address": "14 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 104 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-104-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 104 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-104-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 105",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 105 notes\"}}]}",
+      "latitude": 35.432156,
+      "longitude": 25.162586,
+      "radiusMeters": 341,
+      "address": "107 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 105 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-105-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 105 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-105-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 106",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 106 notes\"}}]}",
+      "latitude": 40.456938,
+      "longitude": -3.712691,
+      "radiusMeters": 275,
+      "address": "1 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 106 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-106-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 106 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-106-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 107",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 107 notes\"}}]}",
+      "latitude": 37.38767,
+      "longitude": -5.983623,
+      "radiusMeters": 116,
+      "address": "86 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Seville Discovery 107 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-107-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 107 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-107-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 108",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 108 notes\"}}]}",
+      "latitude": 47.168113,
+      "longitude": 15.417282,
+      "radiusMeters": 53,
+      "address": "100 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 108 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-108-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 108 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-108-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 109",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 109 notes\"}}]}",
+      "latitude": 47.05911,
+      "longitude": 15.354586,
+      "radiusMeters": 396,
+      "address": "92 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 109 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-109-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 109 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-109-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 110",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 110 notes\"}}]}",
+      "latitude": 47.026497,
+      "longitude": 15.477925,
+      "radiusMeters": 431,
+      "address": "103 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 110 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-110-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 110 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-110-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 111",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 111 notes\"}}]}",
+      "latitude": 52.599964,
+      "longitude": 13.461614,
+      "radiusMeters": 204,
+      "address": "140 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Berlin Discovery 111 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-111-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 111 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-111-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 112",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 112 notes\"}}]}",
+      "latitude": 43.730172,
+      "longitude": 11.168701,
+      "radiusMeters": 258,
+      "address": "59 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Florence Discovery 112 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-112-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 112 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-112-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 113",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 113 notes\"}}]}",
+      "latitude": 43.701604,
+      "longitude": 11.187358,
+      "radiusMeters": 181,
+      "address": "125 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 113 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-113-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 113 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-113-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 114",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 114 notes\"}}]}",
+      "latitude": 47.036529,
+      "longitude": 15.531178,
+      "radiusMeters": 106,
+      "address": "172 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Graz Discovery 114 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-114-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 114 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-114-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 115",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 115 notes\"}}]}",
+      "latitude": 52.605136,
+      "longitude": 13.349359,
+      "radiusMeters": 123,
+      "address": "108 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 115 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-115-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 115 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-115-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 116",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 116 notes\"}}]}",
+      "latitude": 53.526845,
+      "longitude": 9.962628,
+      "radiusMeters": 365,
+      "address": "148 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 116 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-116-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 116 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-116-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 117",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 117 notes\"}}]}",
+      "latitude": 40.840274,
+      "longitude": 14.287993,
+      "radiusMeters": 64,
+      "address": "168 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 117 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-117-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 117 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-117-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 118",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 118 notes\"}}]}",
+      "latitude": 35.337581,
+      "longitude": 25.125742,
+      "radiusMeters": 133,
+      "address": "123 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 118 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-118-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 118 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-118-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 119",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 119 notes\"}}]}",
+      "latitude": 41.328341,
+      "longitude": 2.24116,
+      "radiusMeters": 248,
+      "address": "30 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 119 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-119-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 119 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-119-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 120",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 120 notes\"}}]}",
+      "latitude": 37.955627,
+      "longitude": 23.631791,
+      "radiusMeters": 193,
+      "address": "151 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 120 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-120-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 120 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-120-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 121",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 121 notes\"}}]}",
+      "latitude": 35.260098,
+      "longitude": 25.12213,
+      "radiusMeters": 293,
+      "address": "109 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 121 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-121-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 121 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-121-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 122",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 122 notes\"}}]}",
+      "latitude": 47.138386,
+      "longitude": 15.492725,
+      "radiusMeters": 428,
+      "address": "72 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Graz Discovery 122 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-122-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 122 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-122-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 123",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 123 notes\"}}]}",
+      "latitude": 40.329383,
+      "longitude": -3.800173,
+      "radiusMeters": 294,
+      "address": "168 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 123 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-123-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 123 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-123-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 124",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 124 notes\"}}]}",
+      "latitude": 40.620318,
+      "longitude": 23.01145,
+      "radiusMeters": 416,
+      "address": "164 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 124 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-124-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 124 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-124-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 125",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 125 notes\"}}]}",
+      "latitude": 52.591364,
+      "longitude": 13.32289,
+      "radiusMeters": 173,
+      "address": "8 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 125 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-125-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 125 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-125-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 126",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 126 notes\"}}]}",
+      "latitude": 48.207817,
+      "longitude": 11.510834,
+      "radiusMeters": 92,
+      "address": "103 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 126 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-126-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 126 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-126-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 127",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 127 notes\"}}]}",
+      "latitude": 37.437646,
+      "longitude": -6.008274,
+      "radiusMeters": 426,
+      "address": "51 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 127 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-127-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 127 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-127-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 128",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 128 notes\"}}]}",
+      "latitude": 43.832316,
+      "longitude": 11.170735,
+      "radiusMeters": 381,
+      "address": "108 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Florence Discovery 128 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-128-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 128 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-128-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 129",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 129 notes\"}}]}",
+      "latitude": 41.384816,
+      "longitude": 2.132918,
+      "radiusMeters": 448,
+      "address": "194 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 129 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-129-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 129 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-129-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 130",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 130 notes\"}}]}",
+      "latitude": 41.442913,
+      "longitude": 2.182225,
+      "radiusMeters": 391,
+      "address": "190 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 130 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-130-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 130 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-130-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 131",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 131 notes\"}}]}",
+      "latitude": 35.263787,
+      "longitude": 25.100846,
+      "radiusMeters": 70,
+      "address": "167 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 131 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-131-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 131 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-131-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 132",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 132 notes\"}}]}",
+      "latitude": 41.418366,
+      "longitude": 2.214395,
+      "radiusMeters": 391,
+      "address": "49 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 132 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-132-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 132 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-132-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 133",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 133 notes\"}}]}",
+      "latitude": 47.061407,
+      "longitude": 15.476068,
+      "radiusMeters": 257,
+      "address": "136 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Graz Discovery 133 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-133-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 133 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-133-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 134",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 134 notes\"}}]}",
+      "latitude": 52.568216,
+      "longitude": 13.332259,
+      "radiusMeters": 144,
+      "address": "198 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 134 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-134-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 134 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-134-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 135",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 135 notes\"}}]}",
+      "latitude": 47.776772,
+      "longitude": 13.017357,
+      "radiusMeters": 335,
+      "address": "155 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 135 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-135-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 135 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-135-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 136",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 136 notes\"}}]}",
+      "latitude": 47.170053,
+      "longitude": 15.532892,
+      "radiusMeters": 382,
+      "address": "76 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Graz Discovery 136 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-136-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 136 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-136-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 137",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 137 notes\"}}]}",
+      "latitude": 41.929829,
+      "longitude": 12.454584,
+      "radiusMeters": 291,
+      "address": "3 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Rome Discovery 137 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-137-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 137 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-137-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 138",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 138 notes\"}}]}",
+      "latitude": 48.160743,
+      "longitude": 11.678261,
+      "radiusMeters": 79,
+      "address": "38 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Munich Discovery 138 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-138-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 138 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-138-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 139",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 139 notes\"}}]}",
+      "latitude": 48.246231,
+      "longitude": 16.292675,
+      "radiusMeters": 84,
+      "address": "7 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Vienna Discovery 139 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-139-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 139 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-139-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 140",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 140 notes\"}}]}",
+      "latitude": 52.434053,
+      "longitude": 13.463642,
+      "radiusMeters": 245,
+      "address": "67 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Berlin Discovery 140 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-140-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 140 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-140-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 141",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 141 notes\"}}]}",
+      "latitude": 37.91625,
+      "longitude": 23.705224,
+      "radiusMeters": 153,
+      "address": "152 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 141 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-141-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 141 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-141-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 142",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 142 notes\"}}]}",
+      "latitude": 47.86307,
+      "longitude": 12.97727,
+      "radiusMeters": 148,
+      "address": "128 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 142 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-142-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 142 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-142-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 143",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 143 notes\"}}]}",
+      "latitude": 40.556465,
+      "longitude": 22.918873,
+      "radiusMeters": 81,
+      "address": "39 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 143 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-143-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 143 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-143-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 144",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 144 notes\"}}]}",
+      "latitude": 35.28277,
+      "longitude": 25.231532,
+      "radiusMeters": 124,
+      "address": "16 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 144 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-144-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 144 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-144-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 145",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 145 notes\"}}]}",
+      "latitude": 37.290648,
+      "longitude": -5.998319,
+      "radiusMeters": 333,
+      "address": "120 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 145 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-145-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 145 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-145-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 146",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 146 notes\"}}]}",
+      "latitude": 40.578084,
+      "longitude": 22.977899,
+      "radiusMeters": 312,
+      "address": "88 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 146 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-146-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 146 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-146-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 147",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 147 notes\"}}]}",
+      "latitude": 40.382205,
+      "longitude": -3.619302,
+      "radiusMeters": 434,
+      "address": "70 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Madrid Discovery 147 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-147-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 147 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-147-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 148",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 148 notes\"}}]}",
+      "latitude": 38.041446,
+      "longitude": 23.711099,
+      "radiusMeters": 299,
+      "address": "82 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 148 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-148-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 148 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-148-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 149",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 149 notes\"}}]}",
+      "latitude": 48.06337,
+      "longitude": 11.547059,
+      "radiusMeters": 216,
+      "address": "139 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 149 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-149-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 149 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-149-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 150",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 150 notes\"}}]}",
+      "latitude": 43.740127,
+      "longitude": 11.253923,
+      "radiusMeters": 183,
+      "address": "95 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 150 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-150-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 150 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-150-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Barcelona Discovery 151",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Barcelona Discovery 151 notes\"}}]}",
+      "latitude": 41.446901,
+      "longitude": 2.222972,
+      "radiusMeters": 398,
+      "address": "59 Barcelona Way",
+      "city": "Barcelona",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Barcelona Discovery 151 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/barcelona-151-0/900/600"
+        },
+        {
+          "description": "Barcelona Discovery 151 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/barcelona-151-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 152",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 152 notes\"}}]}",
+      "latitude": 40.768618,
+      "longitude": 14.298366,
+      "radiusMeters": 211,
+      "address": "141 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 152 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-152-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 152 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-152-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 153",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 153 notes\"}}]}",
+      "latitude": 52.564025,
+      "longitude": 13.439874,
+      "radiusMeters": 160,
+      "address": "113 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 153 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-153-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 153 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-153-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 154",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 154 notes\"}}]}",
+      "latitude": 37.473109,
+      "longitude": -6.074639,
+      "radiusMeters": 382,
+      "address": "81 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 154 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-154-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 154 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-154-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 155",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 155 notes\"}}]}",
+      "latitude": 47.857862,
+      "longitude": 13.072407,
+      "radiusMeters": 265,
+      "address": "58 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 155 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-155-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 155 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-155-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 156",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 156 notes\"}}]}",
+      "latitude": 40.79855,
+      "longitude": 14.266593,
+      "radiusMeters": 223,
+      "address": "169 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 156 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-156-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 156 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-156-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 157",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 157 notes\"}}]}",
+      "latitude": 43.787439,
+      "longitude": 11.325006,
+      "radiusMeters": 72,
+      "address": "186 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 157 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-157-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 157 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-157-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 158",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 158 notes\"}}]}",
+      "latitude": 48.109083,
+      "longitude": 11.495572,
+      "radiusMeters": 204,
+      "address": "159 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Munich Discovery 158 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-158-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 158 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-158-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 159",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 159 notes\"}}]}",
+      "latitude": 48.164755,
+      "longitude": 16.362602,
+      "radiusMeters": 372,
+      "address": "132 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 159 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-159-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 159 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-159-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 160",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 160 notes\"}}]}",
+      "latitude": 47.852173,
+      "longitude": 13.057011,
+      "radiusMeters": 87,
+      "address": "148 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 160 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-160-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 160 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-160-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 161",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 161 notes\"}}]}",
+      "latitude": 40.775964,
+      "longitude": 14.199646,
+      "radiusMeters": 356,
+      "address": "119 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 161 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-161-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 161 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-161-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Seville Discovery 162",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Seville Discovery 162 notes\"}}]}",
+      "latitude": 37.436986,
+      "longitude": -6.00375,
+      "radiusMeters": 316,
+      "address": "140 Seville Way",
+      "city": "Seville",
+      "country": "Spain",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Seville Discovery 162 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/seville-162-0/900/600"
+        },
+        {
+          "description": "Seville Discovery 162 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/seville-162-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 163",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 163 notes\"}}]}",
+      "latitude": 53.593616,
+      "longitude": 9.937874,
+      "radiusMeters": 301,
+      "address": "169 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 163 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-163-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 163 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-163-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Hamburg Discovery 164",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Hamburg Discovery 164 notes\"}}]}",
+      "latitude": 53.532455,
+      "longitude": 9.924218,
+      "radiusMeters": 231,
+      "address": "0 Hamburg Way",
+      "city": "Hamburg",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Hamburg Discovery 164 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/hamburg-164-0/900/600"
+        },
+        {
+          "description": "Hamburg Discovery 164 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/hamburg-164-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 165",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 165 notes\"}}]}",
+      "latitude": 48.200399,
+      "longitude": 11.614698,
+      "radiusMeters": 166,
+      "address": "88 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Munich Discovery 165 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-165-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 165 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-165-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 166",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 166 notes\"}}]}",
+      "latitude": 48.262376,
+      "longitude": 16.413373,
+      "radiusMeters": 312,
+      "address": "137 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 166 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-166-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 166 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-166-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 167",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 167 notes\"}}]}",
+      "latitude": 41.822489,
+      "longitude": 12.440435,
+      "radiusMeters": 295,
+      "address": "156 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Rome Discovery 167 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-167-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 167 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-167-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 168",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 168 notes\"}}]}",
+      "latitude": 52.431888,
+      "longitude": 13.321313,
+      "radiusMeters": 415,
+      "address": "199 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Berlin Discovery 168 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-168-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 168 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-168-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 169",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 169 notes\"}}]}",
+      "latitude": 35.42091,
+      "longitude": 25.086629,
+      "radiusMeters": 393,
+      "address": "160 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 169 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-169-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 169 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-169-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 170",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 170 notes\"}}]}",
+      "latitude": 40.513101,
+      "longitude": -3.775857,
+      "radiusMeters": 289,
+      "address": "171 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Madrid Discovery 170 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-170-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 170 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-170-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 171",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 171 notes\"}}]}",
+      "latitude": 35.381087,
+      "longitude": 25.193594,
+      "radiusMeters": 121,
+      "address": "127 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 171 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-171-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 171 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-171-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 172",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 172 notes\"}}]}",
+      "latitude": 35.389651,
+      "longitude": 25.165364,
+      "radiusMeters": 273,
+      "address": "120 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 172 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-172-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 172 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-172-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 173",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 173 notes\"}}]}",
+      "latitude": 40.358549,
+      "longitude": -3.655614,
+      "radiusMeters": 245,
+      "address": "159 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Madrid Discovery 173 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-173-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 173 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-173-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 174",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 174 notes\"}}]}",
+      "latitude": 40.647345,
+      "longitude": 22.911614,
+      "radiusMeters": 177,
+      "address": "145 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 174 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-174-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 174 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-174-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 175",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 175 notes\"}}]}",
+      "latitude": 38.070734,
+      "longitude": 23.813791,
+      "radiusMeters": 81,
+      "address": "79 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 175 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-175-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 175 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-175-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 176",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 176 notes\"}}]}",
+      "latitude": 47.835893,
+      "longitude": 12.976069,
+      "radiusMeters": 280,
+      "address": "182 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 176 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-176-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 176 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-176-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 177",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 177 notes\"}}]}",
+      "latitude": 40.929495,
+      "longitude": 14.293323,
+      "radiusMeters": 180,
+      "address": "105 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Naples Discovery 177 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-177-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 177 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-177-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 178",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 178 notes\"}}]}",
+      "latitude": 48.126953,
+      "longitude": 16.281291,
+      "radiusMeters": 360,
+      "address": "35 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 178 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-178-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 178 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-178-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 179",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 179 notes\"}}]}",
+      "latitude": 43.722594,
+      "longitude": 11.288221,
+      "radiusMeters": 280,
+      "address": "149 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 179 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-179-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 179 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-179-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Salzburg Discovery 180",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Salzburg Discovery 180 notes\"}}]}",
+      "latitude": 47.807191,
+      "longitude": 12.969582,
+      "radiusMeters": 396,
+      "address": "87 Salzburg Way",
+      "city": "Salzburg",
+      "country": "Austria",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Salzburg Discovery 180 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/salzburg-180-0/900/600"
+        },
+        {
+          "description": "Salzburg Discovery 180 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/salzburg-180-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 181",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 181 notes\"}}]}",
+      "latitude": 52.530381,
+      "longitude": 13.404146,
+      "radiusMeters": 341,
+      "address": "35 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 181 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-181-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 181 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-181-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 182",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 182 notes\"}}]}",
+      "latitude": 48.188488,
+      "longitude": 16.332435,
+      "radiusMeters": 331,
+      "address": "42 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 182 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-182-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 182 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-182-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Madrid Discovery 183",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Madrid Discovery 183 notes\"}}]}",
+      "latitude": 40.419857,
+      "longitude": -3.627378,
+      "radiusMeters": 139,
+      "address": "41 Madrid Way",
+      "city": "Madrid",
+      "country": "Spain",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Madrid Discovery 183 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/madrid-183-0/900/600"
+        },
+        {
+          "description": "Madrid Discovery 183 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/madrid-183-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 184",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 184 notes\"}}]}",
+      "latitude": 37.95426,
+      "longitude": 23.822561,
+      "radiusMeters": 378,
+      "address": "181 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Athens Discovery 184 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-184-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 184 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-184-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 185",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 185 notes\"}}]}",
+      "latitude": 41.96142,
+      "longitude": 12.442121,
+      "radiusMeters": 266,
+      "address": "23 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Rome Discovery 185 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-185-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 185 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-185-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 186",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 186 notes\"}}]}",
+      "latitude": 43.826162,
+      "longitude": 11.248456,
+      "radiusMeters": 55,
+      "address": "71 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 186 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-186-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 186 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-186-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 187",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 187 notes\"}}]}",
+      "latitude": 41.995402,
+      "longitude": 12.567007,
+      "radiusMeters": 215,
+      "address": "55 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Rome Discovery 187 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-187-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 187 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-187-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Naples Discovery 188",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Naples Discovery 188 notes\"}}]}",
+      "latitude": 40.889676,
+      "longitude": 14.265438,
+      "radiusMeters": 257,
+      "address": "157 Naples Way",
+      "city": "Naples",
+      "country": "Italy",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Naples Discovery 188 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/naples-188-0/900/600"
+        },
+        {
+          "description": "Naples Discovery 188 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/naples-188-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Athens Discovery 189",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Athens Discovery 189 notes\"}}]}",
+      "latitude": 37.923539,
+      "longitude": 23.757544,
+      "radiusMeters": 204,
+      "address": "152 Athens Way",
+      "city": "Athens",
+      "country": "Greece",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Athens Discovery 189 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/athens-189-0/900/600"
+        },
+        {
+          "description": "Athens Discovery 189 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/athens-189-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Graz Discovery 190",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Graz Discovery 190 notes\"}}]}",
+      "latitude": 47.01227,
+      "longitude": 15.47609,
+      "radiusMeters": 387,
+      "address": "181 Graz Way",
+      "city": "Graz",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Graz Discovery 190 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/graz-190-0/900/600"
+        },
+        {
+          "description": "Graz Discovery 190 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/graz-190-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 191",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 191 notes\"}}]}",
+      "latitude": 52.444485,
+      "longitude": 13.44779,
+      "radiusMeters": 127,
+      "address": "181 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Berlin Discovery 191 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-191-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 191 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-191-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 192",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 192 notes\"}}]}",
+      "latitude": 41.934949,
+      "longitude": 12.577802,
+      "radiusMeters": 83,
+      "address": "184 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Rome Discovery 192 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-192-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 192 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-192-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Munich Discovery 193",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Munich Discovery 193 notes\"}}]}",
+      "latitude": 48.043368,
+      "longitude": 11.66404,
+      "radiusMeters": 91,
+      "address": "43 Munich Way",
+      "city": "Munich",
+      "country": "Germany",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Munich Discovery 193 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/munich-193-0/900/600"
+        },
+        {
+          "description": "Munich Discovery 193 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/munich-193-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Vienna Discovery 194",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Vienna Discovery 194 notes\"}}]}",
+      "latitude": 48.124469,
+      "longitude": 16.450069,
+      "radiusMeters": 386,
+      "address": "48 Vienna Way",
+      "city": "Vienna",
+      "country": "Austria",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Vienna Discovery 194 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/vienna-194-0/900/600"
+        },
+        {
+          "description": "Vienna Discovery 194 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/vienna-194-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Berlin Discovery 195",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Berlin Discovery 195 notes\"}}]}",
+      "latitude": 52.618563,
+      "longitude": 13.382288,
+      "radiusMeters": 427,
+      "address": "193 Berlin Way",
+      "city": "Berlin",
+      "country": "Germany",
+      "visited": true,
+      "photos": [
+        {
+          "description": "Berlin Discovery 195 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/berlin-195-0/900/600"
+        },
+        {
+          "description": "Berlin Discovery 195 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/berlin-195-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Florence Discovery 196",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Florence Discovery 196 notes\"}}]}",
+      "latitude": 43.672558,
+      "longitude": 11.256913,
+      "radiusMeters": 426,
+      "address": "141 Florence Way",
+      "city": "Florence",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Florence Discovery 196 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/florence-196-0/900/600"
+        },
+        {
+          "description": "Florence Discovery 196 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/florence-196-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 197",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 197 notes\"}}]}",
+      "latitude": 40.587575,
+      "longitude": 23.000174,
+      "radiusMeters": 149,
+      "address": "11 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 197 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-197-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 197 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-197-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Thessaloniki Discovery 198",
+      "type": "MUSEUM",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Thessaloniki Discovery 198 notes\"}}]}",
+      "latitude": 40.61306,
+      "longitude": 22.884379,
+      "radiusMeters": 94,
+      "address": "160 Thessaloniki Way",
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Thessaloniki Discovery 198 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-198-0/900/600"
+        },
+        {
+          "description": "Thessaloniki Discovery 198 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/thessaloniki-198-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Rome Discovery 199",
+      "type": "SITE",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Rome Discovery 199 notes\"}}]}",
+      "latitude": 41.952123,
+      "longitude": 12.516684,
+      "radiusMeters": 396,
+      "address": "63 Rome Way",
+      "city": "Rome",
+      "country": "Italy",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Rome Discovery 199 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/rome-199-0/900/600"
+        },
+        {
+          "description": "Rome Discovery 199 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/rome-199-1/900/600"
+        }
+      ]
+    },
+    {
+      "title": "Heraklion Discovery 200",
+      "type": "POI",
+      "description": "{\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Heraklion Discovery 200 notes\"}}]}",
+      "latitude": 35.417858,
+      "longitude": 25.054851,
+      "radiusMeters": 243,
+      "address": "150 Heraklion Way",
+      "city": "Heraklion",
+      "country": "Greece",
+      "visited": false,
+      "photos": [
+        {
+          "description": "Heraklion Discovery 200 Photo 1",
+          "imageUrl": "https://picsum.photos/seed/heraklion-200-0/900/600"
+        },
+        {
+          "description": "Heraklion Discovery 200 Photo 2",
+          "imageUrl": "https://picsum.photos/seed/heraklion-200-1/900/600"
+        }
+      ]
+    }
+  ]
+}

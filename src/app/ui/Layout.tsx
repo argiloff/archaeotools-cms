@@ -1,11 +1,14 @@
+import { useState } from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import './layout.css';
 import { ProjectSelector } from './ProjectSelector';
 import { useAuth } from '../providers/AuthProvider';
+import { ImportDatasetModal } from '../../components/import/ImportDatasetModal';
 
 export function Layout() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const [showImport, setShowImport] = useState(false);
 
   const handleLogout = async () => {
     await logout();
@@ -16,7 +19,12 @@ export function Layout() {
     <div className="app-shell">
       <aside className="app-sidebar">
         <div className="sidebar-header">
-          <div className="brand">archaeoTools ACC</div>
+          <div className="brand-row">
+            <div className="brand">archaeoTools ACC</div>
+            <button className="gear-btn" onClick={() => setShowImport(true)} aria-label="Import / Einstellungen">
+              ⚙️
+            </button>
+          </div>
           <ProjectSelector />
         </div>
         <nav className="sidebar-nav">
@@ -51,6 +59,7 @@ export function Layout() {
       <main className="app-main">
         <Outlet />
       </main>
+      <ImportDatasetModal open={showImport} onClose={() => setShowImport(false)} />
     </div>
   );
 }

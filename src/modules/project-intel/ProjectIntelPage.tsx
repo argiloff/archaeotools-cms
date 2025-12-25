@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
 import { listPhotos } from '../../api/photos.service';
 import { listOsint } from '../../api/osint.service';
 import { listPlaces } from '../../api/places.service';
@@ -7,6 +8,7 @@ import '../../app/ui/layout.css';
 import { MapPreview } from '../../components/map/MapPreview';
 
 export function ProjectIntelPage() {
+  const navigate = useNavigate();
   const { projectId, project } = useCurrentProject();
 
   const photosQuery = useQuery({
@@ -60,6 +62,7 @@ export function ProjectIntelPage() {
     .slice(0, 8);
 
   const geoSamples = photos.filter((p) => p.lat != null && p.lng != null);
+  const topPlaces = places.slice(0, 8);
 
   return (
     <div className="page">
@@ -90,8 +93,39 @@ export function ProjectIntelPage() {
         <Panel title="OSINT Status" loading={osintQuery.isLoading} error={osintQuery.isError}>
           <MiniList items={osint.map((o) => `${o.title} (${o.status})`)} empty="Keine OSINT Items" />
         </Panel>
-        <Panel title="Places" loading={placesQuery.isLoading} error={placesQuery.isError}>
-          <MiniList items={places.map((pl) => pl.title ?? pl.type ?? 'Place')} empty="Keine Places" />
+        <Panel title="Places (Top 8)" loading={placesQuery.isLoading} error={placesQuery.isError}>
+          <div style={{ display: 'grid', gap: 8, maxHeight: 220, overflowY: 'auto', paddingRight: 4 }}>
+            {topPlaces.length === 0 ? (
+              <div style={{ color: '#8fa0bf', fontSize: 13 }}>Keine Places</div>
+            ) : (
+              topPlaces.map((pl, idx) => (
+                <div
+                  key={`${pl.id}-${idx}`}
+                  style={{
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: 10,
+                    padding: 10,
+                    fontSize: 13,
+                    background: 'rgba(255,255,255,0.02)',
+                  }}
+                >
+                  <div style={{ fontWeight: 600 }}>{pl.title ?? pl.type ?? 'Place'}</div>
+                  <div style={{ color: '#8fa0bf' }}>
+                    {[pl.city, pl.country].filter(Boolean).join(', ') || 'Ort unbekannt'}
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+          {places.length > topPlaces.length && (
+            <button
+              className="btn"
+              style={{ marginTop: 10, padding: '8px 12px', fontSize: 13 }}
+              onClick={() => navigate('/media')}
+            >
+              Alle Places öffnen
+            </button>
+          )}
         </Panel>
         <Panel title="Timeline (neueste zuerst)">
           <Timeline items={timelineItems} empty="Keine zeitlichen Einträge" />

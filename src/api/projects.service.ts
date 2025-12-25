@@ -15,3 +15,7 @@ export async function createProject(payload: Partial<Project>) {
   const { data } = await httpClient.post<Project>('/projects', payload);
   return data;
 }
+
+export async function deleteProject(id: string) {
+  await httpClient.delete(`/projects/${id}`);
+}
