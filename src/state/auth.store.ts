@@ -18,11 +18,32 @@ type AuthState = {
 };
 
 export const authStore = create<AuthState>((set) => ({
-  accessToken: null,
-  refreshToken: null,
-  user: null,
+  accessToken: sessionStorage.getItem('acc') || null,
+  refreshToken: sessionStorage.getItem('ref') || null,
+  user: (() => {
+    const raw = sessionStorage.getItem('usr');
+    return raw ? (JSON.parse(raw) as SessionUser) : null;
+  })(),
   setTokens: ({ accessToken, refreshToken }) =>
-    set(() => ({ accessToken, refreshToken })),
-  clear: () => set(() => ({ accessToken: null, refreshToken: null, user: null })),
-  setUser: (user) => set(() => ({ user })),
+    set(() => {
+      sessionStorage.setItem('acc', accessToken);
+      sessionStorage.setItem('ref', refreshToken);
+      return { accessToken, refreshToken };
+    }),
+  clear: () =>
+    set(() => {
+      sessionStorage.removeItem('acc');
+      sessionStorage.removeItem('ref');
+      sessionStorage.removeItem('usr');
+      return { accessToken: null, refreshToken: null, user: null };
+    }),
+  setUser: (user) =>
+    set(() => {
+      if (user) {
+        sessionStorage.setItem('usr', JSON.stringify(user));
+      } else {
+        sessionStorage.removeItem('usr');
+      }
+      return { user };
+    }),
 }));
