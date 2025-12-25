@@ -16,6 +16,11 @@ export async function createProject(payload: Partial<Project>) {
   return data;
 }
 
+export async function updateProject(id: string, payload: Partial<Project>) {
+  const { data } = await httpClient.patch<Project>(`/projects/${id}`, payload);
+  return data;
+}
+
 export async function deleteProject(id: string) {
   await httpClient.delete(`/projects/${id}`);
 }
