@@ -1,3 +1,23 @@
+.pill-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: #cfd7e6;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.pill-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.pill-btn.active {
+  background: linear-gradient(135deg, rgba(79, 107, 255, 0.3), rgba(109, 227, 196, 0.3));
+  color: #f5f7ff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
 .place-actions {
   display: flex;
   gap: 8px;

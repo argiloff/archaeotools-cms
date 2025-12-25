@@ -338,7 +338,18 @@ function Timeline({
     return <div style={{ color: '#8fa0bf', fontSize: 13 }}>{empty}</div>;
   }
   return (
-    <ul style={{ padding: 0, margin: 0, listStyle: 'none', display: 'grid', gap: 10 }}>
+    <ul
+      style={{
+        padding: 0,
+        margin: 0,
+        listStyle: 'none',
+        display: 'grid',
+        gap: 10,
+        maxHeight: 280,
+        overflowY: 'auto',
+        paddingRight: 6,
+      }}
+    >
       {items.map((t, i) => (
         <li
           key={`${t.title}-${t.at}-${i}`}
