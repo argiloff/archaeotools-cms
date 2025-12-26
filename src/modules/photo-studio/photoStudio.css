@@ -235,6 +235,36 @@
   line-height: 1.35;
 }
 
+/* Editor Wrapper */
+.editor-wrapper {
+  flex: 1;
+  min-height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.editor-wrapper .tui-editor-container {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+}
+
+.editor-wrapper .tui-image-editor-container {
+  background: #0f172a !important;
+}
+
+.editor-wrapper .tui-image-editor-header {
+  display: none !important;
+}
+
+.versions-hint {
+  font-size: 0.7rem;
+  color: #475569;
+  margin: 0.5rem 0 0;
+  text-align: center;
+}
+
 /* Responsive */
 @media (max-width: 1100px) {
   .studio-layout {

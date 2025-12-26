@@ -1,15 +1,76 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { useMemo } from 'react';
+import { useRef, useState, useCallback } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { TuiImageEditor, type ImageEditorHandle } from '../../components/editor/ImageEditor';
+import { getPhoto, resolvePhotoUrl, createUploadUrl, updatePhoto } from '../../api/photos.service';
+import { useCurrentProject } from '../../app/hooks/useCurrentProject';
+import { useToast } from '../../components/ui';
 import './photoStudio.css';
 
 export function PhotoStudioPage() {
   const navigate = useNavigate();
   const { photoId } = useParams<{ photoId?: string }>();
+  const { projectId } = useCurrentProject();
+  const { showToast } = useToast();
+  const editorRef = useRef<ImageEditorHandle>(null);
+  const [saving, setSaving] = useState(false);
 
-  const studioTitle = useMemo(
-    () => (photoId ? `Photo Studio – ${photoId.slice(0, 8)}…` : 'Photo Studio – Vorschau'),
-    [photoId],
-  );
+  const photoQuery = useQuery({
+    queryKey: ['photo', projectId, photoId],
+    queryFn: () => getPhoto(projectId!, photoId!),
+    enabled: !!projectId && !!photoId,
+  });
+
+  const photo = photoQuery.data;
+  const photoUrl = photo ? resolvePhotoUrl(photo) : undefined;
+
+  const handleSave = useCallback(async () => {
+    if (!editorRef.current || !projectId || !photoId) return;
+    const dataUrl = editorRef.current.getImageData();
+    if (!dataUrl) {
+      showToast('error', 'Kein Bild zum Speichern');
+      return;
+    }
+
+    setSaving(true);
+    try {
+      const blob = await (await fetch(dataUrl)).blob();
+      const file = new File([blob], `edited-${Date.now()}.png`, { type: 'image/png' });
+
+      const presigned = await createUploadUrl(projectId, {
+        filename: file.name,
+        contentType: file.type,
+        contentLength: file.size,
+      });
+
+      await fetch(presigned.uploadUrl, {
+        method: 'PUT',
+        headers: { 'Content-Type': file.type },
+        body: file,
+      });
+
+      await updatePhoto(projectId, photoId, {
+        url: presigned.fileUrl ?? presigned.key,
+        storageKey: presigned.key,
+      });
+
+      showToast('success', 'Bild gespeichert');
+      photoQuery.refetch();
+    } catch (err: any) {
+      showToast('error', err?.message || 'Speichern fehlgeschlagen');
+    } finally {
+      setSaving(false);
+    }
+  }, [projectId, photoId, showToast, photoQuery]);
+
+  const handleReset = useCallback(() => {
+    editorRef.current?.resetEditor();
+    showToast('info', 'Editor zurückgesetzt');
+  }, [showToast]);
+
+  const studioTitle = photoId
+    ? `Photo Studio – ${photo?.description || photoId.slice(0, 8)}…`
+    : 'Photo Studio';
 
   return (
     <div className="page photo-studio-page">
@@ -17,17 +78,14 @@ export function PhotoStudioPage() {
         <div>
           <p className="eyebrow">Spatial Media · Editing Suite</p>
           <h1>{studioTitle}</h1>
-          <p>
-            Bearbeite Fotos non-destruktiv, verwalte Versionen, Tags und Annotationen direkt im CMS. Diese
-            Ansicht ist der Startpunkt für das kommende Toast-UI-Editor-Setup.
-          </p>
+          <p>Bearbeite Fotos non-destruktiv mit Crop, Filter, Text und mehr.</p>
         </div>
         <div className="studio-header__actions">
           <button className="ghost-btn" onClick={() => navigate(-1)}>
             Zurück
           </button>
-          <button className="btn" disabled>
-            Speichern (bald)
+          <button className="btn" onClick={handleSave} disabled={saving || !photo}>
+            {saving ? 'Speichere…' : 'Speichern'}
           </button>
         </div>
       </div>
@@ -36,21 +94,29 @@ export function PhotoStudioPage() {
         <section className="studio-panel studio-canvas">
           <div className="panel-header">
             <div>
-              <h2>Editor Canvas</h2>
-              <p>Toast UI Image Editor wird hier eingebettet.</p>
+              <h2>Editor</h2>
+              <p>{photoQuery.isLoading ? 'Lade Bild…' : photo?.description || 'Foto bearbeiten'}</p>
             </div>
             <div className="panel-actions">
-              <button className="ghost-link-btn" disabled>
+              <button className="ghost-link-btn" onClick={handleReset} disabled={!photo}>
                 Reset
-              </button>
-              <button className="ghost-link-btn" disabled>
-                Original anzeigen
               </button>
             </div>
           </div>
-          <div className="canvas-placeholder">
-            <span>Canvas Placeholder</span>
-            <small>Importiere später Editor + Annotation Layer</small>
+          <div className="editor-wrapper">
+            {photoUrl ? (
+              <TuiImageEditor ref={editorRef} imageUrl={photoUrl} />
+            ) : (
+              <div className="canvas-placeholder">
+                {photoQuery.isLoading ? (
+                  <span>Lade…</span>
+                ) : photoQuery.isError ? (
+                  <span>Fehler beim Laden</span>
+                ) : (
+                  <span>Kein Foto ausgewählt</span>
+                )}
+              </div>
+            )}
           </div>
         </section>
 
@@ -60,33 +126,30 @@ export function PhotoStudioPage() {
           </div>
           <dl className="metadata-list">
             <div>
-              <dt>Projekt</dt>
-              <dd>–</dd>
-            </div>
-            <div>
-              <dt>Place</dt>
-              <dd>–</dd>
+              <dt>Beschreibung</dt>
+              <dd>{photo?.description || '–'}</dd>
             </div>
             <div>
               <dt>Tags</dt>
               <dd className="metadata-tags">
-                <span className="tag">archiv</span>
-                <span className="tag">idee</span>
+                {(photo?.tags ?? []).length > 0 ? (
+                  photo!.tags!.map((t) => (
+                    <span key={t} className="tag">
+                      {t}
+                    </span>
+                  ))
+                ) : (
+                  <span>–</span>
+                )}
               </dd>
             </div>
             <div>
               <dt>Notizen</dt>
-              <dd className="metadata-notes">
-                Freitext / Rich Notes erscheinen hier. Später editierbar mit Autosave.
-              </dd>
+              <dd className="metadata-notes">{photo?.notes || '–'}</dd>
             </div>
             <div>
-              <dt>EXIF</dt>
-              <dd className="metadata-exif">
-                <span>Lens: –</span>
-                <span>ISO: –</span>
-                <span>Shutter: –</span>
-              </dd>
+              <dt>Erstellt</dt>
+              <dd>{photo?.createdAt ? new Date(photo.createdAt).toLocaleString() : '–'}</dd>
             </div>
           </dl>
         </aside>
@@ -94,23 +157,16 @@ export function PhotoStudioPage() {
         <aside className="studio-panel studio-versions">
           <div className="panel-header">
             <h3>Versionen</h3>
-            <button className="ghost-link-btn" disabled>
-              Neue Version
-            </button>
           </div>
           <ul className="versions-list">
-            {['Original', 'Entwurf A', 'Entwurf B'].map((label, idx) => (
-              <li key={label} className={idx === 0 ? 'active' : ''}>
-                <div>
-                  <strong>{label}</strong>
-                  <p>Noch kein Upload – diese Liste dient als Vorschau.</p>
-                </div>
-                <button className="ghost-link-btn" disabled>
-                  Aktivieren
-                </button>
-              </li>
-            ))}
+            <li className="active">
+              <div>
+                <strong>Aktuell</strong>
+                <p>{photo?.updatedAt ? new Date(photo.updatedAt).toLocaleString() : 'Original'}</p>
+              </div>
+            </li>
           </ul>
+          <p className="versions-hint">Versionsverlauf kommt in Phase 2.</p>
         </aside>
       </div>
     </div>

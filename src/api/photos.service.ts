@@ -104,3 +104,8 @@ export async function createUploadUrl(
   );
   return data;
 }
+
+export async function getPhoto(projectId: string, photoId: string): Promise<Photo> {
+  const { data } = await httpClient.get<Photo>(`/projects/${projectId}/photos/${photoId}`);
+  return data;
+}
