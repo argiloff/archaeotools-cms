@@ -1,4 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   listPhotos,
@@ -20,6 +21,7 @@ import type { Photo } from '../../api/types';
 import './mediaManager.css';
 
 export function MediaManagerPage() {
+  const navigate = useNavigate();
   const { projectId, project } = useCurrentProject();
   const qc = useQueryClient();
   const [placeFilter, setPlaceFilter] = useState<string>('');
@@ -563,6 +565,16 @@ export function MediaManagerPage() {
                       }}
                     >
                       ✏️
+                    </button>
+                    <button
+                      className="icon-btn"
+                      aria-label="Photo Studio öffnen"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate(`/media/studio/${p.id}`);
+                      }}
+                    >
+                      🛠
                     </button>
                     <button
                       className="icon-btn danger"

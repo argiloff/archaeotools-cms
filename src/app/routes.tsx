@@ -4,6 +4,7 @@ import { AuthProvider } from './providers/AuthProvider';
 import { Layout } from './ui/Layout';
 import { ProjectIntelPage } from '../modules/project-intel/ProjectIntelPage';
 import { MediaManagerPage } from '../modules/media-manager/MediaManagerPage';
+import { PhotoStudioPage } from '../modules/photo-studio/PhotoStudioPage';
 import { DataQualityPage } from '../modules/data-quality/DataQualityPage';
 import { OsintPage } from '../modules/osint/OsintPage';
 import { CacheStudioPage } from '../modules/cache-studio/CacheStudioPage';
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <ProjectIntelPage /> },
       { path: 'media', element: <MediaManagerPage /> },
+      { path: 'media/studio/:photoId?', element: <PhotoStudioPage /> },
       { path: 'data-quality', element: <DataQualityPage /> },
       { path: 'osint', element: <OsintPage /> },
       { path: 'cache', element: <CacheStudioPage /> },
