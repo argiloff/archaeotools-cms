@@ -4,6 +4,11 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: ['acc.archaeotools.argiloff.at', 'localhost'],
+    host: '0.0.0.0',
+    port: 5173,
+  },
   preview: {
     allowedHosts: ['acc.archaeotools.argiloff.at', 'localhost'],
     port: 4173,
