@@ -2,14 +2,17 @@ import { useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { listOsint } from '../../api/osint.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
-import '../../app/ui/layout.css';
+import { Input, Button, EmptyState, LoadingSpinner, StatCard } from '../../components/ui';
+import { OsintKanbanColumn } from './components/OsintKanbanColumn';
+import type { OsintItem } from '../../api/types';
+import './osint.css';
 
-const STATUS: Array<'IDEA' | 'IN_PROGRESS' | 'DONE'> = ['IDEA', 'IN_PROGRESS', 'DONE'];
+const STATUS_ORDER: Array<'IDEA' | 'IN_PROGRESS' | 'DONE'> = ['IDEA', 'IN_PROGRESS', 'DONE'];
 
 export function OsintPage() {
   const { projectId, project } = useCurrentProject();
-  const [statusFilter, setStatusFilter] = useState<string>('');
   const [search, setSearch] = useState<string>('');
+  const [, setSelectedItem] = useState<OsintItem | null>(null);
 
   const osintQuery = useQuery({
     queryKey: ['osint', projectId],
@@ -17,142 +20,130 @@ export function OsintPage() {
     enabled: !!projectId,
   });
 
+  const filteredByStatus = useMemo(() => {
+    const osint = osintQuery.data ?? [];
+    const searchLower = search.toLowerCase();
+    
+    const filtered = search
+      ? osint.filter((o) => {
+          const text = `${o.title ?? ''} ${o.summary ?? ''} ${o.source ?? ''}`.toLowerCase();
+          return text.includes(searchLower);
+        })
+      : osint;
+
+    return STATUS_ORDER.reduce(
+      (acc, status) => {
+        acc[status] = filtered.filter((o) => o.status === status);
+        return acc;
+      },
+      {} as Record<string, OsintItem[]>
+    );
+  }, [osintQuery.data, search]);
+
   if (!projectId) {
     return (
       <div className="page">
-        <h1>OSINT Control & Audit</h1>
-        <p>Bitte wähle ein Projekt aus.</p>
+        <EmptyState
+          icon="🛰"
+          title="Kein Projekt ausgewählt"
+          description="Bitte wähle ein Projekt aus, um OSINT Items zu verwalten."
+        />
       </div>
     );
   }
 
-  const osint = osintQuery.data ?? [];
-
-  const filtered = useMemo(() => {
-    return osint.filter((o) => {
-      const matchStatus = statusFilter ? o.status === statusFilter : true;
-      const text = `${o.title ?? ''} ${o.summary ?? ''} ${o.source ?? ''}`.toLowerCase();
-      const matchSearch = search ? text.includes(search.toLowerCase()) : true;
-      return matchStatus && matchSearch;
-    });
-  }, [osint, search, statusFilter]);
-
-  return (
-    <div className="page">
-      <h1>OSINT Control & Audit</h1>
-      <p>{project?.name ?? 'Projekt'} — OSINT Items nach Status.</p>
-
-      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', marginTop: 16 }}>
-        <FilterBlock label="Status">
-          <select
-            className="input select-like"
-            value={statusFilter}
-            onChange={(e) => setStatusFilter(e.target.value)}
-          >
-            <option value="">Alle</option>
-            {STATUS.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
-        </FilterBlock>
-        <FilterBlock label="Suche">
-          <input
-            className="input"
-            placeholder="Titel/Quelle/Notiz…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </FilterBlock>
+  if (osintQuery.isLoading) {
+    return (
+      <div className="page">
+        <LoadingSpinner size="lg" text="Lade OSINT Items..." />
       </div>
-
-      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', marginTop: 16 }}>
-        {STATUS.map((status) => (
-          <Panel key={status} title={status}>
-            <MiniList
-              items={filtered.filter((o) => o.status === status).map((o) => ({
-                title: o.title,
-                source: o.source,
-                summary: o.summary,
-              }))}
-              empty="Keine Items"
-            />
-          </Panel>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function FilterBlock({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <div
-      style={{
-        display: 'grid',
-        gap: 6,
-        padding: 12,
-        background: 'rgba(255,255,255,0.02)',
-        border: '1px solid rgba(255,255,255,0.08)',
-        borderRadius: 12,
-      }}
-    >
-      <span style={{ fontSize: 12, color: '#8fa0bf' }}>{label}</span>
-      {children}
-    </div>
-  );
-}
-
-function Panel({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div
-      style={{
-        background: 'rgba(255,255,255,0.02)',
-        border: '1px solid rgba(255,255,255,0.08)',
-        borderRadius: 14,
-        padding: 14,
-        minHeight: 200,
-      }}
-    >
-      <div style={{ fontWeight: 700, marginBottom: 10 }}>{title}</div>
-      {children}
-    </div>
-  );
-}
-
-function MiniList({
-  items,
-  empty,
-}: {
-  items: { title?: string; source?: string; summary?: string }[];
-  empty: string;
-}) {
-  if (!items.length) {
-    return <div style={{ color: '#8fa0bf', fontSize: 13 }}>{empty}</div>;
+    );
   }
+
+  const totalItems = osintQuery.data?.length ?? 0;
+  const doneItems = filteredByStatus.DONE?.length ?? 0;
+  const inProgressItems = filteredByStatus.IN_PROGRESS?.length ?? 0;
+  const ideaItems = filteredByStatus.IDEA?.length ?? 0;
+
   return (
-    <ul style={{ padding: 0, margin: 0, listStyle: 'none', display: 'grid', gap: 8 }}>
-      {items.map((o, i) => (
-        <li
-          key={`${o.title}-${i}`}
-          style={{
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.06)',
-            borderRadius: 10,
-            padding: 10,
-            display: 'grid',
-            gap: 4,
-          }}
-        >
-          <div style={{ fontWeight: 600 }}>{o.title ?? 'OSINT Item'}</div>
-          {o.source && (
-            <div style={{ fontSize: 12, color: '#8fa0bf' }}>
-              Quelle: <span style={{ color: '#6de3c4' }}>{o.source}</span>
-            </div>
-          )}
-          {o.summary && <div style={{ fontSize: 13, color: '#c5d1e0' }}>{o.summary}</div>}
-        </li>
-      ))}
-    </ul>
+    <div className="page osint-page">
+      <div className="osint-header">
+        <div>
+          <h1>OSINT Control & Audit</h1>
+          <p className="osint-subtitle">
+            {project?.name ?? 'Projekt'} — Open Source Intelligence Management
+          </p>
+        </div>
+        <Button onClick={() => console.log('Create OSINT')} icon="➕">
+          Neues OSINT Item
+        </Button>
+      </div>
+
+      <div className="osint-stats-grid">
+        <StatCard
+          label="Gesamt"
+          value={totalItems}
+          icon="🛰"
+          variant="default"
+        />
+        <StatCard
+          label="Ideen"
+          value={ideaItems}
+          icon="💡"
+          variant="info"
+        />
+        <StatCard
+          label="In Arbeit"
+          value={inProgressItems}
+          icon="⚙️"
+          variant="warning"
+        />
+        <StatCard
+          label="Erledigt"
+          value={doneItems}
+          subtitle={totalItems > 0 ? `${Math.round((doneItems / totalItems) * 100)}%` : '0%'}
+          icon="✓"
+          variant="success"
+        />
+      </div>
+
+      <div className="osint-filters">
+        <Input
+          placeholder="Suche nach Titel, Quelle oder Notizen..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          leftIcon="🔍"
+        />
+        {search && (
+          <Button variant="ghost" size="sm" onClick={() => setSearch('')}>
+            Zurücksetzen
+          </Button>
+        )}
+      </div>
+
+      {totalItems === 0 ? (
+        <EmptyState
+          icon="🛰"
+          title="Noch keine OSINT Items"
+          description="Erstelle dein erstes OSINT Item, um mit der Recherche zu beginnen."
+          action={
+            <Button onClick={() => console.log('Create OSINT')}>
+              Erstes Item erstellen
+            </Button>
+          }
+        />
+      ) : (
+        <div className="osint-kanban">
+          {STATUS_ORDER.map((status) => (
+            <OsintKanbanColumn
+              key={status}
+              status={status}
+              items={filteredByStatus[status] ?? []}
+              onItemClick={setSelectedItem}
+            />
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

@@ -1,0 +1,52 @@
+.project-hero {
+  padding: 32px;
+  border-radius: 20px;
+  background: radial-gradient(circle at 10% 20%, rgba(102, 153, 255, 0.18), transparent 55%),
+    radial-gradient(circle at 90% 15%, rgba(109, 227, 196, 0.18), transparent 45%),
+    rgba(7, 11, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+.project-hero__content {
+  max-width: 800px;
+}
+
+.project-hero__badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.project-hero__title {
+  margin: 0 0 8px;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  background: linear-gradient(135deg, #f5f7ff, #c5d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-hero__location {
+  margin: 0 0 12px;
+  color: #c7d8ff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.project-hero__description {
+  margin: 0 0 24px;
+  color: #a9b7d0;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.project-hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

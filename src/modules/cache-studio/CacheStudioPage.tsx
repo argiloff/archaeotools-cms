@@ -5,7 +5,9 @@ import {
   invalidateProjectCache,
   recomputeProjectSummary,
 } from '../../api/cache.service';
-import '../../app/ui/layout.css';
+import { Card, CardHeader, CardBody, Button, Alert, EmptyState, LoadingSpinner, StatCard } from '../../components/ui';
+import { MetricCard } from './components/MetricCard';
+import './cacheStudio.css';
 
 export function CacheStudioPage() {
   const { projectId, project } = useCurrentProject();
@@ -18,141 +20,145 @@ export function CacheStudioPage() {
 
   const invalidateMutation = useMutation({
     mutationFn: (pid: string) => invalidateProjectCache(pid),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['cache-metrics'] }),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['cache-metrics'] });
+    },
   });
 
   const recomputeMutation = useMutation({
     mutationFn: (pid: string) => recomputeProjectSummary(pid),
   });
 
-  return (
-    <div className="page">
-      <h1>System & Cache Studio</h1>
-      <p>Cache-Hit-Rates, Invalidation, Summary-Recompute.</p>
-
-      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', marginTop: 16 }}>
-        <Panel title="Cache Hit Rate">
-          {metricsQuery.isLoading ? (
-            <div style={{ color: '#8fa0bf' }}>Lade …</div>
-          ) : metricsQuery.isError ? (
-            <div style={{ color: '#f78c6c' }}>Fehler beim Laden</div>
-          ) : (
-            <div style={{ fontSize: 24, fontWeight: 700 }}>
-              {Math.round((metricsQuery.data?.hitRate ?? 0) * 100)}%
-            </div>
-          )}
-        </Panel>
-        <Panel title="Letzte Invalidations">
-          {metricsQuery.isLoading ? (
-            <div style={{ color: '#8fa0bf' }}>Lade …</div>
-          ) : metricsQuery.isError ? (
-            <div style={{ color: '#f78c6c' }}>Fehler beim Laden</div>
-          ) : (
-            <MiniList
-              items={(metricsQuery.data?.lastInvalidations ?? []).map(
-                (i) => `${i.projectId} — ${i.at}`,
-              )}
-              empty="Keine Einträge"
-            />
-          )}
-        </Panel>
-      </div>
-
-      <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', marginTop: 18 }}>
-        <ActionCard
-          title="Projekt-Cache invalidieren"
-          desc="Setzt Cache für aktuelles Projekt zurück."
-          disabled={!projectId || invalidateMutation.isPending}
-          onClick={() => invalidateMutation.mutate(projectId!)}
-          status={invalidateMutation.isPending ? 'Läuft …' : undefined}
-        />
-        <ActionCard
-          title="Project Summary neu berechnen"
-          desc="Recompute Summary für aktuelles Projekt."
-          disabled={!projectId || recomputeMutation.isPending}
-          onClick={() => recomputeMutation.mutate(projectId!)}
-          status={recomputeMutation.isPending ? 'Läuft …' : undefined}
+  if (!projectId) {
+    return (
+      <div className="page">
+        <EmptyState
+          icon="⚙️"
+          title="Kein Projekt ausgewählt"
+          description="Bitte wähle ein Projekt aus, um Cache-Operationen durchzuführen."
         />
       </div>
-
-      <div style={{ color: '#8fa0bf', fontSize: 12, marginTop: 12 }}>
-        Projekt: {project?.name ?? projectId ?? 'nicht gewählt'}
-      </div>
-    </div>
-  );
-}
-
-function Panel({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div
-      style={{
-        background: 'rgba(255,255,255,0.02)',
-        border: '1px solid rgba(255,255,255,0.08)',
-        borderRadius: 14,
-        padding: 14,
-        minHeight: 160,
-      }}
-    >
-      <div style={{ fontWeight: 700, marginBottom: 10 }}>{title}</div>
-      {children}
-    </div>
-  );
-}
-
-function MiniList({ items, empty }: { items: string[]; empty: string }) {
-  if (!items.length) {
-    return <div style={{ color: '#8fa0bf', fontSize: 13 }}>{empty}</div>;
+    );
   }
-  return (
-    <ul style={{ padding: 0, margin: 0, listStyle: 'none', display: 'grid', gap: 8 }}>
-      {items.map((t, i) => (
-        <li
-          key={`${t}-${i}`}
-          style={{
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.06)',
-            borderRadius: 10,
-            padding: 10,
-            fontSize: 13,
-          }}
-        >
-          {t}
-        </li>
-      ))}
-    </ul>
-  );
-}
 
-function ActionCard({
-  title,
-  desc,
-  disabled,
-  onClick,
-  status,
-}: {
-  title: string;
-  desc: string;
-  disabled?: boolean;
-  onClick: () => void;
-  status?: string;
-}) {
+  const hitRate = metricsQuery.data?.hitRate ?? 0;
+  const lastInvalidations = metricsQuery.data?.lastInvalidations ?? [];
+
   return (
-    <div
-      style={{
-        background: 'rgba(255,255,255,0.02)',
-        border: '1px solid rgba(255,255,255,0.08)',
-        borderRadius: 14,
-        padding: 14,
-        display: 'grid',
-        gap: 10,
-        minHeight: 160,
-      }}
-    >
-      <div style={{ fontWeight: 700 }}>{title}</div>
-      <div style={{ color: '#c5d1e0', fontSize: 13 }}>{desc}</div>
-      <button className="btn" onClick={onClick} disabled={disabled}>
-        {status ?? 'Ausführen'}
-      </button>
+    <div className="page cache-studio-page">
+      <div className="cache-header">
+        <div>
+          <h1>System & Cache Studio</h1>
+          <p className="cache-subtitle">
+            {project?.name ?? 'Projekt'} — Cache-Management & Performance
+          </p>
+        </div>
+      </div>
+
+      <Alert variant="warning" title="Vorsicht">
+        Cache-Operationen können die Performance beeinflussen. Verwende diese Funktionen nur bei Bedarf.
+      </Alert>
+
+      <div className="cache-metrics-grid">
+        <MetricCard
+          title="Cache Hit Rate"
+          value={Math.round(hitRate * 100)}
+          unit="%"
+          loading={metricsQuery.isLoading}
+          error={metricsQuery.isError}
+        />
+        <StatCard
+          label="Letzte Invalidations"
+          value={lastInvalidations.length}
+          icon="🔄"
+          variant="default"
+        />
+      </div>
+
+      <div className="cache-actions-grid">
+        <Card variant="elevated" padding="lg">
+          <CardHeader
+            title="Projekt-Cache invalidieren"
+            subtitle="Setzt den Cache für das aktuelle Projekt zurück"
+          />
+          <CardBody>
+            <div className="cache-action-content">
+              <p className="cache-action-description">
+                Diese Aktion löscht alle gecachten Daten für das Projekt. Verwende dies, wenn du
+                veraltete Daten vermutest oder nach größeren Änderungen.
+              </p>
+              <Button
+                onClick={() => invalidateMutation.mutate(projectId)}
+                disabled={invalidateMutation.isPending}
+                loading={invalidateMutation.isPending}
+                variant="secondary"
+              >
+                Cache invalidieren
+              </Button>
+              {invalidateMutation.isSuccess && (
+                <Alert variant="success">Cache erfolgreich invalidiert</Alert>
+              )}
+              {invalidateMutation.isError && (
+                <Alert variant="error">Fehler beim Invalidieren</Alert>
+              )}
+            </div>
+          </CardBody>
+        </Card>
+
+        <Card variant="elevated" padding="lg">
+          <CardHeader
+            title="Project Summary neu berechnen"
+            subtitle="Berechnet Projekt-Statistiken neu"
+          />
+          <CardBody>
+            <div className="cache-action-content">
+              <p className="cache-action-description">
+                Diese Aktion berechnet alle Projekt-Zusammenfassungen und Statistiken neu.
+                Nützlich nach Datenimporten oder größeren Änderungen.
+              </p>
+              <Button
+                onClick={() => recomputeMutation.mutate(projectId)}
+                disabled={recomputeMutation.isPending}
+                loading={recomputeMutation.isPending}
+                variant="secondary"
+              >
+                Summary neu berechnen
+              </Button>
+              {recomputeMutation.isSuccess && (
+                <Alert variant="success">Summary erfolgreich neu berechnet</Alert>
+              )}
+              {recomputeMutation.isError && (
+                <Alert variant="error">Fehler beim Neuberechnen</Alert>
+              )}
+            </div>
+          </CardBody>
+        </Card>
+      </div>
+
+      {lastInvalidations.length > 0 && (
+        <Card variant="elevated" padding="lg">
+          <CardHeader
+            title="Invalidation History"
+            subtitle="Letzte Cache-Invalidierungen"
+          />
+          <CardBody>
+            {metricsQuery.isLoading ? (
+              <LoadingSpinner size="sm" />
+            ) : (
+              <div className="invalidation-list">
+                {lastInvalidations.map((inv, idx) => (
+                  <div key={`${inv.projectId}-${inv.at}-${idx}`} className="invalidation-item">
+                    <div className="invalidation-item__project">
+                      Projekt: <span>{inv.projectId}</span>
+                    </div>
+                    <div className="invalidation-item__time">{inv.at}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </CardBody>
+        </Card>
+      )}
     </div>
   );
 }
