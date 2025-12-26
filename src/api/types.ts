@@ -49,12 +49,18 @@ export type Place = {
   address?: string;
   city?: string;
   country?: string;
+  region?: string;
   postalCode?: string;
   visited?: boolean;
   tags?: string[];
   metadata?: Record<string, unknown>;
   importSource?: string;
   importedAt?: string;
+  collections?: Array<{
+    id: string;
+    name: string;
+    color?: string;
+  }>;
   createdAt?: string;
   updatedAt?: string;
 };
@@ -100,4 +106,14 @@ export type OsintItem = {
 export type AuthTokens = {
   accessToken: string;
   refreshToken: string;
+};
+
+export type PlaceCollection = {
+  id: string;
+  name: string;
+  color?: string;
+  description?: string;
+  placesCount?: number;
+  createdAt?: string;
+  updatedAt?: string;
 };

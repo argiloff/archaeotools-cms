@@ -11,6 +11,8 @@ import { PlacesBrowserPage } from '../modules/places/PlacesBrowserPage';
 import { PlacesImportPage } from '../modules/places/PlacesImportPage';
 import { LoginPage } from '../modules/auth/LoginPage';
 import { RequireAuth } from './RequireAuth';
+import { SettingsLayout } from '../modules/settings/SettingsLayout';
+import { SettingsOverviewPage } from '../modules/settings/SettingsOverviewPage';
 
 const router = createBrowserRouter([
   {
@@ -30,8 +32,15 @@ const router = createBrowserRouter([
       { path: 'data-quality', element: <DataQualityPage /> },
       { path: 'osint', element: <OsintPage /> },
       { path: 'cache', element: <CacheStudioPage /> },
-      { path: 'places', element: <PlacesBrowserPage /> },
-      { path: 'places/import', element: <PlacesImportPage /> },
+      {
+        path: 'settings',
+        element: <SettingsLayout />,
+        children: [
+          { index: true, element: <SettingsOverviewPage /> },
+          { path: 'places', element: <PlacesBrowserPage /> },
+          { path: 'places/import', element: <PlacesImportPage /> },
+        ],
+      },
     ],
   },
 ]);

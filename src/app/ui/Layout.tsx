@@ -21,7 +21,11 @@ export function Layout() {
         <div className="sidebar-header">
           <div className="brand-row">
             <div className="brand">archaeoTools ACC</div>
-            <button className="gear-btn" onClick={() => setShowImport(true)} aria-label="Import / Einstellungen">
+            <button
+              className="gear-btn"
+              onClick={() => navigate('/settings')}
+              aria-label="Settings"
+            >
               ⚙️
             </button>
           </div>
@@ -46,8 +50,8 @@ export function Layout() {
           <NavLink to="/cache" className={({ isActive }) => (isActive ? 'active' : '')}>
             System & Cache Studio
           </NavLink>
-          <NavLink to="/places" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Global Places
+          <NavLink to="/settings" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Settings & Data
           </NavLink>
         </nav>
         <div className="sidebar-footer">
