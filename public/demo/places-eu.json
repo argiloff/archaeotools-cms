@@ -14,11 +14,11 @@
       "photos": [
         {
           "description": "Naples Discovery 1 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-1-0/900/600"
+          "url": "https://picsum.photos/seed/naples-1-0/900/600"
         },
         {
           "description": "Naples Discovery 1 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-1-1/900/600"
+          "url": "https://picsum.photos/seed/naples-1-1/900/600"
         }
       ]
     },
@@ -36,11 +36,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 2 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-2-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-2-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 2 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-2-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-2-1/900/600"
         }
       ]
     },
@@ -58,11 +58,11 @@
       "photos": [
         {
           "description": "Florence Discovery 3 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-3-0/900/600"
+          "url": "https://picsum.photos/seed/florence-3-0/900/600"
         },
         {
           "description": "Florence Discovery 3 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-3-1/900/600"
+          "url": "https://picsum.photos/seed/florence-3-1/900/600"
         }
       ]
     },
@@ -80,11 +80,11 @@
       "photos": [
         {
           "description": "Naples Discovery 4 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-4-0/900/600"
+          "url": "https://picsum.photos/seed/naples-4-0/900/600"
         },
         {
           "description": "Naples Discovery 4 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-4-1/900/600"
+          "url": "https://picsum.photos/seed/naples-4-1/900/600"
         }
       ]
     },
@@ -102,11 +102,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 5 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-5-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-5-0/900/600"
         },
         {
           "description": "Madrid Discovery 5 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-5-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-5-1/900/600"
         }
       ]
     },
@@ -124,11 +124,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 6 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-6-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-6-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 6 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-6-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-6-1/900/600"
         }
       ]
     },
@@ -146,11 +146,11 @@
       "photos": [
         {
           "description": "Naples Discovery 7 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-7-0/900/600"
+          "url": "https://picsum.photos/seed/naples-7-0/900/600"
         },
         {
           "description": "Naples Discovery 7 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-7-1/900/600"
+          "url": "https://picsum.photos/seed/naples-7-1/900/600"
         }
       ]
     },
@@ -168,11 +168,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 8 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-8-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-8-0/900/600"
         },
         {
           "description": "Berlin Discovery 8 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-8-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-8-1/900/600"
         }
       ]
     },
@@ -190,11 +190,11 @@
       "photos": [
         {
           "description": "Rome Discovery 9 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-9-0/900/600"
+          "url": "https://picsum.photos/seed/rome-9-0/900/600"
         },
         {
           "description": "Rome Discovery 9 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-9-1/900/600"
+          "url": "https://picsum.photos/seed/rome-9-1/900/600"
         }
       ]
     },
@@ -212,11 +212,11 @@
       "photos": [
         {
           "description": "Naples Discovery 10 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-10-0/900/600"
+          "url": "https://picsum.photos/seed/naples-10-0/900/600"
         },
         {
           "description": "Naples Discovery 10 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-10-1/900/600"
+          "url": "https://picsum.photos/seed/naples-10-1/900/600"
         }
       ]
     },
@@ -234,11 +234,11 @@
       "photos": [
         {
           "description": "Munich Discovery 11 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-11-0/900/600"
+          "url": "https://picsum.photos/seed/munich-11-0/900/600"
         },
         {
           "description": "Munich Discovery 11 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-11-1/900/600"
+          "url": "https://picsum.photos/seed/munich-11-1/900/600"
         }
       ]
     },
@@ -256,11 +256,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 12 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-12-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-12-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 12 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-12-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-12-1/900/600"
         }
       ]
     },
@@ -278,11 +278,11 @@
       "photos": [
         {
           "description": "Graz Discovery 13 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-13-0/900/600"
+          "url": "https://picsum.photos/seed/graz-13-0/900/600"
         },
         {
           "description": "Graz Discovery 13 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-13-1/900/600"
+          "url": "https://picsum.photos/seed/graz-13-1/900/600"
         }
       ]
     },
@@ -300,11 +300,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 14 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-14-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-14-0/900/600"
         },
         {
           "description": "Vienna Discovery 14 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-14-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-14-1/900/600"
         }
       ]
     },
@@ -322,11 +322,11 @@
       "photos": [
         {
           "description": "Munich Discovery 15 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-15-0/900/600"
+          "url": "https://picsum.photos/seed/munich-15-0/900/600"
         },
         {
           "description": "Munich Discovery 15 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-15-1/900/600"
+          "url": "https://picsum.photos/seed/munich-15-1/900/600"
         }
       ]
     },
@@ -344,11 +344,11 @@
       "photos": [
         {
           "description": "Rome Discovery 16 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-16-0/900/600"
+          "url": "https://picsum.photos/seed/rome-16-0/900/600"
         },
         {
           "description": "Rome Discovery 16 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-16-1/900/600"
+          "url": "https://picsum.photos/seed/rome-16-1/900/600"
         }
       ]
     },
@@ -366,11 +366,11 @@
       "photos": [
         {
           "description": "Florence Discovery 17 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-17-0/900/600"
+          "url": "https://picsum.photos/seed/florence-17-0/900/600"
         },
         {
           "description": "Florence Discovery 17 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-17-1/900/600"
+          "url": "https://picsum.photos/seed/florence-17-1/900/600"
         }
       ]
     },
@@ -388,11 +388,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 18 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-18-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-18-0/900/600"
         },
         {
           "description": "Hamburg Discovery 18 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-18-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-18-1/900/600"
         }
       ]
     },
@@ -410,11 +410,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 19 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-19-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-19-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 19 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-19-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-19-1/900/600"
         }
       ]
     },
@@ -432,11 +432,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 20 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-20-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-20-0/900/600"
         },
         {
           "description": "Barcelona Discovery 20 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-20-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-20-1/900/600"
         }
       ]
     },
@@ -454,11 +454,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 21 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-21-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-21-0/900/600"
         },
         {
           "description": "Vienna Discovery 21 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-21-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-21-1/900/600"
         }
       ]
     },
@@ -476,11 +476,11 @@
       "photos": [
         {
           "description": "Munich Discovery 22 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-22-0/900/600"
+          "url": "https://picsum.photos/seed/munich-22-0/900/600"
         },
         {
           "description": "Munich Discovery 22 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-22-1/900/600"
+          "url": "https://picsum.photos/seed/munich-22-1/900/600"
         }
       ]
     },
@@ -498,11 +498,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 23 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-23-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-23-0/900/600"
         },
         {
           "description": "Vienna Discovery 23 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-23-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-23-1/900/600"
         }
       ]
     },
@@ -520,11 +520,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 24 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-24-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-24-0/900/600"
         },
         {
           "description": "Hamburg Discovery 24 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-24-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-24-1/900/600"
         }
       ]
     },
@@ -542,11 +542,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 25 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-25-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-25-0/900/600"
         },
         {
           "description": "Barcelona Discovery 25 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-25-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-25-1/900/600"
         }
       ]
     },
@@ -564,11 +564,11 @@
       "photos": [
         {
           "description": "Seville Discovery 26 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-26-0/900/600"
+          "url": "https://picsum.photos/seed/seville-26-0/900/600"
         },
         {
           "description": "Seville Discovery 26 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-26-1/900/600"
+          "url": "https://picsum.photos/seed/seville-26-1/900/600"
         }
       ]
     },
@@ -586,11 +586,11 @@
       "photos": [
         {
           "description": "Athens Discovery 27 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-27-0/900/600"
+          "url": "https://picsum.photos/seed/athens-27-0/900/600"
         },
         {
           "description": "Athens Discovery 27 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-27-1/900/600"
+          "url": "https://picsum.photos/seed/athens-27-1/900/600"
         }
       ]
     },
@@ -608,11 +608,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 28 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-28-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-28-0/900/600"
         },
         {
           "description": "Hamburg Discovery 28 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-28-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-28-1/900/600"
         }
       ]
     },
@@ -630,11 +630,11 @@
       "photos": [
         {
           "description": "Florence Discovery 29 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-29-0/900/600"
+          "url": "https://picsum.photos/seed/florence-29-0/900/600"
         },
         {
           "description": "Florence Discovery 29 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-29-1/900/600"
+          "url": "https://picsum.photos/seed/florence-29-1/900/600"
         }
       ]
     },
@@ -652,11 +652,11 @@
       "photos": [
         {
           "description": "Naples Discovery 30 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-30-0/900/600"
+          "url": "https://picsum.photos/seed/naples-30-0/900/600"
         },
         {
           "description": "Naples Discovery 30 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-30-1/900/600"
+          "url": "https://picsum.photos/seed/naples-30-1/900/600"
         }
       ]
     },
@@ -674,11 +674,11 @@
       "photos": [
         {
           "description": "Athens Discovery 31 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-31-0/900/600"
+          "url": "https://picsum.photos/seed/athens-31-0/900/600"
         },
         {
           "description": "Athens Discovery 31 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-31-1/900/600"
+          "url": "https://picsum.photos/seed/athens-31-1/900/600"
         }
       ]
     },
@@ -696,11 +696,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 32 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-32-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-32-0/900/600"
         },
         {
           "description": "Heraklion Discovery 32 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-32-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-32-1/900/600"
         }
       ]
     },
@@ -718,11 +718,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 33 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-33-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-33-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 33 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-33-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-33-1/900/600"
         }
       ]
     },
@@ -740,11 +740,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 34 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-34-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-34-0/900/600"
         },
         {
           "description": "Heraklion Discovery 34 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-34-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-34-1/900/600"
         }
       ]
     },
@@ -762,11 +762,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 35 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-35-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-35-0/900/600"
         },
         {
           "description": "Heraklion Discovery 35 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-35-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-35-1/900/600"
         }
       ]
     },
@@ -784,11 +784,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 36 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-36-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-36-0/900/600"
         },
         {
           "description": "Berlin Discovery 36 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-36-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-36-1/900/600"
         }
       ]
     },
@@ -806,11 +806,11 @@
       "photos": [
         {
           "description": "Munich Discovery 37 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-37-0/900/600"
+          "url": "https://picsum.photos/seed/munich-37-0/900/600"
         },
         {
           "description": "Munich Discovery 37 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-37-1/900/600"
+          "url": "https://picsum.photos/seed/munich-37-1/900/600"
         }
       ]
     },
@@ -828,11 +828,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 38 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-38-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-38-0/900/600"
         },
         {
           "description": "Madrid Discovery 38 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-38-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-38-1/900/600"
         }
       ]
     },
@@ -850,11 +850,11 @@
       "photos": [
         {
           "description": "Florence Discovery 39 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-39-0/900/600"
+          "url": "https://picsum.photos/seed/florence-39-0/900/600"
         },
         {
           "description": "Florence Discovery 39 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-39-1/900/600"
+          "url": "https://picsum.photos/seed/florence-39-1/900/600"
         }
       ]
     },
@@ -872,11 +872,11 @@
       "photos": [
         {
           "description": "Athens Discovery 40 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-40-0/900/600"
+          "url": "https://picsum.photos/seed/athens-40-0/900/600"
         },
         {
           "description": "Athens Discovery 40 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-40-1/900/600"
+          "url": "https://picsum.photos/seed/athens-40-1/900/600"
         }
       ]
     },
@@ -894,11 +894,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 41 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-41-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-41-0/900/600"
         },
         {
           "description": "Heraklion Discovery 41 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-41-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-41-1/900/600"
         }
       ]
     },
@@ -916,11 +916,11 @@
       "photos": [
         {
           "description": "Athens Discovery 42 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-42-0/900/600"
+          "url": "https://picsum.photos/seed/athens-42-0/900/600"
         },
         {
           "description": "Athens Discovery 42 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-42-1/900/600"
+          "url": "https://picsum.photos/seed/athens-42-1/900/600"
         }
       ]
     },
@@ -938,11 +938,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 43 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-43-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-43-0/900/600"
         },
         {
           "description": "Berlin Discovery 43 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-43-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-43-1/900/600"
         }
       ]
     },
@@ -960,11 +960,11 @@
       "photos": [
         {
           "description": "Naples Discovery 44 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-44-0/900/600"
+          "url": "https://picsum.photos/seed/naples-44-0/900/600"
         },
         {
           "description": "Naples Discovery 44 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-44-1/900/600"
+          "url": "https://picsum.photos/seed/naples-44-1/900/600"
         }
       ]
     },
@@ -982,11 +982,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 45 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-45-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-45-0/900/600"
         },
         {
           "description": "Salzburg Discovery 45 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-45-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-45-1/900/600"
         }
       ]
     },
@@ -1004,11 +1004,11 @@
       "photos": [
         {
           "description": "Graz Discovery 46 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-46-0/900/600"
+          "url": "https://picsum.photos/seed/graz-46-0/900/600"
         },
         {
           "description": "Graz Discovery 46 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-46-1/900/600"
+          "url": "https://picsum.photos/seed/graz-46-1/900/600"
         }
       ]
     },
@@ -1026,11 +1026,11 @@
       "photos": [
         {
           "description": "Naples Discovery 47 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-47-0/900/600"
+          "url": "https://picsum.photos/seed/naples-47-0/900/600"
         },
         {
           "description": "Naples Discovery 47 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-47-1/900/600"
+          "url": "https://picsum.photos/seed/naples-47-1/900/600"
         }
       ]
     },
@@ -1048,11 +1048,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 48 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-48-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-48-0/900/600"
         },
         {
           "description": "Hamburg Discovery 48 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-48-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-48-1/900/600"
         }
       ]
     },
@@ -1070,11 +1070,11 @@
       "photos": [
         {
           "description": "Seville Discovery 49 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-49-0/900/600"
+          "url": "https://picsum.photos/seed/seville-49-0/900/600"
         },
         {
           "description": "Seville Discovery 49 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-49-1/900/600"
+          "url": "https://picsum.photos/seed/seville-49-1/900/600"
         }
       ]
     },
@@ -1092,11 +1092,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 50 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-50-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-50-0/900/600"
         },
         {
           "description": "Barcelona Discovery 50 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-50-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-50-1/900/600"
         }
       ]
     },
@@ -1114,11 +1114,11 @@
       "photos": [
         {
           "description": "Munich Discovery 51 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-51-0/900/600"
+          "url": "https://picsum.photos/seed/munich-51-0/900/600"
         },
         {
           "description": "Munich Discovery 51 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-51-1/900/600"
+          "url": "https://picsum.photos/seed/munich-51-1/900/600"
         }
       ]
     },
@@ -1136,11 +1136,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 52 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-52-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-52-0/900/600"
         },
         {
           "description": "Vienna Discovery 52 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-52-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-52-1/900/600"
         }
       ]
     },
@@ -1158,11 +1158,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 53 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-53-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-53-0/900/600"
         },
         {
           "description": "Madrid Discovery 53 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-53-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-53-1/900/600"
         }
       ]
     },
@@ -1180,11 +1180,11 @@
       "photos": [
         {
           "description": "Athens Discovery 54 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-54-0/900/600"
+          "url": "https://picsum.photos/seed/athens-54-0/900/600"
         },
         {
           "description": "Athens Discovery 54 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-54-1/900/600"
+          "url": "https://picsum.photos/seed/athens-54-1/900/600"
         }
       ]
     },
@@ -1202,11 +1202,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 55 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-55-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-55-0/900/600"
         },
         {
           "description": "Vienna Discovery 55 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-55-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-55-1/900/600"
         }
       ]
     },
@@ -1224,11 +1224,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 56 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-56-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-56-0/900/600"
         },
         {
           "description": "Vienna Discovery 56 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-56-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-56-1/900/600"
         }
       ]
     },
@@ -1246,11 +1246,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 57 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-57-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-57-0/900/600"
         },
         {
           "description": "Salzburg Discovery 57 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-57-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-57-1/900/600"
         }
       ]
     },
@@ -1268,11 +1268,11 @@
       "photos": [
         {
           "description": "Naples Discovery 58 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-58-0/900/600"
+          "url": "https://picsum.photos/seed/naples-58-0/900/600"
         },
         {
           "description": "Naples Discovery 58 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-58-1/900/600"
+          "url": "https://picsum.photos/seed/naples-58-1/900/600"
         }
       ]
     },
@@ -1290,11 +1290,11 @@
       "photos": [
         {
           "description": "Florence Discovery 59 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-59-0/900/600"
+          "url": "https://picsum.photos/seed/florence-59-0/900/600"
         },
         {
           "description": "Florence Discovery 59 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-59-1/900/600"
+          "url": "https://picsum.photos/seed/florence-59-1/900/600"
         }
       ]
     },
@@ -1312,11 +1312,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 60 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-60-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-60-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 60 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-60-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-60-1/900/600"
         }
       ]
     },
@@ -1334,11 +1334,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 61 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-61-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-61-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 61 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-61-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-61-1/900/600"
         }
       ]
     },
@@ -1356,11 +1356,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 62 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-62-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-62-0/900/600"
         },
         {
           "description": "Vienna Discovery 62 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-62-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-62-1/900/600"
         }
       ]
     },
@@ -1378,11 +1378,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 63 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-63-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-63-0/900/600"
         },
         {
           "description": "Vienna Discovery 63 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-63-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-63-1/900/600"
         }
       ]
     },
@@ -1400,11 +1400,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 64 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-64-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-64-0/900/600"
         },
         {
           "description": "Salzburg Discovery 64 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-64-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-64-1/900/600"
         }
       ]
     },
@@ -1422,11 +1422,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 65 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-65-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-65-0/900/600"
         },
         {
           "description": "Vienna Discovery 65 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-65-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-65-1/900/600"
         }
       ]
     },
@@ -1444,11 +1444,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 66 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-66-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-66-0/900/600"
         },
         {
           "description": "Madrid Discovery 66 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-66-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-66-1/900/600"
         }
       ]
     },
@@ -1466,11 +1466,11 @@
       "photos": [
         {
           "description": "Florence Discovery 67 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-67-0/900/600"
+          "url": "https://picsum.photos/seed/florence-67-0/900/600"
         },
         {
           "description": "Florence Discovery 67 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-67-1/900/600"
+          "url": "https://picsum.photos/seed/florence-67-1/900/600"
         }
       ]
     },
@@ -1488,11 +1488,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 68 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-68-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-68-0/900/600"
         },
         {
           "description": "Vienna Discovery 68 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-68-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-68-1/900/600"
         }
       ]
     },
@@ -1510,11 +1510,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 69 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-69-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-69-0/900/600"
         },
         {
           "description": "Salzburg Discovery 69 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-69-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-69-1/900/600"
         }
       ]
     },
@@ -1532,11 +1532,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 70 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-70-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-70-0/900/600"
         },
         {
           "description": "Barcelona Discovery 70 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-70-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-70-1/900/600"
         }
       ]
     },
@@ -1554,11 +1554,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 71 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-71-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-71-0/900/600"
         },
         {
           "description": "Heraklion Discovery 71 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-71-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-71-1/900/600"
         }
       ]
     },
@@ -1576,11 +1576,11 @@
       "photos": [
         {
           "description": "Graz Discovery 72 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-72-0/900/600"
+          "url": "https://picsum.photos/seed/graz-72-0/900/600"
         },
         {
           "description": "Graz Discovery 72 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-72-1/900/600"
+          "url": "https://picsum.photos/seed/graz-72-1/900/600"
         }
       ]
     },
@@ -1598,11 +1598,11 @@
       "photos": [
         {
           "description": "Seville Discovery 73 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-73-0/900/600"
+          "url": "https://picsum.photos/seed/seville-73-0/900/600"
         },
         {
           "description": "Seville Discovery 73 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-73-1/900/600"
+          "url": "https://picsum.photos/seed/seville-73-1/900/600"
         }
       ]
     },
@@ -1620,11 +1620,11 @@
       "photos": [
         {
           "description": "Athens Discovery 74 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-74-0/900/600"
+          "url": "https://picsum.photos/seed/athens-74-0/900/600"
         },
         {
           "description": "Athens Discovery 74 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-74-1/900/600"
+          "url": "https://picsum.photos/seed/athens-74-1/900/600"
         }
       ]
     },
@@ -1642,11 +1642,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 75 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-75-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-75-0/900/600"
         },
         {
           "description": "Heraklion Discovery 75 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-75-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-75-1/900/600"
         }
       ]
     },
@@ -1664,11 +1664,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 76 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-76-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-76-0/900/600"
         },
         {
           "description": "Heraklion Discovery 76 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-76-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-76-1/900/600"
         }
       ]
     },
@@ -1686,11 +1686,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 77 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-77-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-77-0/900/600"
         },
         {
           "description": "Berlin Discovery 77 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-77-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-77-1/900/600"
         }
       ]
     },
@@ -1708,11 +1708,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 78 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-78-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-78-0/900/600"
         },
         {
           "description": "Madrid Discovery 78 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-78-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-78-1/900/600"
         }
       ]
     },
@@ -1730,11 +1730,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 79 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-79-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-79-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 79 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-79-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-79-1/900/600"
         }
       ]
     },
@@ -1752,11 +1752,11 @@
       "photos": [
         {
           "description": "Naples Discovery 80 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-80-0/900/600"
+          "url": "https://picsum.photos/seed/naples-80-0/900/600"
         },
         {
           "description": "Naples Discovery 80 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-80-1/900/600"
+          "url": "https://picsum.photos/seed/naples-80-1/900/600"
         }
       ]
     },
@@ -1774,11 +1774,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 81 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-81-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-81-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 81 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-81-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-81-1/900/600"
         }
       ]
     },
@@ -1796,11 +1796,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 82 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-82-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-82-0/900/600"
         },
         {
           "description": "Berlin Discovery 82 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-82-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-82-1/900/600"
         }
       ]
     },
@@ -1818,11 +1818,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 83 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-83-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-83-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 83 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-83-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-83-1/900/600"
         }
       ]
     },
@@ -1840,11 +1840,11 @@
       "photos": [
         {
           "description": "Graz Discovery 84 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-84-0/900/600"
+          "url": "https://picsum.photos/seed/graz-84-0/900/600"
         },
         {
           "description": "Graz Discovery 84 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-84-1/900/600"
+          "url": "https://picsum.photos/seed/graz-84-1/900/600"
         }
       ]
     },
@@ -1862,11 +1862,11 @@
       "photos": [
         {
           "description": "Naples Discovery 85 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-85-0/900/600"
+          "url": "https://picsum.photos/seed/naples-85-0/900/600"
         },
         {
           "description": "Naples Discovery 85 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-85-1/900/600"
+          "url": "https://picsum.photos/seed/naples-85-1/900/600"
         }
       ]
     },
@@ -1884,11 +1884,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 86 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-86-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-86-0/900/600"
         },
         {
           "description": "Salzburg Discovery 86 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-86-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-86-1/900/600"
         }
       ]
     },
@@ -1906,11 +1906,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 87 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-87-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-87-0/900/600"
         },
         {
           "description": "Heraklion Discovery 87 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-87-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-87-1/900/600"
         }
       ]
     },
@@ -1928,11 +1928,11 @@
       "photos": [
         {
           "description": "Munich Discovery 88 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-88-0/900/600"
+          "url": "https://picsum.photos/seed/munich-88-0/900/600"
         },
         {
           "description": "Munich Discovery 88 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-88-1/900/600"
+          "url": "https://picsum.photos/seed/munich-88-1/900/600"
         }
       ]
     },
@@ -1950,11 +1950,11 @@
       "photos": [
         {
           "description": "Florence Discovery 89 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-89-0/900/600"
+          "url": "https://picsum.photos/seed/florence-89-0/900/600"
         },
         {
           "description": "Florence Discovery 89 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-89-1/900/600"
+          "url": "https://picsum.photos/seed/florence-89-1/900/600"
         }
       ]
     },
@@ -1972,11 +1972,11 @@
       "photos": [
         {
           "description": "Rome Discovery 90 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-90-0/900/600"
+          "url": "https://picsum.photos/seed/rome-90-0/900/600"
         },
         {
           "description": "Rome Discovery 90 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-90-1/900/600"
+          "url": "https://picsum.photos/seed/rome-90-1/900/600"
         }
       ]
     },
@@ -1994,11 +1994,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 91 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-91-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-91-0/900/600"
         },
         {
           "description": "Heraklion Discovery 91 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-91-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-91-1/900/600"
         }
       ]
     },
@@ -2016,11 +2016,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 92 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-92-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-92-0/900/600"
         },
         {
           "description": "Salzburg Discovery 92 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-92-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-92-1/900/600"
         }
       ]
     },
@@ -2038,11 +2038,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 93 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-93-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-93-0/900/600"
         },
         {
           "description": "Salzburg Discovery 93 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-93-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-93-1/900/600"
         }
       ]
     },
@@ -2060,11 +2060,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 94 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-94-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-94-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 94 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-94-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-94-1/900/600"
         }
       ]
     },
@@ -2082,11 +2082,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 95 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-95-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-95-0/900/600"
         },
         {
           "description": "Heraklion Discovery 95 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-95-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-95-1/900/600"
         }
       ]
     },
@@ -2104,11 +2104,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 96 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-96-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-96-0/900/600"
         },
         {
           "description": "Berlin Discovery 96 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-96-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-96-1/900/600"
         }
       ]
     },
@@ -2126,11 +2126,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 97 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-97-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-97-0/900/600"
         },
         {
           "description": "Heraklion Discovery 97 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-97-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-97-1/900/600"
         }
       ]
     },
@@ -2148,11 +2148,11 @@
       "photos": [
         {
           "description": "Rome Discovery 98 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-98-0/900/600"
+          "url": "https://picsum.photos/seed/rome-98-0/900/600"
         },
         {
           "description": "Rome Discovery 98 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-98-1/900/600"
+          "url": "https://picsum.photos/seed/rome-98-1/900/600"
         }
       ]
     },
@@ -2170,11 +2170,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 99 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-99-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-99-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 99 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-99-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-99-1/900/600"
         }
       ]
     },
@@ -2192,11 +2192,11 @@
       "photos": [
         {
           "description": "Munich Discovery 100 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-100-0/900/600"
+          "url": "https://picsum.photos/seed/munich-100-0/900/600"
         },
         {
           "description": "Munich Discovery 100 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-100-1/900/600"
+          "url": "https://picsum.photos/seed/munich-100-1/900/600"
         }
       ]
     },
@@ -2214,11 +2214,11 @@
       "photos": [
         {
           "description": "Graz Discovery 101 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-101-0/900/600"
+          "url": "https://picsum.photos/seed/graz-101-0/900/600"
         },
         {
           "description": "Graz Discovery 101 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-101-1/900/600"
+          "url": "https://picsum.photos/seed/graz-101-1/900/600"
         }
       ]
     },
@@ -2236,11 +2236,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 102 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-102-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-102-0/900/600"
         },
         {
           "description": "Madrid Discovery 102 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-102-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-102-1/900/600"
         }
       ]
     },
@@ -2258,11 +2258,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 103 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-103-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-103-0/900/600"
         },
         {
           "description": "Hamburg Discovery 103 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-103-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-103-1/900/600"
         }
       ]
     },
@@ -2280,11 +2280,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 104 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-104-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-104-0/900/600"
         },
         {
           "description": "Heraklion Discovery 104 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-104-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-104-1/900/600"
         }
       ]
     },
@@ -2302,11 +2302,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 105 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-105-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-105-0/900/600"
         },
         {
           "description": "Heraklion Discovery 105 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-105-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-105-1/900/600"
         }
       ]
     },
@@ -2324,11 +2324,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 106 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-106-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-106-0/900/600"
         },
         {
           "description": "Madrid Discovery 106 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-106-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-106-1/900/600"
         }
       ]
     },
@@ -2346,11 +2346,11 @@
       "photos": [
         {
           "description": "Seville Discovery 107 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-107-0/900/600"
+          "url": "https://picsum.photos/seed/seville-107-0/900/600"
         },
         {
           "description": "Seville Discovery 107 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-107-1/900/600"
+          "url": "https://picsum.photos/seed/seville-107-1/900/600"
         }
       ]
     },
@@ -2368,11 +2368,11 @@
       "photos": [
         {
           "description": "Graz Discovery 108 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-108-0/900/600"
+          "url": "https://picsum.photos/seed/graz-108-0/900/600"
         },
         {
           "description": "Graz Discovery 108 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-108-1/900/600"
+          "url": "https://picsum.photos/seed/graz-108-1/900/600"
         }
       ]
     },
@@ -2390,11 +2390,11 @@
       "photos": [
         {
           "description": "Graz Discovery 109 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-109-0/900/600"
+          "url": "https://picsum.photos/seed/graz-109-0/900/600"
         },
         {
           "description": "Graz Discovery 109 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-109-1/900/600"
+          "url": "https://picsum.photos/seed/graz-109-1/900/600"
         }
       ]
     },
@@ -2412,11 +2412,11 @@
       "photos": [
         {
           "description": "Graz Discovery 110 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-110-0/900/600"
+          "url": "https://picsum.photos/seed/graz-110-0/900/600"
         },
         {
           "description": "Graz Discovery 110 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-110-1/900/600"
+          "url": "https://picsum.photos/seed/graz-110-1/900/600"
         }
       ]
     },
@@ -2434,11 +2434,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 111 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-111-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-111-0/900/600"
         },
         {
           "description": "Berlin Discovery 111 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-111-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-111-1/900/600"
         }
       ]
     },
@@ -2456,11 +2456,11 @@
       "photos": [
         {
           "description": "Florence Discovery 112 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-112-0/900/600"
+          "url": "https://picsum.photos/seed/florence-112-0/900/600"
         },
         {
           "description": "Florence Discovery 112 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-112-1/900/600"
+          "url": "https://picsum.photos/seed/florence-112-1/900/600"
         }
       ]
     },
@@ -2478,11 +2478,11 @@
       "photos": [
         {
           "description": "Florence Discovery 113 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-113-0/900/600"
+          "url": "https://picsum.photos/seed/florence-113-0/900/600"
         },
         {
           "description": "Florence Discovery 113 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-113-1/900/600"
+          "url": "https://picsum.photos/seed/florence-113-1/900/600"
         }
       ]
     },
@@ -2500,11 +2500,11 @@
       "photos": [
         {
           "description": "Graz Discovery 114 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-114-0/900/600"
+          "url": "https://picsum.photos/seed/graz-114-0/900/600"
         },
         {
           "description": "Graz Discovery 114 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-114-1/900/600"
+          "url": "https://picsum.photos/seed/graz-114-1/900/600"
         }
       ]
     },
@@ -2522,11 +2522,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 115 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-115-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-115-0/900/600"
         },
         {
           "description": "Berlin Discovery 115 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-115-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-115-1/900/600"
         }
       ]
     },
@@ -2544,11 +2544,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 116 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-116-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-116-0/900/600"
         },
         {
           "description": "Hamburg Discovery 116 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-116-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-116-1/900/600"
         }
       ]
     },
@@ -2566,11 +2566,11 @@
       "photos": [
         {
           "description": "Naples Discovery 117 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-117-0/900/600"
+          "url": "https://picsum.photos/seed/naples-117-0/900/600"
         },
         {
           "description": "Naples Discovery 117 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-117-1/900/600"
+          "url": "https://picsum.photos/seed/naples-117-1/900/600"
         }
       ]
     },
@@ -2588,11 +2588,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 118 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-118-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-118-0/900/600"
         },
         {
           "description": "Heraklion Discovery 118 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-118-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-118-1/900/600"
         }
       ]
     },
@@ -2610,11 +2610,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 119 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-119-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-119-0/900/600"
         },
         {
           "description": "Barcelona Discovery 119 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-119-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-119-1/900/600"
         }
       ]
     },
@@ -2632,11 +2632,11 @@
       "photos": [
         {
           "description": "Athens Discovery 120 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-120-0/900/600"
+          "url": "https://picsum.photos/seed/athens-120-0/900/600"
         },
         {
           "description": "Athens Discovery 120 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-120-1/900/600"
+          "url": "https://picsum.photos/seed/athens-120-1/900/600"
         }
       ]
     },
@@ -2654,11 +2654,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 121 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-121-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-121-0/900/600"
         },
         {
           "description": "Heraklion Discovery 121 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-121-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-121-1/900/600"
         }
       ]
     },
@@ -2676,11 +2676,11 @@
       "photos": [
         {
           "description": "Graz Discovery 122 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-122-0/900/600"
+          "url": "https://picsum.photos/seed/graz-122-0/900/600"
         },
         {
           "description": "Graz Discovery 122 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-122-1/900/600"
+          "url": "https://picsum.photos/seed/graz-122-1/900/600"
         }
       ]
     },
@@ -2698,11 +2698,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 123 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-123-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-123-0/900/600"
         },
         {
           "description": "Madrid Discovery 123 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-123-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-123-1/900/600"
         }
       ]
     },
@@ -2720,11 +2720,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 124 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-124-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-124-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 124 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-124-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-124-1/900/600"
         }
       ]
     },
@@ -2742,11 +2742,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 125 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-125-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-125-0/900/600"
         },
         {
           "description": "Berlin Discovery 125 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-125-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-125-1/900/600"
         }
       ]
     },
@@ -2764,11 +2764,11 @@
       "photos": [
         {
           "description": "Munich Discovery 126 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-126-0/900/600"
+          "url": "https://picsum.photos/seed/munich-126-0/900/600"
         },
         {
           "description": "Munich Discovery 126 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-126-1/900/600"
+          "url": "https://picsum.photos/seed/munich-126-1/900/600"
         }
       ]
     },
@@ -2786,11 +2786,11 @@
       "photos": [
         {
           "description": "Seville Discovery 127 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-127-0/900/600"
+          "url": "https://picsum.photos/seed/seville-127-0/900/600"
         },
         {
           "description": "Seville Discovery 127 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-127-1/900/600"
+          "url": "https://picsum.photos/seed/seville-127-1/900/600"
         }
       ]
     },
@@ -2808,11 +2808,11 @@
       "photos": [
         {
           "description": "Florence Discovery 128 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-128-0/900/600"
+          "url": "https://picsum.photos/seed/florence-128-0/900/600"
         },
         {
           "description": "Florence Discovery 128 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-128-1/900/600"
+          "url": "https://picsum.photos/seed/florence-128-1/900/600"
         }
       ]
     },
@@ -2830,11 +2830,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 129 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-129-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-129-0/900/600"
         },
         {
           "description": "Barcelona Discovery 129 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-129-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-129-1/900/600"
         }
       ]
     },
@@ -2852,11 +2852,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 130 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-130-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-130-0/900/600"
         },
         {
           "description": "Barcelona Discovery 130 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-130-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-130-1/900/600"
         }
       ]
     },
@@ -2874,11 +2874,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 131 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-131-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-131-0/900/600"
         },
         {
           "description": "Heraklion Discovery 131 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-131-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-131-1/900/600"
         }
       ]
     },
@@ -2896,11 +2896,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 132 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-132-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-132-0/900/600"
         },
         {
           "description": "Barcelona Discovery 132 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-132-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-132-1/900/600"
         }
       ]
     },
@@ -2918,11 +2918,11 @@
       "photos": [
         {
           "description": "Graz Discovery 133 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-133-0/900/600"
+          "url": "https://picsum.photos/seed/graz-133-0/900/600"
         },
         {
           "description": "Graz Discovery 133 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-133-1/900/600"
+          "url": "https://picsum.photos/seed/graz-133-1/900/600"
         }
       ]
     },
@@ -2940,11 +2940,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 134 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-134-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-134-0/900/600"
         },
         {
           "description": "Berlin Discovery 134 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-134-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-134-1/900/600"
         }
       ]
     },
@@ -2962,11 +2962,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 135 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-135-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-135-0/900/600"
         },
         {
           "description": "Salzburg Discovery 135 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-135-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-135-1/900/600"
         }
       ]
     },
@@ -2984,11 +2984,11 @@
       "photos": [
         {
           "description": "Graz Discovery 136 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-136-0/900/600"
+          "url": "https://picsum.photos/seed/graz-136-0/900/600"
         },
         {
           "description": "Graz Discovery 136 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-136-1/900/600"
+          "url": "https://picsum.photos/seed/graz-136-1/900/600"
         }
       ]
     },
@@ -3006,11 +3006,11 @@
       "photos": [
         {
           "description": "Rome Discovery 137 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-137-0/900/600"
+          "url": "https://picsum.photos/seed/rome-137-0/900/600"
         },
         {
           "description": "Rome Discovery 137 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-137-1/900/600"
+          "url": "https://picsum.photos/seed/rome-137-1/900/600"
         }
       ]
     },
@@ -3028,11 +3028,11 @@
       "photos": [
         {
           "description": "Munich Discovery 138 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-138-0/900/600"
+          "url": "https://picsum.photos/seed/munich-138-0/900/600"
         },
         {
           "description": "Munich Discovery 138 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-138-1/900/600"
+          "url": "https://picsum.photos/seed/munich-138-1/900/600"
         }
       ]
     },
@@ -3050,11 +3050,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 139 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-139-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-139-0/900/600"
         },
         {
           "description": "Vienna Discovery 139 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-139-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-139-1/900/600"
         }
       ]
     },
@@ -3072,11 +3072,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 140 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-140-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-140-0/900/600"
         },
         {
           "description": "Berlin Discovery 140 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-140-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-140-1/900/600"
         }
       ]
     },
@@ -3094,11 +3094,11 @@
       "photos": [
         {
           "description": "Athens Discovery 141 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-141-0/900/600"
+          "url": "https://picsum.photos/seed/athens-141-0/900/600"
         },
         {
           "description": "Athens Discovery 141 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-141-1/900/600"
+          "url": "https://picsum.photos/seed/athens-141-1/900/600"
         }
       ]
     },
@@ -3116,11 +3116,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 142 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-142-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-142-0/900/600"
         },
         {
           "description": "Salzburg Discovery 142 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-142-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-142-1/900/600"
         }
       ]
     },
@@ -3138,11 +3138,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 143 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-143-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-143-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 143 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-143-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-143-1/900/600"
         }
       ]
     },
@@ -3160,11 +3160,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 144 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-144-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-144-0/900/600"
         },
         {
           "description": "Heraklion Discovery 144 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-144-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-144-1/900/600"
         }
       ]
     },
@@ -3182,11 +3182,11 @@
       "photos": [
         {
           "description": "Seville Discovery 145 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-145-0/900/600"
+          "url": "https://picsum.photos/seed/seville-145-0/900/600"
         },
         {
           "description": "Seville Discovery 145 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-145-1/900/600"
+          "url": "https://picsum.photos/seed/seville-145-1/900/600"
         }
       ]
     },
@@ -3204,11 +3204,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 146 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-146-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-146-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 146 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-146-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-146-1/900/600"
         }
       ]
     },
@@ -3226,11 +3226,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 147 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-147-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-147-0/900/600"
         },
         {
           "description": "Madrid Discovery 147 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-147-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-147-1/900/600"
         }
       ]
     },
@@ -3248,11 +3248,11 @@
       "photos": [
         {
           "description": "Athens Discovery 148 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-148-0/900/600"
+          "url": "https://picsum.photos/seed/athens-148-0/900/600"
         },
         {
           "description": "Athens Discovery 148 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-148-1/900/600"
+          "url": "https://picsum.photos/seed/athens-148-1/900/600"
         }
       ]
     },
@@ -3270,11 +3270,11 @@
       "photos": [
         {
           "description": "Munich Discovery 149 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-149-0/900/600"
+          "url": "https://picsum.photos/seed/munich-149-0/900/600"
         },
         {
           "description": "Munich Discovery 149 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-149-1/900/600"
+          "url": "https://picsum.photos/seed/munich-149-1/900/600"
         }
       ]
     },
@@ -3292,11 +3292,11 @@
       "photos": [
         {
           "description": "Florence Discovery 150 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-150-0/900/600"
+          "url": "https://picsum.photos/seed/florence-150-0/900/600"
         },
         {
           "description": "Florence Discovery 150 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-150-1/900/600"
+          "url": "https://picsum.photos/seed/florence-150-1/900/600"
         }
       ]
     },
@@ -3314,11 +3314,11 @@
       "photos": [
         {
           "description": "Barcelona Discovery 151 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/barcelona-151-0/900/600"
+          "url": "https://picsum.photos/seed/barcelona-151-0/900/600"
         },
         {
           "description": "Barcelona Discovery 151 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/barcelona-151-1/900/600"
+          "url": "https://picsum.photos/seed/barcelona-151-1/900/600"
         }
       ]
     },
@@ -3336,11 +3336,11 @@
       "photos": [
         {
           "description": "Naples Discovery 152 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-152-0/900/600"
+          "url": "https://picsum.photos/seed/naples-152-0/900/600"
         },
         {
           "description": "Naples Discovery 152 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-152-1/900/600"
+          "url": "https://picsum.photos/seed/naples-152-1/900/600"
         }
       ]
     },
@@ -3358,11 +3358,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 153 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-153-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-153-0/900/600"
         },
         {
           "description": "Berlin Discovery 153 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-153-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-153-1/900/600"
         }
       ]
     },
@@ -3380,11 +3380,11 @@
       "photos": [
         {
           "description": "Seville Discovery 154 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-154-0/900/600"
+          "url": "https://picsum.photos/seed/seville-154-0/900/600"
         },
         {
           "description": "Seville Discovery 154 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-154-1/900/600"
+          "url": "https://picsum.photos/seed/seville-154-1/900/600"
         }
       ]
     },
@@ -3402,11 +3402,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 155 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-155-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-155-0/900/600"
         },
         {
           "description": "Salzburg Discovery 155 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-155-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-155-1/900/600"
         }
       ]
     },
@@ -3424,11 +3424,11 @@
       "photos": [
         {
           "description": "Naples Discovery 156 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-156-0/900/600"
+          "url": "https://picsum.photos/seed/naples-156-0/900/600"
         },
         {
           "description": "Naples Discovery 156 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-156-1/900/600"
+          "url": "https://picsum.photos/seed/naples-156-1/900/600"
         }
       ]
     },
@@ -3446,11 +3446,11 @@
       "photos": [
         {
           "description": "Florence Discovery 157 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-157-0/900/600"
+          "url": "https://picsum.photos/seed/florence-157-0/900/600"
         },
         {
           "description": "Florence Discovery 157 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-157-1/900/600"
+          "url": "https://picsum.photos/seed/florence-157-1/900/600"
         }
       ]
     },
@@ -3468,11 +3468,11 @@
       "photos": [
         {
           "description": "Munich Discovery 158 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-158-0/900/600"
+          "url": "https://picsum.photos/seed/munich-158-0/900/600"
         },
         {
           "description": "Munich Discovery 158 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-158-1/900/600"
+          "url": "https://picsum.photos/seed/munich-158-1/900/600"
         }
       ]
     },
@@ -3490,11 +3490,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 159 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-159-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-159-0/900/600"
         },
         {
           "description": "Vienna Discovery 159 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-159-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-159-1/900/600"
         }
       ]
     },
@@ -3512,11 +3512,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 160 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-160-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-160-0/900/600"
         },
         {
           "description": "Salzburg Discovery 160 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-160-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-160-1/900/600"
         }
       ]
     },
@@ -3534,11 +3534,11 @@
       "photos": [
         {
           "description": "Naples Discovery 161 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-161-0/900/600"
+          "url": "https://picsum.photos/seed/naples-161-0/900/600"
         },
         {
           "description": "Naples Discovery 161 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-161-1/900/600"
+          "url": "https://picsum.photos/seed/naples-161-1/900/600"
         }
       ]
     },
@@ -3556,11 +3556,11 @@
       "photos": [
         {
           "description": "Seville Discovery 162 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/seville-162-0/900/600"
+          "url": "https://picsum.photos/seed/seville-162-0/900/600"
         },
         {
           "description": "Seville Discovery 162 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/seville-162-1/900/600"
+          "url": "https://picsum.photos/seed/seville-162-1/900/600"
         }
       ]
     },
@@ -3578,11 +3578,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 163 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-163-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-163-0/900/600"
         },
         {
           "description": "Hamburg Discovery 163 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-163-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-163-1/900/600"
         }
       ]
     },
@@ -3600,11 +3600,11 @@
       "photos": [
         {
           "description": "Hamburg Discovery 164 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/hamburg-164-0/900/600"
+          "url": "https://picsum.photos/seed/hamburg-164-0/900/600"
         },
         {
           "description": "Hamburg Discovery 164 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/hamburg-164-1/900/600"
+          "url": "https://picsum.photos/seed/hamburg-164-1/900/600"
         }
       ]
     },
@@ -3622,11 +3622,11 @@
       "photos": [
         {
           "description": "Munich Discovery 165 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-165-0/900/600"
+          "url": "https://picsum.photos/seed/munich-165-0/900/600"
         },
         {
           "description": "Munich Discovery 165 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-165-1/900/600"
+          "url": "https://picsum.photos/seed/munich-165-1/900/600"
         }
       ]
     },
@@ -3644,11 +3644,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 166 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-166-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-166-0/900/600"
         },
         {
           "description": "Vienna Discovery 166 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-166-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-166-1/900/600"
         }
       ]
     },
@@ -3666,11 +3666,11 @@
       "photos": [
         {
           "description": "Rome Discovery 167 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-167-0/900/600"
+          "url": "https://picsum.photos/seed/rome-167-0/900/600"
         },
         {
           "description": "Rome Discovery 167 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-167-1/900/600"
+          "url": "https://picsum.photos/seed/rome-167-1/900/600"
         }
       ]
     },
@@ -3688,11 +3688,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 168 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-168-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-168-0/900/600"
         },
         {
           "description": "Berlin Discovery 168 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-168-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-168-1/900/600"
         }
       ]
     },
@@ -3710,11 +3710,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 169 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-169-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-169-0/900/600"
         },
         {
           "description": "Heraklion Discovery 169 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-169-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-169-1/900/600"
         }
       ]
     },
@@ -3732,11 +3732,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 170 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-170-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-170-0/900/600"
         },
         {
           "description": "Madrid Discovery 170 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-170-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-170-1/900/600"
         }
       ]
     },
@@ -3754,11 +3754,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 171 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-171-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-171-0/900/600"
         },
         {
           "description": "Heraklion Discovery 171 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-171-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-171-1/900/600"
         }
       ]
     },
@@ -3776,11 +3776,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 172 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-172-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-172-0/900/600"
         },
         {
           "description": "Heraklion Discovery 172 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-172-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-172-1/900/600"
         }
       ]
     },
@@ -3798,11 +3798,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 173 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-173-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-173-0/900/600"
         },
         {
           "description": "Madrid Discovery 173 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-173-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-173-1/900/600"
         }
       ]
     },
@@ -3820,11 +3820,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 174 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-174-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-174-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 174 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-174-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-174-1/900/600"
         }
       ]
     },
@@ -3842,11 +3842,11 @@
       "photos": [
         {
           "description": "Athens Discovery 175 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-175-0/900/600"
+          "url": "https://picsum.photos/seed/athens-175-0/900/600"
         },
         {
           "description": "Athens Discovery 175 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-175-1/900/600"
+          "url": "https://picsum.photos/seed/athens-175-1/900/600"
         }
       ]
     },
@@ -3864,11 +3864,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 176 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-176-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-176-0/900/600"
         },
         {
           "description": "Salzburg Discovery 176 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-176-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-176-1/900/600"
         }
       ]
     },
@@ -3886,11 +3886,11 @@
       "photos": [
         {
           "description": "Naples Discovery 177 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-177-0/900/600"
+          "url": "https://picsum.photos/seed/naples-177-0/900/600"
         },
         {
           "description": "Naples Discovery 177 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-177-1/900/600"
+          "url": "https://picsum.photos/seed/naples-177-1/900/600"
         }
       ]
     },
@@ -3908,11 +3908,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 178 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-178-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-178-0/900/600"
         },
         {
           "description": "Vienna Discovery 178 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-178-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-178-1/900/600"
         }
       ]
     },
@@ -3930,11 +3930,11 @@
       "photos": [
         {
           "description": "Florence Discovery 179 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-179-0/900/600"
+          "url": "https://picsum.photos/seed/florence-179-0/900/600"
         },
         {
           "description": "Florence Discovery 179 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-179-1/900/600"
+          "url": "https://picsum.photos/seed/florence-179-1/900/600"
         }
       ]
     },
@@ -3952,11 +3952,11 @@
       "photos": [
         {
           "description": "Salzburg Discovery 180 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/salzburg-180-0/900/600"
+          "url": "https://picsum.photos/seed/salzburg-180-0/900/600"
         },
         {
           "description": "Salzburg Discovery 180 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/salzburg-180-1/900/600"
+          "url": "https://picsum.photos/seed/salzburg-180-1/900/600"
         }
       ]
     },
@@ -3974,11 +3974,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 181 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-181-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-181-0/900/600"
         },
         {
           "description": "Berlin Discovery 181 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-181-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-181-1/900/600"
         }
       ]
     },
@@ -3996,11 +3996,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 182 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-182-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-182-0/900/600"
         },
         {
           "description": "Vienna Discovery 182 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-182-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-182-1/900/600"
         }
       ]
     },
@@ -4018,11 +4018,11 @@
       "photos": [
         {
           "description": "Madrid Discovery 183 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/madrid-183-0/900/600"
+          "url": "https://picsum.photos/seed/madrid-183-0/900/600"
         },
         {
           "description": "Madrid Discovery 183 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/madrid-183-1/900/600"
+          "url": "https://picsum.photos/seed/madrid-183-1/900/600"
         }
       ]
     },
@@ -4040,11 +4040,11 @@
       "photos": [
         {
           "description": "Athens Discovery 184 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-184-0/900/600"
+          "url": "https://picsum.photos/seed/athens-184-0/900/600"
         },
         {
           "description": "Athens Discovery 184 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-184-1/900/600"
+          "url": "https://picsum.photos/seed/athens-184-1/900/600"
         }
       ]
     },
@@ -4062,11 +4062,11 @@
       "photos": [
         {
           "description": "Rome Discovery 185 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-185-0/900/600"
+          "url": "https://picsum.photos/seed/rome-185-0/900/600"
         },
         {
           "description": "Rome Discovery 185 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-185-1/900/600"
+          "url": "https://picsum.photos/seed/rome-185-1/900/600"
         }
       ]
     },
@@ -4084,11 +4084,11 @@
       "photos": [
         {
           "description": "Florence Discovery 186 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-186-0/900/600"
+          "url": "https://picsum.photos/seed/florence-186-0/900/600"
         },
         {
           "description": "Florence Discovery 186 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-186-1/900/600"
+          "url": "https://picsum.photos/seed/florence-186-1/900/600"
         }
       ]
     },
@@ -4106,11 +4106,11 @@
       "photos": [
         {
           "description": "Rome Discovery 187 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-187-0/900/600"
+          "url": "https://picsum.photos/seed/rome-187-0/900/600"
         },
         {
           "description": "Rome Discovery 187 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-187-1/900/600"
+          "url": "https://picsum.photos/seed/rome-187-1/900/600"
         }
       ]
     },
@@ -4128,11 +4128,11 @@
       "photos": [
         {
           "description": "Naples Discovery 188 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/naples-188-0/900/600"
+          "url": "https://picsum.photos/seed/naples-188-0/900/600"
         },
         {
           "description": "Naples Discovery 188 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/naples-188-1/900/600"
+          "url": "https://picsum.photos/seed/naples-188-1/900/600"
         }
       ]
     },
@@ -4150,11 +4150,11 @@
       "photos": [
         {
           "description": "Athens Discovery 189 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/athens-189-0/900/600"
+          "url": "https://picsum.photos/seed/athens-189-0/900/600"
         },
         {
           "description": "Athens Discovery 189 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/athens-189-1/900/600"
+          "url": "https://picsum.photos/seed/athens-189-1/900/600"
         }
       ]
     },
@@ -4172,11 +4172,11 @@
       "photos": [
         {
           "description": "Graz Discovery 190 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/graz-190-0/900/600"
+          "url": "https://picsum.photos/seed/graz-190-0/900/600"
         },
         {
           "description": "Graz Discovery 190 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/graz-190-1/900/600"
+          "url": "https://picsum.photos/seed/graz-190-1/900/600"
         }
       ]
     },
@@ -4194,11 +4194,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 191 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-191-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-191-0/900/600"
         },
         {
           "description": "Berlin Discovery 191 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-191-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-191-1/900/600"
         }
       ]
     },
@@ -4216,11 +4216,11 @@
       "photos": [
         {
           "description": "Rome Discovery 192 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-192-0/900/600"
+          "url": "https://picsum.photos/seed/rome-192-0/900/600"
         },
         {
           "description": "Rome Discovery 192 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-192-1/900/600"
+          "url": "https://picsum.photos/seed/rome-192-1/900/600"
         }
       ]
     },
@@ -4238,11 +4238,11 @@
       "photos": [
         {
           "description": "Munich Discovery 193 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/munich-193-0/900/600"
+          "url": "https://picsum.photos/seed/munich-193-0/900/600"
         },
         {
           "description": "Munich Discovery 193 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/munich-193-1/900/600"
+          "url": "https://picsum.photos/seed/munich-193-1/900/600"
         }
       ]
     },
@@ -4260,11 +4260,11 @@
       "photos": [
         {
           "description": "Vienna Discovery 194 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/vienna-194-0/900/600"
+          "url": "https://picsum.photos/seed/vienna-194-0/900/600"
         },
         {
           "description": "Vienna Discovery 194 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/vienna-194-1/900/600"
+          "url": "https://picsum.photos/seed/vienna-194-1/900/600"
         }
       ]
     },
@@ -4282,11 +4282,11 @@
       "photos": [
         {
           "description": "Berlin Discovery 195 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/berlin-195-0/900/600"
+          "url": "https://picsum.photos/seed/berlin-195-0/900/600"
         },
         {
           "description": "Berlin Discovery 195 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/berlin-195-1/900/600"
+          "url": "https://picsum.photos/seed/berlin-195-1/900/600"
         }
       ]
     },
@@ -4304,11 +4304,11 @@
       "photos": [
         {
           "description": "Florence Discovery 196 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/florence-196-0/900/600"
+          "url": "https://picsum.photos/seed/florence-196-0/900/600"
         },
         {
           "description": "Florence Discovery 196 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/florence-196-1/900/600"
+          "url": "https://picsum.photos/seed/florence-196-1/900/600"
         }
       ]
     },
@@ -4326,11 +4326,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 197 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-197-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-197-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 197 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-197-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-197-1/900/600"
         }
       ]
     },
@@ -4348,11 +4348,11 @@
       "photos": [
         {
           "description": "Thessaloniki Discovery 198 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-198-0/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-198-0/900/600"
         },
         {
           "description": "Thessaloniki Discovery 198 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/thessaloniki-198-1/900/600"
+          "url": "https://picsum.photos/seed/thessaloniki-198-1/900/600"
         }
       ]
     },
@@ -4370,11 +4370,11 @@
       "photos": [
         {
           "description": "Rome Discovery 199 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/rome-199-0/900/600"
+          "url": "https://picsum.photos/seed/rome-199-0/900/600"
         },
         {
           "description": "Rome Discovery 199 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/rome-199-1/900/600"
+          "url": "https://picsum.photos/seed/rome-199-1/900/600"
         }
       ]
     },
@@ -4392,11 +4392,11 @@
       "photos": [
         {
           "description": "Heraklion Discovery 200 Photo 1",
-          "imageUrl": "https://picsum.photos/seed/heraklion-200-0/900/600"
+          "url": "https://picsum.photos/seed/heraklion-200-0/900/600"
         },
         {
           "description": "Heraklion Discovery 200 Photo 2",
-          "imageUrl": "https://picsum.photos/seed/heraklion-200-1/900/600"
+          "url": "https://picsum.photos/seed/heraklion-200-1/900/600"
         }
       ]
     }

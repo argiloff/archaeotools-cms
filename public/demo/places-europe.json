@@ -1,0 +1,2606 @@
+{
+  "source": "Europe Heritage POIs",
+  "version": "2024.12",
+  "places": [
+    {
+      "title": "Athens Heritage POI 1",
+      "description": "Curated point of interest #1 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.067456,
+      "longitude": 23.442506,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 2",
+      "description": "Curated point of interest #2 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.767818,
+      "longitude": 12.330326,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 3",
+      "description": "Curated point of interest #3 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.661883,
+      "longitude": 13.51102,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 4",
+      "description": "Curated point of interest #4 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 49.091908,
+      "longitude": 2.104363,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 5",
+      "description": "Curated point of interest #5 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.161353,
+      "longitude": 16.091678,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 6",
+      "description": "Curated point of interest #6 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.218583,
+      "longitude": 2.171813,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 7",
+      "description": "Curated point of interest #7 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.065722,
+      "longitude": -6.440997,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 8",
+      "description": "Curated point of interest #8 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.165431,
+      "longitude": 14.464765,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 9",
+      "description": "Curated point of interest #9 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.330164,
+      "longitude": 19.093759,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 10",
+      "description": "Curated point of interest #10 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.415358,
+      "longitude": 20.716099,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 11",
+      "description": "Curated point of interest #11 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.167292,
+      "longitude": 23.846384,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 12",
+      "description": "Curated point of interest #12 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.80695,
+      "longitude": 12.289688,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 13",
+      "description": "Curated point of interest #13 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.794328,
+      "longitude": 13.306957,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 14",
+      "description": "Curated point of interest #14 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.612248,
+      "longitude": 2.11023,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 15",
+      "description": "Curated point of interest #15 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.416697,
+      "longitude": 16.436036,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 16",
+      "description": "Curated point of interest #16 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.571677,
+      "longitude": 2.306439,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 17",
+      "description": "Curated point of interest #17 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.371537,
+      "longitude": -5.976431,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 18",
+      "description": "Curated point of interest #18 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.002621,
+      "longitude": 14.469024,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 19",
+      "description": "Curated point of interest #19 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.695543,
+      "longitude": 19.111312,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 20",
+      "description": "Curated point of interest #20 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.446724,
+      "longitude": 21.058611,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 21",
+      "description": "Curated point of interest #21 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.106543,
+      "longitude": 23.454995,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 22",
+      "description": "Curated point of interest #22 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.739539,
+      "longitude": 12.370033,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 23",
+      "description": "Curated point of interest #23 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.267875,
+      "longitude": 13.244675,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 24",
+      "description": "Curated point of interest #24 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.617201,
+      "longitude": 2.218984,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 25",
+      "description": "Curated point of interest #25 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.289611,
+      "longitude": 16.292699,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 26",
+      "description": "Curated point of interest #26 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.309509,
+      "longitude": 1.994304,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 27",
+      "description": "Curated point of interest #27 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.209987,
+      "longitude": -5.998307,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 28",
+      "description": "Curated point of interest #28 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.164321,
+      "longitude": 14.503279,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 29",
+      "description": "Curated point of interest #29 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.300583,
+      "longitude": 19.177676,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 30",
+      "description": "Curated point of interest #30 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.027741,
+      "longitude": 20.939873,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 31",
+      "description": "Curated point of interest #31 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.277514,
+      "longitude": 23.8115,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 32",
+      "description": "Curated point of interest #32 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.93697,
+      "longitude": 12.607169,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 33",
+      "description": "Curated point of interest #33 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.725711,
+      "longitude": 13.5706,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 34",
+      "description": "Curated point of interest #34 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.694029,
+      "longitude": 2.07146,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 35",
+      "description": "Curated point of interest #35 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.097472,
+      "longitude": 16.234445,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 36",
+      "description": "Curated point of interest #36 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.21399,
+      "longitude": 2.434346,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 37",
+      "description": "Curated point of interest #37 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.575621,
+      "longitude": -6.371493,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 38",
+      "description": "Curated point of interest #38 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.168763,
+      "longitude": 14.375179,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 39",
+      "description": "Curated point of interest #39 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.746629,
+      "longitude": 19.015511,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 40",
+      "description": "Curated point of interest #40 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.088628,
+      "longitude": 20.860177,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 41",
+      "description": "Curated point of interest #41 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.020621,
+      "longitude": 23.585145,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 42",
+      "description": "Curated point of interest #42 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.953552,
+      "longitude": 12.735094,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 43",
+      "description": "Curated point of interest #43 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.45964,
+      "longitude": 13.236592,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 44",
+      "description": "Curated point of interest #44 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 49.155123,
+      "longitude": 2.357916,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 45",
+      "description": "Curated point of interest #45 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 47.962746,
+      "longitude": 16.10207,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 46",
+      "description": "Curated point of interest #46 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.153189,
+      "longitude": 2.245068,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 47",
+      "description": "Curated point of interest #47 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.525048,
+      "longitude": -6.307004,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 48",
+      "description": "Curated point of interest #48 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.813617,
+      "longitude": 14.366772,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 49",
+      "description": "Curated point of interest #49 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.795573,
+      "longitude": 19.057669,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 50",
+      "description": "Curated point of interest #50 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.512347,
+      "longitude": 21.228668,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 51",
+      "description": "Curated point of interest #51 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 37.690689,
+      "longitude": 23.859933,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 52",
+      "description": "Curated point of interest #52 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 42.011826,
+      "longitude": 12.518582,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 53",
+      "description": "Curated point of interest #53 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.380095,
+      "longitude": 13.489577,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 54",
+      "description": "Curated point of interest #54 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.623531,
+      "longitude": 2.313059,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 55",
+      "description": "Curated point of interest #55 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.180434,
+      "longitude": 16.64609,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 56",
+      "description": "Curated point of interest #56 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.612912,
+      "longitude": 2.026633,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 57",
+      "description": "Curated point of interest #57 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.350152,
+      "longitude": -6.453109,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 58",
+      "description": "Curated point of interest #58 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.323077,
+      "longitude": 14.660111,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 59",
+      "description": "Curated point of interest #59 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.376967,
+      "longitude": 19.12357,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 60",
+      "description": "Curated point of interest #60 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.295082,
+      "longitude": 20.803904,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 61",
+      "description": "Curated point of interest #61 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.141306,
+      "longitude": 23.751127,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 62",
+      "description": "Curated point of interest #62 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 42.069976,
+      "longitude": 12.514612,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 63",
+      "description": "Curated point of interest #63 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.220343,
+      "longitude": 13.299494,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 64",
+      "description": "Curated point of interest #64 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.568286,
+      "longitude": 2.609659,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 65",
+      "description": "Curated point of interest #65 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.435433,
+      "longitude": 16.572799,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 66",
+      "description": "Curated point of interest #66 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.271908,
+      "longitude": 1.903355,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 67",
+      "description": "Curated point of interest #67 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.576606,
+      "longitude": -5.99213,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 68",
+      "description": "Curated point of interest #68 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.826892,
+      "longitude": 14.429394,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 69",
+      "description": "Curated point of interest #69 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.239428,
+      "longitude": 19.196561,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 70",
+      "description": "Curated point of interest #70 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.389201,
+      "longitude": 20.789235,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 71",
+      "description": "Curated point of interest #71 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 37.968969,
+      "longitude": 23.757382,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 72",
+      "description": "Curated point of interest #72 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.761834,
+      "longitude": 12.71986,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 73",
+      "description": "Curated point of interest #73 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.473883,
+      "longitude": 13.232079,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 74",
+      "description": "Curated point of interest #74 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.880178,
+      "longitude": 2.490159,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 75",
+      "description": "Curated point of interest #75 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.028891,
+      "longitude": 16.26083,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 76",
+      "description": "Curated point of interest #76 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.68449,
+      "longitude": 2.258527,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 77",
+      "description": "Curated point of interest #77 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.31266,
+      "longitude": -6.249754,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 78",
+      "description": "Curated point of interest #78 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.848103,
+      "longitude": 14.272618,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 79",
+      "description": "Curated point of interest #79 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.400751,
+      "longitude": 19.093185,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 80",
+      "description": "Curated point of interest #80 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.067769,
+      "longitude": 20.84433,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 81",
+      "description": "Curated point of interest #81 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 37.726396,
+      "longitude": 23.806162,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 82",
+      "description": "Curated point of interest #82 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.740165,
+      "longitude": 12.739652,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 83",
+      "description": "Curated point of interest #83 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.735781,
+      "longitude": 13.147514,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 84",
+      "description": "Curated point of interest #84 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.699403,
+      "longitude": 2.453587,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 85",
+      "description": "Curated point of interest #85 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.036742,
+      "longitude": 16.153187,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 86",
+      "description": "Curated point of interest #86 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.648709,
+      "longitude": 2.211226,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 87",
+      "description": "Curated point of interest #87 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.333403,
+      "longitude": -6.089528,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 88",
+      "description": "Curated point of interest #88 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.259998,
+      "longitude": 14.252046,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 89",
+      "description": "Curated point of interest #89 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.256058,
+      "longitude": 18.998831,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 90",
+      "description": "Curated point of interest #90 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.183847,
+      "longitude": 20.992415,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 91",
+      "description": "Curated point of interest #91 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.121246,
+      "longitude": 23.831519,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 92",
+      "description": "Curated point of interest #92 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 42.193299,
+      "longitude": 12.255451,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 93",
+      "description": "Curated point of interest #93 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.461573,
+      "longitude": 13.308582,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 94",
+      "description": "Curated point of interest #94 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 49.073604,
+      "longitude": 2.201394,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 95",
+      "description": "Curated point of interest #95 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.022325,
+      "longitude": 16.342968,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 96",
+      "description": "Curated point of interest #96 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.340529,
+      "longitude": 2.035727,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 97",
+      "description": "Curated point of interest #97 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.199684,
+      "longitude": -6.006341,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 98",
+      "description": "Curated point of interest #98 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.041378,
+      "longitude": 14.654609,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 99",
+      "description": "Curated point of interest #99 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.528095,
+      "longitude": 18.770553,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 100",
+      "description": "Curated point of interest #100 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.529269,
+      "longitude": 21.213817,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 101",
+      "description": "Curated point of interest #101 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.265198,
+      "longitude": 23.98332,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 102",
+      "description": "Curated point of interest #102 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 42.112017,
+      "longitude": 12.296187,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 103",
+      "description": "Curated point of interest #103 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.511385,
+      "longitude": 13.233248,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 104",
+      "description": "Curated point of interest #104 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.797224,
+      "longitude": 2.087381,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 105",
+      "description": "Curated point of interest #105 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.135584,
+      "longitude": 16.664985,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 106",
+      "description": "Curated point of interest #106 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.246522,
+      "longitude": 2.339042,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 107",
+      "description": "Curated point of interest #107 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.322805,
+      "longitude": -6.306496,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 108",
+      "description": "Curated point of interest #108 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.349891,
+      "longitude": 14.735054,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 109",
+      "description": "Curated point of interest #109 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.531361,
+      "longitude": 19.171245,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 110",
+      "description": "Curated point of interest #110 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.022578,
+      "longitude": 20.890225,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 111",
+      "description": "Curated point of interest #111 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.265026,
+      "longitude": 23.775008,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 112",
+      "description": "Curated point of interest #112 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.928117,
+      "longitude": 12.645185,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 113",
+      "description": "Curated point of interest #113 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.254299,
+      "longitude": 13.455507,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 114",
+      "description": "Curated point of interest #114 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.85831,
+      "longitude": 2.563832,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 115",
+      "description": "Curated point of interest #115 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.00266,
+      "longitude": 16.650267,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 116",
+      "description": "Curated point of interest #116 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.135467,
+      "longitude": 1.980095,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 117",
+      "description": "Curated point of interest #117 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.406821,
+      "longitude": -6.155172,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 118",
+      "description": "Curated point of interest #118 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.916622,
+      "longitude": 14.209732,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 119",
+      "description": "Curated point of interest #119 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.732072,
+      "longitude": 18.887929,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 120",
+      "description": "Curated point of interest #120 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.286411,
+      "longitude": 21.083829,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 121",
+      "description": "Curated point of interest #121 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 37.935335,
+      "longitude": 23.777703,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 122",
+      "description": "Curated point of interest #122 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.91647,
+      "longitude": 12.757224,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 123",
+      "description": "Curated point of interest #123 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.342556,
+      "longitude": 13.534715,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 124",
+      "description": "Curated point of interest #124 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.699812,
+      "longitude": 2.289672,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 125",
+      "description": "Curated point of interest #125 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.311214,
+      "longitude": 16.253798,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 126",
+      "description": "Curated point of interest #126 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.277106,
+      "longitude": 2.319719,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 127",
+      "description": "Curated point of interest #127 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.093326,
+      "longitude": -6.285329,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 128",
+      "description": "Curated point of interest #128 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.374573,
+      "longitude": 14.735458,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 129",
+      "description": "Curated point of interest #129 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.241856,
+      "longitude": 18.868093,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 130",
+      "description": "Curated point of interest #130 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.08882,
+      "longitude": 21.272156,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 131",
+      "description": "Curated point of interest #131 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.212319,
+      "longitude": 23.955062,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 132",
+      "description": "Curated point of interest #132 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.824516,
+      "longitude": 12.291048,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 133",
+      "description": "Curated point of interest #133 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.720247,
+      "longitude": 13.527124,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 134",
+      "description": "Curated point of interest #134 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.923607,
+      "longitude": 2.64454,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 135",
+      "description": "Curated point of interest #135 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.300586,
+      "longitude": 16.078494,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 136",
+      "description": "Curated point of interest #136 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.577662,
+      "longitude": 2.048227,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 137",
+      "description": "Curated point of interest #137 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.447833,
+      "longitude": -5.996942,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 138",
+      "description": "Curated point of interest #138 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.856075,
+      "longitude": 14.207057,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 139",
+      "description": "Curated point of interest #139 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.262122,
+      "longitude": 19.072134,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 140",
+      "description": "Curated point of interest #140 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.093109,
+      "longitude": 21.075098,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 141",
+      "description": "Curated point of interest #141 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.114367,
+      "longitude": 23.549658,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 142",
+      "description": "Curated point of interest #142 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.983343,
+      "longitude": 12.35479,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 143",
+      "description": "Curated point of interest #143 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.513119,
+      "longitude": 13.648202,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 144",
+      "description": "Curated point of interest #144 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 49.064262,
+      "longitude": 2.107579,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 145",
+      "description": "Curated point of interest #145 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.162345,
+      "longitude": 16.239808,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 146",
+      "description": "Curated point of interest #146 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.089527,
+      "longitude": 2.331272,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 147",
+      "description": "Curated point of interest #147 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.432068,
+      "longitude": -6.403127,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 148",
+      "description": "Curated point of interest #148 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.220239,
+      "longitude": 14.468808,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 149",
+      "description": "Curated point of interest #149 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.454512,
+      "longitude": 18.746002,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 150",
+      "description": "Curated point of interest #150 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 51.974846,
+      "longitude": 21.242064,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 151",
+      "description": "Curated point of interest #151 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.226157,
+      "longitude": 23.754854,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 152",
+      "description": "Curated point of interest #152 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 42.103557,
+      "longitude": 12.545906,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 153",
+      "description": "Curated point of interest #153 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.308856,
+      "longitude": 13.181467,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 154",
+      "description": "Curated point of interest #154 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.741555,
+      "longitude": 2.591589,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 155",
+      "description": "Curated point of interest #155 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.385873,
+      "longitude": 16.590222,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 156",
+      "description": "Curated point of interest #156 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.626755,
+      "longitude": 1.994646,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 157",
+      "description": "Curated point of interest #157 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.199518,
+      "longitude": -6.498624,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 158",
+      "description": "Curated point of interest #158 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.24357,
+      "longitude": 14.668281,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 159",
+      "description": "Curated point of interest #159 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.441726,
+      "longitude": 19.112597,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 160",
+      "description": "Curated point of interest #160 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.022432,
+      "longitude": 21.270129,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 161",
+      "description": "Curated point of interest #161 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.202563,
+      "longitude": 24.013224,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 162",
+      "description": "Curated point of interest #162 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 42.089263,
+      "longitude": 12.72525,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 163",
+      "description": "Curated point of interest #163 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.234872,
+      "longitude": 13.546939,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 164",
+      "description": "Curated point of interest #164 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.755911,
+      "longitude": 2.61069,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 165",
+      "description": "Curated point of interest #165 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.389541,
+      "longitude": 16.592238,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 166",
+      "description": "Curated point of interest #166 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.57385,
+      "longitude": 2.028683,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 167",
+      "description": "Curated point of interest #167 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.522225,
+      "longitude": -6.495443,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 168",
+      "description": "Curated point of interest #168 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.2988,
+      "longitude": 14.652956,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 169",
+      "description": "Curated point of interest #169 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.33136,
+      "longitude": 19.230152,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 170",
+      "description": "Curated point of interest #170 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.205882,
+      "longitude": 20.895315,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 171",
+      "description": "Curated point of interest #171 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.161007,
+      "longitude": 23.564057,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 172",
+      "description": "Curated point of interest #172 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.616999,
+      "longitude": 12.312278,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 173",
+      "description": "Curated point of interest #173 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.416957,
+      "longitude": 13.623612,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 174",
+      "description": "Curated point of interest #174 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 49.136733,
+      "longitude": 2.219675,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 175",
+      "description": "Curated point of interest #175 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.293089,
+      "longitude": 16.313607,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 176",
+      "description": "Curated point of interest #176 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.67609,
+      "longitude": 2.190329,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 177",
+      "description": "Curated point of interest #177 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.613342,
+      "longitude": -6.491095,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 178",
+      "description": "Curated point of interest #178 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 50.35774,
+      "longitude": 14.244941,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 179",
+      "description": "Curated point of interest #179 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.775421,
+      "longitude": 18.89948,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 180",
+      "description": "Curated point of interest #180 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 51.994742,
+      "longitude": 20.972938,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 181",
+      "description": "Curated point of interest #181 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.120927,
+      "longitude": 23.615706,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 182",
+      "description": "Curated point of interest #182 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.966525,
+      "longitude": 12.503254,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 183",
+      "description": "Curated point of interest #183 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.451117,
+      "longitude": 13.450953,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 184",
+      "description": "Curated point of interest #184 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.709434,
+      "longitude": 2.477471,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 185",
+      "description": "Curated point of interest #185 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 47.909215,
+      "longitude": 16.629145,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 186",
+      "description": "Curated point of interest #186 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.410471,
+      "longitude": 2.300258,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 187",
+      "description": "Curated point of interest #187 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.49497,
+      "longitude": -6.157923,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 188",
+      "description": "Curated point of interest #188 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.994033,
+      "longitude": 14.179784,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 189",
+      "description": "Curated point of interest #189 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.596443,
+      "longitude": 18.93832,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 190",
+      "description": "Curated point of interest #190 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.118049,
+      "longitude": 21.221009,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    },
+    {
+      "title": "Athens Heritage POI 191",
+      "description": "Curated point of interest #191 located in Athens, Greece.",
+      "type": "ARCHAEOLOGICAL_SITE",
+      "latitude": 38.115653,
+      "longitude": 23.607693,
+      "city": "Athens",
+      "country": "Greece",
+      "tags": [
+        "classical",
+        "unesco"
+      ]
+    },
+    {
+      "title": "Rome Heritage POI 192",
+      "description": "Curated point of interest #192 located in Rome, Italy.",
+      "type": "MONUMENT",
+      "latitude": 41.788371,
+      "longitude": 12.441436,
+      "city": "Rome",
+      "country": "Italy",
+      "tags": [
+        "roman",
+        "heritage"
+      ]
+    },
+    {
+      "title": "Berlin Heritage POI 193",
+      "description": "Curated point of interest #193 located in Berlin, Germany.",
+      "type": "MUSEUM",
+      "latitude": 52.46144,
+      "longitude": 13.282393,
+      "city": "Berlin",
+      "country": "Germany",
+      "tags": [
+        "modern",
+        "urban"
+      ]
+    },
+    {
+      "title": "Paris Heritage POI 194",
+      "description": "Curated point of interest #194 located in Paris, France.",
+      "type": "HISTORICAL_SITE",
+      "latitude": 48.632973,
+      "longitude": 2.304468,
+      "city": "Paris",
+      "country": "France",
+      "tags": [
+        "cultural",
+        "museum"
+      ]
+    },
+    {
+      "title": "Vienna Heritage POI 195",
+      "description": "Curated point of interest #195 located in Vienna, Austria.",
+      "type": "ARCHIVE",
+      "latitude": 48.472418,
+      "longitude": 16.480191,
+      "city": "Vienna",
+      "country": "Austria",
+      "tags": [
+        "music",
+        "imperial"
+      ]
+    },
+    {
+      "title": "Barcelona Heritage POI 196",
+      "description": "Curated point of interest #196 located in Barcelona, Spain.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 41.629083,
+      "longitude": 2.237909,
+      "city": "Barcelona",
+      "country": "Spain",
+      "tags": [
+        "gaudi",
+        "modernisme"
+      ]
+    },
+    {
+      "title": "Dublin Heritage POI 197",
+      "description": "Curated point of interest #197 located in Dublin, Ireland.",
+      "type": "FORTIFICATION",
+      "latitude": 53.23037,
+      "longitude": -6.231538,
+      "city": "Dublin",
+      "country": "Ireland",
+      "tags": [
+        "celtic",
+        "medieval"
+      ]
+    },
+    {
+      "title": "Prague Heritage POI 198",
+      "description": "Curated point of interest #198 located in Prague, Czech Republic.",
+      "type": "SETTLEMENT",
+      "latitude": 49.775744,
+      "longitude": 14.309948,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tags": [
+        "bohemian",
+        "castle"
+      ]
+    },
+    {
+      "title": "Budapest Heritage POI 199",
+      "description": "Curated point of interest #199 located in Budapest, Hungary.",
+      "type": "RELIGIOUS_SITE",
+      "latitude": 47.455833,
+      "longitude": 19.088191,
+      "city": "Budapest",
+      "country": "Hungary",
+      "tags": [
+        "danube",
+        "thermal"
+      ]
+    },
+    {
+      "title": "Warsaw Heritage POI 200",
+      "description": "Curated point of interest #200 located in Warsaw, Poland.",
+      "type": "MONUMENT",
+      "latitude": 52.322523,
+      "longitude": 20.991193,
+      "city": "Warsaw",
+      "country": "Poland",
+      "tags": [
+        "rebuilt",
+        "worldwar"
+      ]
+    }
+  ]
+}
