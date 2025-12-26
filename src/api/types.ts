@@ -18,19 +18,43 @@ export type Project = {
   updatedAt?: string;
 };
 
+export type PlaceType = 
+  | 'SITE'                    // Backward Compatibility
+  | 'MUSEUM'
+  | 'POI'
+  | 'ARCHAEOLOGICAL_SITE'     // Ausgrabungsstätte
+  | 'HISTORICAL_SITE'         // Historischer Ort
+  | 'MONUMENT'                // Denkmal
+  | 'ARCHIVE'                 // Archiv
+  | 'RELIGIOUS_SITE'          // Kirche, Tempel
+  | 'FORTIFICATION'           // Burg, Festung
+  | 'SETTLEMENT'              // Siedlung
+  | 'BURIAL_SITE'             // Grabstätte
+  | 'INDUSTRIAL_HERITAGE'     // Industriedenkmal
+  | 'CULTURAL_LANDSCAPE'      // Kulturlandschaft
+  | 'RESEARCH_LOCATION'       // Forschungsstandort
+  | 'WITNESS_LOCATION'        // Zeitzeugen-Ort
+  | 'OTHER';
+
 export type Place = {
   id: string;
-  projectId: string;
+  userId: string;
+  projectId?: string | null; // Optional - kann null sein für globale Places
   title?: string;
   description?: string;
-  type?: 'SITE' | 'MUSEUM' | 'POI';
-  latitude?: number;
-  longitude?: number;
+  type?: PlaceType;
+  latitude: number;
+  longitude: number;
   radiusMeters?: number;
   address?: string;
   city?: string;
   country?: string;
+  postalCode?: string;
   visited?: boolean;
+  tags?: string[];
+  metadata?: Record<string, unknown>;
+  importSource?: string;
+  importedAt?: string;
   createdAt?: string;
   updatedAt?: string;
 };

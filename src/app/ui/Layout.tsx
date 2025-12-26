@@ -46,6 +46,9 @@ export function Layout() {
           <NavLink to="/cache" className={({ isActive }) => (isActive ? 'active' : '')}>
             System & Cache Studio
           </NavLink>
+          <NavLink to="/places" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Global Places
+          </NavLink>
         </nav>
         <div className="sidebar-footer">
           <div className="user-line">
