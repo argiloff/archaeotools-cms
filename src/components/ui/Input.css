@@ -1,0 +1,99 @@
+.input-modern-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-modern-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #c5d1e0;
+  letter-spacing: 0.2px;
+}
+
+.input-modern-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-modern {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e8ecf5;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-modern:focus {
+  border-color: #6ed2ff;
+  box-shadow: 0 0 0 3px rgba(110, 210, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.input-modern::placeholder {
+  color: #7f8dab;
+}
+
+.input-modern:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input-modern--error {
+  border-color: #f78c6c;
+}
+
+.input-modern--error:focus {
+  border-color: #f78c6c;
+  box-shadow: 0 0 0 3px rgba(247, 140, 108, 0.15);
+}
+
+.input-modern--with-left-icon {
+  padding-left: 42px;
+}
+
+.input-modern--with-right-icon {
+  padding-right: 42px;
+}
+
+.input-modern-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8fa0bf;
+  pointer-events: none;
+}
+
+.input-modern-icon--left {
+  left: 14px;
+}
+
+.input-modern-icon--right {
+  right: 14px;
+}
+
+.input-modern-error {
+  font-size: 12px;
+  color: #f78c6c;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.input-modern-helper {
+  font-size: 12px;
+  color: #8fa0bf;
+}
+
+.input-modern--textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}

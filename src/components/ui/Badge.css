@@ -1,0 +1,84 @@
+.badge-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 1px solid;
+  transition: all 0.15s ease;
+}
+
+.badge-modern--sm {
+  padding: 3px 8px;
+  font-size: 10px;
+}
+
+.badge-modern--md {
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.badge-modern--lg {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.badge-modern--default {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #c5d1e0;
+}
+
+.badge-modern--primary {
+  background: rgba(79, 107, 255, 0.15);
+  border-color: rgba(79, 107, 255, 0.3);
+  color: #8fb0ff;
+}
+
+.badge-modern--success {
+  background: rgba(109, 227, 196, 0.15);
+  border-color: rgba(109, 227, 196, 0.3);
+  color: #6de3c4;
+}
+
+.badge-modern--warning {
+  background: rgba(255, 200, 120, 0.15);
+  border-color: rgba(255, 200, 120, 0.3);
+  color: #ffc878;
+}
+
+.badge-modern--error {
+  background: rgba(247, 140, 108, 0.15);
+  border-color: rgba(247, 140, 108, 0.3);
+  color: #f78c6c;
+}
+
+.badge-modern--info {
+  background: rgba(110, 210, 255, 0.15);
+  border-color: rgba(110, 210, 255, 0.3);
+  color: #6ed2ff;
+}
+
+.badge-modern__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.badge-modern--dot {
+  padding-left: 6px;
+}

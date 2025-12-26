@@ -1,0 +1,92 @@
+.card-modern {
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.card-modern--default {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-modern--elevated {
+  background: rgba(10, 14, 26, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card-modern--ghost {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.card-modern--hover:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.card-modern--padding-none {
+  padding: 0;
+}
+
+.card-modern--padding-sm {
+  padding: 12px;
+}
+
+.card-modern--padding-md {
+  padding: 16px;
+}
+
+.card-modern--padding-lg {
+  padding: 24px;
+}
+
+.card-modern__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.card-modern__header-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-modern__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f5f7ff;
+  line-height: 1.4;
+}
+
+.card-modern__subtitle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #8fa0bf;
+  line-height: 1.5;
+}
+
+.card-modern__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card-modern__body {
+  color: #c5d1e0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card-modern__footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

@@ -1,0 +1,94 @@
+.stat-card {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.stat-card--primary {
+  background: linear-gradient(135deg, rgba(79, 107, 255, 0.1), rgba(79, 107, 255, 0.05));
+  border-color: rgba(79, 107, 255, 0.2);
+}
+
+.stat-card--success {
+  background: linear-gradient(135deg, rgba(109, 227, 196, 0.1), rgba(109, 227, 196, 0.05));
+  border-color: rgba(109, 227, 196, 0.2);
+}
+
+.stat-card--warning {
+  background: linear-gradient(135deg, rgba(255, 200, 120, 0.1), rgba(255, 200, 120, 0.05));
+  border-color: rgba(255, 200, 120, 0.2);
+}
+
+.stat-card--error {
+  background: linear-gradient(135deg, rgba(247, 140, 108, 0.1), rgba(247, 140, 108, 0.05));
+  border-color: rgba(247, 140, 108, 0.2);
+}
+
+.stat-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  color: #8fa0bf;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.stat-card__icon {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.stat-card__value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f5f7ff;
+  line-height: 1.2;
+}
+
+.stat-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-card__subtitle {
+  font-size: 12px;
+  color: #6de3c4;
+  font-weight: 500;
+}
+
+.stat-card__trend {
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-card__trend--up {
+  color: #6de3c4;
+}
+
+.stat-card__trend--down {
+  color: #f78c6c;
+}
+
+.stat-card__trend--neutral {
+  color: #8fa0bf;
+}
