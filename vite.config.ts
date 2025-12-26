@@ -5,12 +5,12 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['acc.archaeotools.argiloff.at', 'localhost'],
+    allowedHosts: true,
     host: '0.0.0.0',
     port: 5173,
   },
   preview: {
-    allowedHosts: ['acc.archaeotools.argiloff.at', 'localhost'],
+    allowedHosts: true,
     port: 4173,
     host: '0.0.0.0',
   },
