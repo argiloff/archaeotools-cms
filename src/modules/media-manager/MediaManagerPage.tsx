@@ -10,7 +10,7 @@ import {
   updatePhoto,
   deletePhoto,
 } from '../../api/photos.service';
-import { listPlaces, createPlace, updatePlace, deletePlace } from '../../api/places.service';
+import { listPlaces, createPlace, updateProjectPlace, deleteProjectPlace } from '../../api/places.service';
 import { useCurrentProject } from '../../app/hooks/useCurrentProject';
 import { MapPreview } from '../../components/map/MapPreview';
 import type { MapPoint } from '../../components/map/MapPreview';
@@ -104,7 +104,7 @@ export function MediaManagerPage() {
   const savePlaceMutation = useMutation({
     mutationFn: (payload: Parameters<typeof createPlace>[1]) =>
       editingPlaceId
-        ? updatePlace(projectId!, editingPlaceId, payload)
+        ? updateProjectPlace(projectId!, editingPlaceId, payload)
         : createPlace(projectId!, payload),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['places', projectId] });
@@ -119,7 +119,7 @@ export function MediaManagerPage() {
   });
 
   const deletePlaceMutation = useMutation({
-    mutationFn: (placeId: string) => deletePlace(projectId!, placeId),
+    mutationFn: (placeId: string) => deleteProjectPlace(projectId!, placeId),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['places', projectId] });
       setStatusMessage('Place gelöscht.');

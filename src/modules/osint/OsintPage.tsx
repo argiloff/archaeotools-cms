@@ -20,16 +20,17 @@ export function OsintPage() {
     enabled: !!projectId,
   });
 
+  const osintItems = osintQuery.data ?? [];
+
   const filteredByStatus = useMemo(() => {
-    const osint = osintQuery.data ?? [];
     const searchLower = search.toLowerCase();
     
     const filtered = search
-      ? osint.filter((o) => {
+      ? osintItems.filter((o) => {
           const text = `${o.title ?? ''} ${o.summary ?? ''} ${o.source ?? ''}`.toLowerCase();
           return text.includes(searchLower);
         })
-      : osint;
+      : osintItems;
 
     return STATUS_ORDER.reduce(
       (acc, status) => {
@@ -38,7 +39,16 @@ export function OsintPage() {
       },
       {} as Record<string, OsintItem[]>
     );
-  }, [osintQuery.data, search]);
+  }, [osintItems, search]);
+
+  const recentItems = useMemo(() => {
+    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    return osintItems.filter((item) => {
+      if (!item.createdAt) return false;
+      const created = new Date(item.createdAt).getTime();
+      return !Number.isNaN(created) && created >= sevenDaysAgo;
+    });
+  }, [osintItems]);
 
   if (!projectId) {
     return (
@@ -60,7 +70,7 @@ export function OsintPage() {
     );
   }
 
-  const totalItems = osintQuery.data?.length ?? 0;
+  const totalItems = osintItems.length;
   const doneItems = filteredByStatus.DONE?.length ?? 0;
   const inProgressItems = filteredByStatus.IN_PROGRESS?.length ?? 0;
   const ideaItems = filteredByStatus.IDEA?.length ?? 0;
@@ -87,10 +97,16 @@ export function OsintPage() {
           variant="default"
         />
         <StatCard
+          label="Neue Hinweise"
+          value={recentItems.length}
+          subtitle="Letzte 7 Tage"
+          variant="primary"
+        />
+        <StatCard
           label="Ideen"
           value={ideaItems}
           icon="💡"
-          variant="info"
+          variant="default"
         />
         <StatCard
           label="In Arbeit"

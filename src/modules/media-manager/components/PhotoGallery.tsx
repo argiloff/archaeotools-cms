@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Card, CardBody, Badge, Button } from '../../../components/ui';
 import type { Photo } from '../../../api/types';
 import { resolvePhotoUrl } from '../../../api/photos.service';
